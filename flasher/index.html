@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MeshCoreNG Web Flasher</title>
+    <meta name="description" content="Flash MeshCoreNG ESP32 repeater firmware from the browser.">
+    <link rel="stylesheet" href="./style.css">
+    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero">
+        <p class="eyebrow">MeshCoreNG</p>
+        <h1>Web Flasher</h1>
+        <p>
+          Flash ESP32-based MeshCoreNG repeater firmware directly from Chrome or Edge.
+          Pick your board, connect USB, then press install.
+        </p>
+      </section>
+
+      <section class="notice">
+        <strong>Important:</strong>
+        Use this only with the matching board variant. The browser flasher supports ESP32-family devices.
+        nRF52, RP2040 and STM32 boards still need their normal UF2, ZIP, HEX or platform-specific flashing flow.
+      </section>
+
+      <section>
+        <label for="board-select">Board variant</label>
+        <select id="board-select"></select>
+        <p id="board-description" class="description"></p>
+      </section>
+
+      <section class="installer">
+        <esp-web-install-button id="install-button" manifest=""></esp-web-install-button>
+      </section>
+
+      <section class="help">
+        <h2>What gets flashed?</h2>
+        <p>
+          These builds use the MeshCoreNG repeater firmware with dense-mesh telemetry and tuning.
+          Default behavior stays compatible with existing MeshCore clients.
+        </p>
+        <h2>Browser support</h2>
+        <p>
+          Web flashing uses Web Serial, so it works best in Chrome or Edge on desktop.
+          If the device is not detected, hold BOOT while connecting or use the board's normal flashing method.
+        </p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

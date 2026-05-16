@@ -1,0 +1,51 @@
+[
+  {
+    "env": "Xiao_C3_repeater",
+    "name": "Seeed XIAO ESP32-C3 Repeater",
+    "chipFamily": "ESP32-C3",
+    "description": "Small ESP32-C3 repeater build for MeshCoreNG dense-mesh testing.",
+    "manifest": "./firmware/Xiao_C3_repeater/manifest.json"
+  },
+  {
+    "env": "Xiao_S3_WIO_repeater",
+    "name": "Seeed XIAO ESP32-S3 WIO Repeater",
+    "chipFamily": "ESP32-S3",
+    "description": "ESP32-S3 WIO repeater build.",
+    "manifest": "./firmware/Xiao_S3_WIO_repeater/manifest.json"
+  },
+  {
+    "env": "Heltec_v3_repeater",
+    "name": "Heltec LoRa 32 V3 Repeater",
+    "chipFamily": "ESP32-S3",
+    "description": "Heltec V3 ESP32-S3 repeater build.",
+    "manifest": "./firmware/Heltec_v3_repeater/manifest.json"
+  },
+  {
+    "env": "heltec_v4_repeater",
+    "name": "Heltec LoRa 32 V4 Repeater",
+    "chipFamily": "ESP32-S3",
+    "description": "Heltec V4 ESP32-S3 repeater build.",
+    "manifest": "./firmware/heltec_v4_repeater/manifest.json"
+  },
+  {
+    "env": "LilyGo_T3S3_sx1262_repeater",
+    "name": "LilyGo T3S3 SX1262 Repeater",
+    "chipFamily": "ESP32-S3",
+    "description": "LilyGo T3S3 SX1262 repeater build.",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/manifest.json"
+  },
+  {
+    "env": "Tbeam_SX1262_repeater",
+    "name": "LilyGo T-Beam SX1262 Repeater",
+    "chipFamily": "ESP32",
+    "description": "LilyGo T-Beam ESP32 SX1262 repeater build.",
+    "manifest": "./firmware/Tbeam_SX1262_repeater/manifest.json"
+  },
+  {
+    "env": "Station_G2_repeater",
+    "name": "Station G2 Repeater",
+    "chipFamily": "ESP32-S3",
+    "description": "Station G2 ESP32-S3 repeater build.",
+    "manifest": "./firmware/Station_G2_repeater/manifest.json"
+  }
+]

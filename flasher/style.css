@@ -1,0 +1,94 @@
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #0d1117;
+  color: #f0f3f6;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background:
+    linear-gradient(135deg, rgba(18, 90, 86, 0.35), transparent 38%),
+    linear-gradient(215deg, rgba(75, 95, 170, 0.28), transparent 42%),
+    #0d1117;
+}
+
+main {
+  width: min(920px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 56px 0;
+}
+
+.hero {
+  margin-bottom: 32px;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #77d6c4;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+h1 {
+  margin: 0;
+  font-size: 48px;
+  line-height: 1.05;
+}
+
+h2 {
+  margin: 28px 0 8px;
+  font-size: 20px;
+}
+
+p {
+  max-width: 720px;
+  color: #c9d1d9;
+  line-height: 1.55;
+}
+
+.notice,
+.installer,
+section:not(.hero) {
+  margin-top: 20px;
+}
+
+.notice {
+  padding: 14px 16px;
+  border: 1px solid rgba(119, 214, 196, 0.35);
+  background: rgba(13, 17, 23, 0.72);
+  border-radius: 8px;
+  color: #dbe7ee;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+select {
+  width: min(100%, 520px);
+  min-height: 44px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #3f4b56;
+  background: #161b22;
+  color: #f0f3f6;
+  font: inherit;
+}
+
+.description {
+  margin-top: 10px;
+}
+
+esp-web-install-button {
+  display: block;
+  margin-top: 10px;
+}
+
+.help {
+  margin-top: 36px;
+}

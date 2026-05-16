@@ -1,0 +1,16 @@
+{
+  "name": "Heltec LoRa 32 V3 Repeater",
+  "version": "repeater-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "Heltec_v3_repeater-v1.0.0-32613f2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
