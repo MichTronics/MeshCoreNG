@@ -524,6 +524,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#power-saving-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Saving Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#system-stats-battery-uptime-queue-length-and-debug-flags" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1421,6 +1432,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#tcp-bridge-instellen-internet-verbinding-tussen-repeaters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCP bridge instellen (internet-verbinding tussen repeaters)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#view-the-compiled-bridge-type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1491,6 +1513,50 @@
     <span class="md-ellipsis">
       
         Set the ESP-Now secret
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-wifi-ssid-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the WiFi SSID (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-wifi-password-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the WiFi password (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-tcp-bridge-server-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the TCP bridge server (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-tcp-bridge-port-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the TCP bridge port (TCP bridge only)
       
     </span>
   </a>
@@ -2105,6 +2171,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#power-saving-stats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Power Saving Stats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#system-stats-battery-uptime-queue-length-and-debug-flags" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3002,6 +3079,17 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#tcp-bridge-instellen-internet-verbinding-tussen-repeaters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TCP bridge instellen (internet-verbinding tussen repeaters)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#view-the-compiled-bridge-type" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3072,6 +3160,50 @@
     <span class="md-ellipsis">
       
         Set the ESP-Now secret
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-wifi-ssid-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the WiFi SSID (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-wifi-password-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the WiFi password (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-tcp-bridge-server-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the TCP bridge server (TCP bridge only)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#set-the-tcp-bridge-port-tcp-bridge-only" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Set the TCP bridge port (TCP bridge only)
       
     </span>
   </a>
@@ -3261,6 +3393,14 @@
 <p>Shows repeater dense-mesh counters in one place: flood adverts received, forwarded and dropped, CAD busy/timeout events, and flood/direct duplicate counters.</p>
 <p>MeshCoreNG v2 also includes a rolling window for neighbor count, unique/duplicate flood RX, suppressed flood TX, RX/TX airtime, congestion level, and density level. These counters are RAM-only and do not change the packet protocol.</p>
 <p><strong>Serial Only:</strong> <code>get dense.stats</code></p>
+<hr />
+<h3 id="power-saving-stats">Power Saving Stats</h3>
+<p><strong>Usage:</strong>
+- <code>get power.stats</code>
+- <code>clear power.stats</code></p>
+<p>Shows repeater power-saving counters: sleep attempts, sleep skipped because outbound work was pending, sleep skipped because a bridge/WiFi mode was active, wakeups caused by LoRa RX when the board reports that reason, and a compact board support indicator.</p>
+<p>These counters are RAM-only and reset on reboot or with <code>clear power.stats</code>.</p>
+<p><strong>Serial Only:</strong> <code>get power.stats</code></p>
 <hr />
 <h3 id="system-stats-battery-uptime-queue-length-and-debug-flags">System Stats - Battery, Uptime, Queue Length and Debug Flags</h3>
 <p><strong>Usage:</strong> 
@@ -3455,8 +3595,9 @@
 <p><strong>Parameters:</strong> 
 - <code>on</code>: enable power saving
 - <code>off</code>: disable power saving</p>
-<p><strong>Default:</strong> <code>on</code></p>
-<p><strong>Note:</strong> When enabled, device enters sleep mode between radio transmissions</p>
+<p><strong>Default:</strong> <code>off</code></p>
+<p><strong>Note:</strong> Power saving is repeater-only. When enabled, sleep is attempted only when there is no pending outbound work. Bridge/WiFi modes prevent sleep because the bridge must stay awake.</p>
+<p>On ESP32 boards with supported LoRa DIO1 wake wiring, sleep can wake by LoRa RX or by timer. On nRF52 boards sleep is event/interrupt driven and the seconds parameter is ignored by the board sleep implementation.</p>
 <hr />
 <h3 id="routing">Routing</h3>
 <h4 id="view-or-change-this-nodes-repeat-flag">View or change this node's repeat flag</h4>
@@ -3849,6 +3990,60 @@ region save
 - <code>value</code>: The value to set the sensor to</p>
 <hr />
 <h3 id="bridge-when-bridge-support-is-compiled-in">Bridge (When bridge support is compiled in)</h3>
+<p>Three bridge types are available, each compiled in separately:</p>
+<table>
+<thead>
+<tr>
+<th>Bridge</th>
+<th>Build flag</th>
+<th>Platform</th>
+<th>Use case</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>RS232</strong></td>
+<td><code>-D WITH_RS232_BRIDGE=Serial2</code></td>
+<td>All</td>
+<td>Wired serieel naar ander apparaat</td>
+</tr>
+<tr>
+<td><strong>ESPNow</strong></td>
+<td><code>-D WITH_ESPNOW_BRIDGE=1</code></td>
+<td>ESP32</td>
+<td>Lokaal WiFi tussen ESP32 boards</td>
+</tr>
+<tr>
+<td><strong>TCP</strong></td>
+<td><code>-D WITH_TCP_BRIDGE=1</code></td>
+<td>ESP32</td>
+<td>Meerdere repeaters via internet</td>
+</tr>
+</tbody>
+</table>
+<h4 id="tcp-bridge-instellen-internet-verbinding-tussen-repeaters">TCP bridge instellen (internet-verbinding tussen repeaters)</h4>
+<p>De TCP bridge verbindt repeaters via internet. Vereist een centrale server (zie <code>tools/tcp_bridge_server.py</code>).</p>
+<p><strong>1. Server starten (VPS, Raspberry Pi of PC met internet):</strong></p>
+<pre><code class="language-bash">python3 tools/tcp_bridge_server.py --port 4200
+</code></pre>
+<p><strong>2. Elke repeater instellen via CLI:</strong></p>
+<pre><code>set wifi.ssid     MijnWiFi
+set wifi.password geheim123
+set bridge.server mijnserver.example.com
+set bridge.port   4200
+set bridge.enabled on
+</code></pre>
+<p><strong>3. Beschikbare firmware-varianten</strong> (compileer met PlatformIO):
+- <code>Heltec_v3_repeater_bridge_tcp</code>
+- <code>Heltec_WSL3_repeater_bridge_tcp</code>
+- <code>heltec_v4_repeater_bridge_tcp</code>
+- <code>Tbeam_SX1262_repeater_bridge_tcp</code>
+- <code>Tbeam_SX1276_repeater_bridge_tcp</code>
+- <code>T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp</code>
+- <code>LilyGo_TBeam_1W_repeater_bridge_tcp</code>
+- <code>LilyGo_T3S3_sx1262_repeater_bridge_tcp</code>
+- <em>(en vele andere, zie de <code>variants/*/platformio.ini</code> bestanden)</em></p>
+<hr />
 <h4 id="view-the-compiled-bridge-type">View the compiled bridge type</h4>
 <p><strong>Usage:</strong> <code>get bridge.type</code></p>
 <hr />
@@ -3900,6 +4095,37 @@ region save
 <p><strong>Parameters:</strong>
 - <code>secret</code>: ESP-NOW bridge secret, up to 15 characters</p>
 <p><strong>Default:</strong> Varies by board</p>
+<hr />
+<h4 id="set-the-wifi-ssid-tcp-bridge-only">Set the WiFi SSID (TCP bridge only)</h4>
+<p><strong>Usage:</strong>
+- <code>get wifi.ssid</code>
+- <code>set wifi.ssid &lt;ssid&gt;</code></p>
+<p><strong>Parameters:</strong>
+- <code>ssid</code>: Name of the WiFi network the repeater should join, up to 31 characters</p>
+<p><strong>Note:</strong> Requires <code>WITH_TCP_BRIDGE</code> firmware build flag. Reboot to apply.</p>
+<hr />
+<h4 id="set-the-wifi-password-tcp-bridge-only">Set the WiFi password (TCP bridge only)</h4>
+<p><strong>Usage:</strong>
+- <code>set wifi.password &lt;password&gt;</code></p>
+<p><strong>Parameters:</strong>
+- <code>password</code>: WiFi network password, up to 63 characters</p>
+<p><strong>Note:</strong> <code>get wifi.password</code> always returns <code>***</code> for security.</p>
+<hr />
+<h4 id="set-the-tcp-bridge-server-tcp-bridge-only">Set the TCP bridge server (TCP bridge only)</h4>
+<p><strong>Usage:</strong>
+- <code>get bridge.server</code>
+- <code>set bridge.server &lt;host&gt;</code></p>
+<p><strong>Parameters:</strong>
+- <code>host</code>: Hostname or IP address of the central TCP bridge server</p>
+<p><strong>Note:</strong> Requires <code>WITH_TCP_BRIDGE</code> firmware build flag.</p>
+<hr />
+<h4 id="set-the-tcp-bridge-port-tcp-bridge-only">Set the TCP bridge port (TCP bridge only)</h4>
+<p><strong>Usage:</strong>
+- <code>get bridge.port</code>
+- <code>set bridge.port &lt;port&gt;</code></p>
+<p><strong>Parameters:</strong>
+- <code>port</code>: TCP port number (1–65535)</p>
+<p><strong>Default:</strong> 4200</p>
 <hr />
 <h4 id="view-the-bootloader-version-nrf52-only">View the bootloader version (nRF52 only)</h4>
 <p><strong>Usage:</strong> <code>get bootloader.ver</code></p>
