@@ -1,94 +1,256 @@
+/* ── Reset / base ─────────────────────────────────────── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 :root {
-  color-scheme: light dark;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  background: #0d1117;
-  color: #f0f3f6;
+  --bg:        #0d1117;
+  --bg-card:   #161b22;
+  --bg-hover:  #1c2330;
+  --border:    #30363d;
+  --accent:    #238636;
+  --accent-h:  #2ea043;
+  --text:      #e6edf3;
+  --muted:     #8b949e;
+  --link:      #58a6ff;
+  --radius:    8px;
+  --max-w:     800px;
 }
 
+html { font-size: 16px; }
 body {
-  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
   min-height: 100vh;
-  background:
-    linear-gradient(135deg, rgba(18, 90, 86, 0.35), transparent 38%),
-    linear-gradient(215deg, rgba(75, 95, 170, 0.28), transparent 42%),
-    #0d1117;
+  display: flex;
+  flex-direction: column;
 }
 
-main {
-  width: min(920px, calc(100% - 32px));
-  margin: 0 auto;
-  padding: 56px 0;
+a { color: var(--link); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+code {
+  font-family: ui-monospace, "SFMono-Regular", Menlo, monospace;
+  font-size: 0.875em;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  padding: 1px 6px;
+  border-radius: 4px;
 }
 
-.hero {
-  margin-bottom: 32px;
+/* ── Header ───────────────────────────────────────────── */
+header {
+  background: var(--bg-card);
+  border-bottom: 1px solid var(--border);
+  padding: 2.5rem 1.5rem 2rem;
+  text-align: center;
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  color: #77d6c4;
+header h1 {
+  font-size: 2.25rem;
   font-weight: 700;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+  letter-spacing: -0.5px;
+  margin-bottom: 0.5rem;
 }
 
-h1 {
-  margin: 0;
-  font-size: 48px;
-  line-height: 1.05;
-}
-
-h2 {
-  margin: 28px 0 8px;
-  font-size: 20px;
-}
-
-p {
-  max-width: 720px;
-  color: #c9d1d9;
+.tagline {
+  color: var(--muted);
+  font-size: 0.93rem;
   line-height: 1.55;
 }
 
-.notice,
-.installer,
-section:not(.hero) {
-  margin-top: 20px;
+.tagline strong { color: var(--text); }
+
+/* ── Back link ────────────────────────────────────────── */
+.back {
+  display: inline-block;
+  color: var(--muted);
+  font-size: 0.85rem;
+  margin-bottom: 0.75rem;
+  text-decoration: none;
+}
+.back:hover { color: var(--link); }
+
+/* ── Main ─────────────────────────────────────────────── */
+main {
+  flex: 1;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 2rem 1.25rem;
+  width: 100%;
 }
 
-.notice {
-  padding: 14px 16px;
-  border: 1px solid rgba(119, 214, 196, 0.35);
-  background: rgba(13, 17, 23, 0.72);
-  border-radius: 8px;
-  color: #dbe7ee;
+/* ── Steps ────────────────────────────────────────────── */
+.step {
+  margin-bottom: 2.5rem;
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.step h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--text);
+}
+
+.step-num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.8rem;
   font-weight: 700;
+  flex-shrink: 0;
 }
 
+/* ── Firmware type grid ───────────────────────────────── */
+.type-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+  gap: 0.75rem;
+}
+
+.type-card {
+  cursor: pointer;
+  display: block;
+}
+
+.type-card input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.type-body {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.9rem 1rem;
+  transition: border-color 0.15s, background 0.15s;
+  height: 100%;
+}
+
+.type-card:hover .type-body {
+  background: var(--bg-hover);
+  border-color: #58a6ff55;
+}
+
+.type-card.selected .type-body {
+  border-color: var(--accent);
+  background: #1a2e1f;
+}
+
+.type-name {
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.type-desc {
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.4;
+}
+
+/* ── Board select ─────────────────────────────────────── */
 select {
-  width: min(100%, 520px);
+  width: 100%;
+  max-width: 520px;
   min-height: 44px;
   padding: 8px 12px;
-  border-radius: 8px;
-  border: 1px solid #3f4b56;
-  background: #161b22;
-  color: #f0f3f6;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
   font: inherit;
+  font-size: 0.9rem;
+  margin-top: 0.25rem;
 }
 
-.description {
-  margin-top: 10px;
+select:focus {
+  outline: none;
+  border-color: var(--accent);
 }
 
-esp-web-install-button {
-  display: block;
-  margin-top: 10px;
+.board-desc {
+  color: var(--muted);
+  font-size: 0.82rem;
+  margin-top: 0.5rem;
+  min-height: 1.2em;
 }
 
-.help {
-  margin-top: 36px;
+/* ── Flash row ────────────────────────────────────────── */
+.hint {
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin-bottom: 1rem;
+}
+
+.notice-nonesp32 {
+  margin-top: 1rem;
+  font-size: 0.82rem;
+}
+
+.flash-row {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.install-btn {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.65rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.15s, opacity 0.15s;
+}
+
+.install-btn:hover:not(:disabled) { background: var(--accent-h); }
+
+.install-btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+/* ── First use ────────────────────────────────────────── */
+.step ol {
+  padding-left: 1.35rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.step ol li { margin-bottom: 0.35rem; }
+.step ol strong { color: var(--text); }
+.step > p { color: var(--muted); font-size: 0.9rem; }
+.step > p a { color: var(--link); }
+
+/* ── Footer ───────────────────────────────────────────── */
+footer {
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1.5rem 1rem;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+footer p + p { margin-top: 0.4rem; }
+footer .small { font-size: 0.78rem; }
+footer a { color: var(--muted); }
+footer a:hover { color: var(--link); text-decoration: underline; }
+
+/* ── Responsive ───────────────────────────────────────── */
+@media (max-width: 500px) {
+  header h1 { font-size: 1.75rem; }
+  .type-grid { grid-template-columns: 1fr 1fr; }
 }

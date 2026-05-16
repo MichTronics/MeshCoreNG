@@ -1,6 +1,6 @@
 {
   "name": "LilyGo T-Beam SX1262 Repeater",
-  "version": "repeater-v1.0.0",
+  "version": "2026-05-16",
   "new_install_prompt_erase": true,
   "builds": [
     {

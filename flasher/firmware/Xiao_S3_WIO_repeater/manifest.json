@@ -1,6 +1,6 @@
 {
   "name": "Seeed XIAO ESP32-S3 WIO Repeater",
-  "version": "repeater-v1.0.0",
+  "version": "2026-05-16",
   "new_install_prompt_erase": true,
   "builds": [
     {

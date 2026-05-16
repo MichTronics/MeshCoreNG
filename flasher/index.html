@@ -1,54 +1,86 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>MeshCoreNG Web Flasher</title>
-    <meta name="description" content="Flash MeshCoreNG ESP32 repeater firmware from the browser.">
-    <link rel="stylesheet" href="./style.css">
-    <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js?module"></script>
-  </head>
-  <body>
-    <main>
-      <section class="hero">
-        <p class="eyebrow">MeshCoreNG</p>
-        <h1>Web Flasher</h1>
-        <p>
-          Flash ESP32-based MeshCoreNG repeater firmware directly from Chrome or Edge.
-          Pick your board, connect USB, then press install.
-        </p>
-      </section>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MeshCoreNG – Web Flasher</title>
+  <link rel="icon" href="/favicon.svg" />
+  <link rel="stylesheet" href="style.css" />
+  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js"></script>
+</head>
+<body>
 
-      <section class="notice">
-        <strong>Important:</strong>
-        Use this only with the matching board variant. The browser flasher supports ESP32-family devices.
-        nRF52, RP2040 and STM32 boards still need their normal UF2, ZIP, HEX or platform-specific flashing flow.
-      </section>
+  <header>
+    <a class="back" href="/">← MeshCoreNG docs</a>
+    <h1>MeshCoreNG</h1>
+    <p class="tagline">
+      LoRa mesh repeater firmware — dense-mesh telemetry &bull; internet bridge &bull; power saving<br>
+      Use <strong>Chrome</strong> or <strong>Edge</strong> — Web Serial is not supported in Firefox or Safari.
+    </p>
+  </header>
 
-      <section>
-        <label for="board-select">Board variant</label>
-        <select id="board-select"></select>
-        <p id="board-description" class="description"></p>
-      </section>
+  <main>
 
-      <section class="installer">
-        <esp-web-install-button id="install-button" manifest=""></esp-web-install-button>
-      </section>
+    <!-- Step 1: firmware type -->
+    <section class="step">
+      <h2><span class="step-num">1</span> Choose firmware type</h2>
+      <div class="type-grid" id="type-grid"></div>
+    </section>
 
-      <section class="help">
-        <h2>What gets flashed?</h2>
-        <p>
-          These builds use the MeshCoreNG repeater firmware with dense-mesh telemetry and tuning.
-          Default behavior stays compatible with existing MeshCore clients.
-        </p>
-        <h2>Browser support</h2>
-        <p>
-          Web flashing uses Web Serial, so it works best in Chrome or Edge on desktop.
-          If the device is not detected, hold BOOT while connecting or use the board's normal flashing method.
-        </p>
-      </section>
-    </main>
+    <!-- Step 2: board -->
+    <section class="step">
+      <h2><span class="step-num">2</span> Select your board</h2>
+      <div id="board-section">
+        <p class="hint" id="board-hint">Select a firmware type first.</p>
+        <select id="board-select" style="display:none"></select>
+        <p class="board-desc" id="board-desc"></p>
+      </div>
+    </section>
 
-    <script src="./app.js"></script>
-  </body>
+    <!-- Step 3: flash -->
+    <section class="step">
+      <h2><span class="step-num">3</span> Connect &amp; flash</h2>
+      <p class="hint">Plug your board into USB, then press the button below.</p>
+      <div class="flash-row">
+        <esp-web-install-button id="install-btn" manifest="">
+          <button slot="activate" class="install-btn" disabled id="install-activate">Install MeshCoreNG</button>
+          <span slot="unsupported">
+            Your browser does not support Web Serial.
+            Use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or
+            <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>.
+          </span>
+        </esp-web-install-button>
+      </div>
+      <p class="hint notice-nonesp32">
+        nRF52, RP2040 and STM32 boards cannot be flashed here. Download the <code>.uf2</code>, <code>.zip</code> or <code>.hex</code> from
+        <a href="https://github.com/MichTronics/MeshCoreNG/releases" target="_blank">GitHub Releases</a>.
+      </p>
+    </section>
+
+    <!-- Step 4: first use -->
+    <section class="step">
+      <h2><span class="step-num">4</span> First use</h2>
+      <ol>
+        <li>Connect via USB serial at <strong>115 200 baud</strong> (e.g. <a href="https://config.meshcore.io" target="_blank">config.meshcore.io</a>).</li>
+        <li>For bridge firmware: <code>set bridge.enabled on</code></li>
+        <li>Check stats: <code>get dense.stats</code></li>
+        <li>Use any MeshCore client to connect: <a href="https://app.meshcore.nz" target="_blank">app.meshcore.nz</a></li>
+      </ol>
+      <p>Full documentation: <a href="/">MeshCoreNG docs</a> &bull;
+         <a href="https://github.com/MichTronics/MeshCoreNG" target="_blank">GitHub</a></p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>
+      <a href="https://github.com/MichTronics/MeshCoreNG" target="_blank">GitHub</a> &bull;
+      <a href="https://github.com/MichTronics/MeshCoreNG/releases" target="_blank">Releases</a> &bull;
+      <a href="/">Documentation</a>
+    </p>
+    <p class="small">MeshCoreNG is open-source firmware. Flash at your own risk.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
 </html>

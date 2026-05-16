@@ -1,0 +1,16 @@
+{
+  "name": "M5Stack Unit C6L Repeater",
+  "version": "2026-05-16",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "M5Stack_Unit_C6L_repeater-v1.0.0-32613f2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

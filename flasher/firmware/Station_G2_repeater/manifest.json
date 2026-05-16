@@ -1,10 +1,10 @@
 {
   "name": "Station G2 Repeater",
-  "version": "repeater-v1.0.0",
+  "version": "2026-05-16",
   "new_install_prompt_erase": true,
   "builds": [
     {
-      "chipFamily": "ESP32-S3",
+      "chipFamily": "ESP32",
       "parts": [
         {
           "path": "Station_G2_repeater-v1.0.0-32613f2-merged.bin",

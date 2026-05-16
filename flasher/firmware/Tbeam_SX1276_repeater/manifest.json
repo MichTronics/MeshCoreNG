@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T-Beam SX1276 Repeater",
+  "version": "2026-05-16",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Tbeam_SX1276_repeater-v1.0.0-32613f2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
