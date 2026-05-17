@@ -57,6 +57,25 @@
     ]
   },
   {
+    "env": "Ebyte_EoRa-S3_Repeater_bridge_tcp",
+    "name": "Ebyte EoRa-S3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Ebyte EoRa-S3 (ESP32-S3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_tcp/Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_tcp/Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Ebyte_EoRa-S3_room_server",
     "name": "Ebyte EoRa-S3 Room Server",
     "chipFamily": "ESP32-S3",
@@ -95,6 +114,25 @@
     ]
   },
   {
+    "env": "Generic_E22_sx1262_repeater_bridge_tcp",
+    "name": "Generic E22 SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1262 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Generic_E22_sx1268_repeater",
     "name": "Generic E22 SX1268 Repeater",
     "chipFamily": "ESP32",
@@ -110,6 +148,25 @@
         "prerelease": false,
         "firmware": "Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Generic_E22_sx1268_repeater_bridge_tcp",
+    "name": "Generic E22 SX1268 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1268 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1268_repeater_bridge_tcp/Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_repeater_bridge_tcp/Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -171,6 +228,25 @@
     ]
   },
   {
+    "env": "Heltec_ct62_repeater_bridge_tcp",
+    "name": "Heltec CT62 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec CT62 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_ct62_repeater_bridge_tcp/Heltec_ct62_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_repeater_bridge_tcp/Heltec_ct62_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_E213_companion_radio_ble",
     "name": "Heltec E213 Companion Radio (BLE)",
     "chipFamily": "ESP32",
@@ -228,6 +304,25 @@
     ]
   },
   {
+    "env": "Heltec_E213_repeater_bridge_tcp",
+    "name": "Heltec E213 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E213 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_repeater_bridge_tcp/Heltec_E213_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_E213_repeater_bridge_tcp/Heltec_E213_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_E213_room_server",
     "name": "Heltec E213 Room Server",
     "chipFamily": "ESP32",
@@ -266,6 +361,25 @@
     ]
   },
   {
+    "env": "Heltec_E290_repeater_bridge_tcp",
+    "name": "Heltec E290 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E290 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_E290_repeater_bridge_tcp/Heltec_E290_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_E290_repeater_bridge_tcp/Heltec_E290_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_E290_room_server",
     "name": "Heltec E290 Room Server",
     "chipFamily": "ESP32",
@@ -281,6 +395,25 @@
         "prerelease": false,
         "firmware": "Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Heltec_T190_repeater_bridge_tcp",
+    "name": "Heltec T190 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec T190 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_T190_repeater_bridge_tcp/Heltec_T190_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_T190_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_T190_repeater_bridge_tcp/Heltec_T190_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -338,6 +471,25 @@
         "prerelease": false,
         "firmware": "heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "heltec_tracker_v2_repeater_bridge_tcp",
+    "name": "Heltec Tracker V2 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Tracker V2 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_tcp/heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_tcp/heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -418,6 +570,25 @@
     ]
   },
   {
+    "env": "Heltec_v2_repeater_bridge_tcp",
+    "name": "Heltec LoRa V2 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V2 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_repeater_bridge_tcp/Heltec_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_v2_repeater_bridge_tcp/Heltec_v2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_v2_room_server",
     "name": "Heltec LoRa V2 Room Server",
     "chipFamily": "ESP32",
@@ -490,6 +661,25 @@
         "prerelease": false,
         "firmware": "Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Heltec_v3_repeater_bridge_tcp",
+    "name": "Heltec LoRa V3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V3 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_repeater_bridge_tcp/Heltec_v3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_v3_repeater_bridge_tcp/Heltec_v3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -570,6 +760,25 @@
     ]
   },
   {
+    "env": "heltec_v4_repeater_bridge_tcp",
+    "name": "Heltec LoRa V4 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_v4_repeater_bridge_tcp/heltec_v4_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/heltec_v4_repeater_bridge_tcp/heltec_v4_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "heltec_v4_room_server",
     "name": "Heltec LoRa V4 Room Server",
     "chipFamily": "ESP32",
@@ -642,6 +851,25 @@
         "prerelease": false,
         "firmware": "heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "heltec_v4_tft_repeater_bridge_tcp",
+    "name": "Heltec LoRa V4 TFT Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 TFT (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_repeater_bridge_tcp/heltec_v4_tft_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_repeater_bridge_tcp/heltec_v4_tft_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -722,6 +950,25 @@
     ]
   },
   {
+    "env": "Heltec_Wireless_Paper_repeater_bridge_tcp",
+    "name": "Heltec Wireless Paper Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Paper (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_repeater_bridge_tcp/Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_repeater_bridge_tcp/Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_Wireless_Paper_room_server",
     "name": "Heltec Wireless Paper Room Server",
     "chipFamily": "ESP32",
@@ -794,6 +1041,25 @@
         "prerelease": false,
         "firmware": "Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Heltec_Wireless_Tracker_repeater_bridge_tcp",
+    "name": "Heltec Wireless Tracker Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Tracker (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater_bridge_tcp/Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_repeater_bridge_tcp/Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -874,6 +1140,25 @@
     ]
   },
   {
+    "env": "Heltec_WSL3_repeater_bridge_tcp",
+    "name": "Heltec WSL3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec WSL3 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_tcp/Heltec_WSL3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_repeater_bridge_tcp/Heltec_WSL3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Heltec_WSL3_room_server",
     "name": "Heltec WSL3 Room Server",
     "chipFamily": "ESP32",
@@ -946,6 +1231,25 @@
         "prerelease": false,
         "firmware": "LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "LilyGo_T3S3_sx1262_repeater_bridge_tcp",
+    "name": "LilyGo T3S3 SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater_bridge_tcp/LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater_bridge_tcp/LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1026,6 +1330,25 @@
     ]
   },
   {
+    "env": "LilyGo_T3S3_sx1276_repeater_bridge_tcp",
+    "name": "LilyGo T3S3 SX1276 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater_bridge_tcp/LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater_bridge_tcp/LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "LilyGo_T3S3_sx1276_room_server",
     "name": "LilyGo T3S3 SX1276 Room Server",
     "chipFamily": "ESP32-S3",
@@ -1098,6 +1421,25 @@
         "prerelease": false,
         "firmware": "LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "LilyGo_TBeam_1W_repeater_bridge_tcp",
+    "name": "LilyGo T-Beam 1W Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam 1W (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_tcp/LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_tcp/LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1178,6 +1520,25 @@
     ]
   },
   {
+    "env": "LilyGo_TDeck_repeater_bridge_tcp",
+    "name": "LilyGo T-Deck Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Deck (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_tcp/LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_tcp/LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "LilyGo_TETH_Elite_sx1262_companion_radio_ble",
     "name": "LilyGo T-ETH Elite SX1262 Companion Radio (BLE)",
     "chipFamily": "ESP32",
@@ -1235,6 +1596,25 @@
     ]
   },
   {
+    "env": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp",
+    "name": "LilyGo T-ETH Elite SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "LilyGo_TETH_Elite_sx1262_room_server",
     "name": "LilyGo T-ETH Elite SX1262 Room Server",
     "chipFamily": "ESP32",
@@ -1250,6 +1630,25 @@
         "prerelease": false,
         "firmware": "LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "LilyGo_Tlora_C6_repeater_bridge_tcp",
+    "name": "LilyGo T-LoRa C6 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa C6 (ESP32-C6).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_Tlora_C6_repeater_bridge_tcp/LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_Tlora_C6_repeater_bridge_tcp/LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1288,6 +1687,25 @@
         "prerelease": false,
         "firmware": "LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp",
+    "name": "LilyGo T-LoRa V2.1.1.6 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1368,6 +1786,25 @@
     ]
   },
   {
+    "env": "M5Stack_Unit_C6L_repeater_bridge_tcp",
+    "name": "M5Stack Unit C6L Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "M5Stack_Unit_C6L_room_server",
     "name": "M5Stack Unit C6L Room Server",
     "chipFamily": "ESP32-C6",
@@ -1440,6 +1877,25 @@
         "prerelease": false,
         "firmware": "Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Meshadventurer_sx1262_repeater_bridge_tcp",
+    "name": "Mesh Adventurer SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1262 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_repeater_bridge_tcp/Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_repeater_bridge_tcp/Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1520,6 +1976,25 @@
     ]
   },
   {
+    "env": "Meshadventurer_sx1268_repeater_bridge_tcp",
+    "name": "Mesh Adventurer SX1268 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1268 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_repeater_bridge_tcp/Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_repeater_bridge_tcp/Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Meshadventurer_sx1268_room_server",
     "name": "Mesh Adventurer SX1268 Room Server",
     "chipFamily": "ESP32",
@@ -1535,6 +2010,25 @@
         "prerelease": false,
         "firmware": "Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Meshimi_repeater_bridge_tcp",
+    "name": "Meshimi Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Meshimi (ESP32-C6).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshimi_repeater_bridge_tcp/Meshimi_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Meshimi_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Meshimi_repeater_bridge_tcp/Meshimi_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1592,6 +2086,25 @@
         "prerelease": false,
         "firmware": "RAK_3112_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "RAK_3112_repeater_bridge_tcp",
+    "name": "RAK3112 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for RAK3112 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/RAK_3112_repeater_bridge_tcp/RAK_3112_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/RAK_3112_repeater_bridge_tcp/RAK_3112_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1672,6 +2185,25 @@
     ]
   },
   {
+    "env": "Station_G2_logging_repeater_bridge_tcp",
+    "name": "Station G2 Repeater (TCP Bridge, Debug Logging)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge, Debug Logging) firmware for Station G2 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Station_G2_logging_repeater_bridge_tcp/Station_G2_logging_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Station_G2_logging_repeater_bridge_tcp/Station_G2_logging_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Station_G2_repeater",
     "name": "Station G2 Repeater",
     "chipFamily": "ESP32",
@@ -1687,6 +2219,25 @@
         "prerelease": false,
         "firmware": "Station_G2_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Station_G2_repeater_bridge_tcp",
+    "name": "Station G2 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Station G2 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Station_G2_repeater_bridge_tcp/Station_G2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Station_G2_repeater_bridge_tcp/Station_G2_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1748,6 +2299,25 @@
     ]
   },
   {
+    "env": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp",
+    "name": "LilyGo T-Beam S3 Supreme SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "T_Beam_S3_Supreme_SX1262_room_server",
     "name": "LilyGo T-Beam S3 Supreme SX1262 Room Server",
     "chipFamily": "ESP32-S3",
@@ -1805,6 +2375,25 @@
     ]
   },
   {
+    "env": "Tbeam_SX1262_repeater_bridge_tcp",
+    "name": "LilyGo T-Beam SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1262 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1262_repeater_bridge_tcp/Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_repeater_bridge_tcp/Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Tbeam_SX1262_room_server",
     "name": "LilyGo T-Beam SX1262 Room Server",
     "chipFamily": "ESP32",
@@ -1858,6 +2447,25 @@
         "prerelease": false,
         "firmware": "Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Tbeam_SX1276_repeater_bridge_tcp",
+    "name": "LilyGo T-Beam SX1276 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1276 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1276_repeater_bridge_tcp/Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_repeater_bridge_tcp/Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -1976,6 +2584,25 @@
     ]
   },
   {
+    "env": "ThinkNode_M5_Repeater_bridge_tcp",
+    "name": "ThinkNode M5 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M5 (ESP32).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_Repeater_bridge_tcp/ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_Repeater_bridge_tcp/ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "ThinkNode_M5_room_server",
     "name": "ThinkNode M5 Room Server",
     "chipFamily": "ESP32",
@@ -1991,6 +2618,25 @@
         "prerelease": false,
         "firmware": "ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "WHY2025_badge_repeater_bridge_tcp",
+    "name": "WHY2025 Badge Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for WHY2025 Badge (ESP32-C6).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/WHY2025_badge_repeater_bridge_tcp/WHY2025_badge_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "WHY2025_badge_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/WHY2025_badge_repeater_bridge_tcp/WHY2025_badge_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -2052,6 +2698,25 @@
     ]
   },
   {
+    "env": "Xiao_C3_repeater_bridge_tcp",
+    "name": "Seeed XIAO ESP32-C3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/Xiao_C3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/Xiao_C3_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Xiao_C3_room_server",
     "name": "Seeed XIAO ESP32-C3 Room Server",
     "chipFamily": "ESP32-C3",
@@ -2067,6 +2732,25 @@
         "prerelease": false,
         "firmware": "Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Xiao_C6_repeater_bridge_tcp",
+    "name": "Seeed XIAO ESP32-C6 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C6 (ESP32-C6).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_C6_repeater_bridge_tcp/Xiao_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Xiao_C6_repeater_bridge_tcp/Xiao_C6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },
@@ -2124,6 +2808,25 @@
         "prerelease": false,
         "firmware": "Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin",
         "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Xiao_S3_WIO_repeater_bridge_tcp",
+    "name": "Seeed XIAO ESP32-S3 WIO Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
+    "category": "bridge_tcp",
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_repeater_bridge_tcp/Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:01:58Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_repeater_bridge_tcp/Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
       }
     ]
   },

@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T-LoRa V2.1.1.6 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
