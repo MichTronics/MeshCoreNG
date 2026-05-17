@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "env": "M5Stack_Unit_C6L_repeater_bridge_tcp",
+    "name": "M5Stack Unit C6L Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
+    "category": "bridge_tcp",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/manifest.json"
+  },
+  {
+    "env": "Xiao_C3_repeater_bridge_tcp",
+    "name": "Seeed XIAO ESP32-C3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
+    "category": "bridge_tcp",
+    "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/manifest.json"
+  }
+]
