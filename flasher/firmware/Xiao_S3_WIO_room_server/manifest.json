@@ -1,0 +1,16 @@
+{
+  "name": "Seeed XIAO ESP32-S3 WIO Room Server",
+  "version": "2026-05-17",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "Xiao_S3_WIO_room_server-v1.0.0-af1742e-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

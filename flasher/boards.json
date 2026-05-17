@@ -8,6 +8,14 @@
     "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/manifest.json"
   },
   {
+    "env": "Ebyte_EoRa-S3_room_server",
+    "name": "Ebyte EoRa-S3 Room Server",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Room Server firmware for Ebyte EoRa-S3 (ESP32-S3).",
+    "category": "room_server",
+    "manifest": "./firmware/Ebyte_EoRa-S3_room_server/manifest.json"
+  },
+  {
     "env": "Generic_E22_sx1262_repeater",
     "name": "Generic E22 SX1262 Repeater",
     "chipFamily": "ESP32",
@@ -40,12 +48,28 @@
     "manifest": "./firmware/Heltec_E213_repeater/manifest.json"
   },
   {
+    "env": "Heltec_E213_room_server",
+    "name": "Heltec E213 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec E213 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_E213_room_server/manifest.json"
+  },
+  {
     "env": "Heltec_E290_repeater",
     "name": "Heltec E290 Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec E290 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Heltec_E290_repeater/manifest.json"
+  },
+  {
+    "env": "Heltec_E290_room_server",
+    "name": "Heltec E290 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec E290 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_E290_room_server/manifest.json"
   },
   {
     "env": "heltec_tracker_v2_repeater",
@@ -56,12 +80,28 @@
     "manifest": "./firmware/heltec_tracker_v2_repeater/manifest.json"
   },
   {
+    "env": "heltec_tracker_v2_room_server",
+    "name": "Heltec Tracker V2 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec Tracker V2 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/heltec_tracker_v2_room_server/manifest.json"
+  },
+  {
     "env": "Heltec_v2_repeater",
     "name": "Heltec LoRa V2 Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V2 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Heltec_v2_repeater/manifest.json"
+  },
+  {
+    "env": "Heltec_v2_room_server",
+    "name": "Heltec LoRa V2 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec LoRa V2 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_v2_room_server/manifest.json"
   },
   {
     "env": "Heltec_v3_repeater",
@@ -80,12 +120,28 @@
     "manifest": "./firmware/Heltec_v3_repeater_bridge_rs232/manifest.json"
   },
   {
+    "env": "Heltec_v3_room_server",
+    "name": "Heltec LoRa V3 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec LoRa V3 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_v3_room_server/manifest.json"
+  },
+  {
     "env": "heltec_v4_repeater",
     "name": "Heltec LoRa V4 Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V4 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/heltec_v4_repeater/manifest.json"
+  },
+  {
+    "env": "heltec_v4_room_server",
+    "name": "Heltec LoRa V4 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/heltec_v4_room_server/manifest.json"
   },
   {
     "env": "heltec_v4_tft_repeater",
@@ -96,6 +152,14 @@
     "manifest": "./firmware/heltec_v4_tft_repeater/manifest.json"
   },
   {
+    "env": "heltec_v4_tft_room_server",
+    "name": "Heltec LoRa V4 TFT Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 TFT (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/heltec_v4_tft_room_server/manifest.json"
+  },
+  {
     "env": "Heltec_Wireless_Paper_repeater",
     "name": "Heltec Wireless Paper Repeater",
     "chipFamily": "ESP32",
@@ -104,12 +168,28 @@
     "manifest": "./firmware/Heltec_Wireless_Paper_repeater/manifest.json"
   },
   {
+    "env": "Heltec_Wireless_Paper_room_server",
+    "name": "Heltec Wireless Paper Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec Wireless Paper (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_Wireless_Paper_room_server/manifest.json"
+  },
+  {
     "env": "Heltec_Wireless_Tracker_repeater",
     "name": "Heltec Wireless Tracker Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Wireless Tracker (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/manifest.json"
+  },
+  {
+    "env": "Heltec_Wireless_Tracker_room_server",
+    "name": "Heltec Wireless Tracker Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec Wireless Tracker (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/manifest.json"
   },
   {
     "env": "Heltec_WSL3_repeater",
@@ -128,12 +208,28 @@
     "manifest": "./firmware/Heltec_WSL3_repeater_bridge_rs232/manifest.json"
   },
   {
+    "env": "Heltec_WSL3_room_server",
+    "name": "Heltec WSL3 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Heltec WSL3 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Heltec_WSL3_room_server/manifest.json"
+  },
+  {
     "env": "LilyGo_T3S3_sx1262_repeater",
     "name": "LilyGo T3S3 SX1262 Repeater",
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "repeater",
     "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/manifest.json"
+  },
+  {
+    "env": "LilyGo_T3S3_sx1262_room_server",
+    "name": "LilyGo T3S3 SX1262 Room Server",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
+    "category": "room_server",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/manifest.json"
   },
   {
     "env": "LilyGo_T3S3_sx1276_repeater",
@@ -144,12 +240,28 @@
     "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/manifest.json"
   },
   {
+    "env": "LilyGo_T3S3_sx1276_room_server",
+    "name": "LilyGo T3S3 SX1276 Room Server",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
+    "category": "room_server",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/manifest.json"
+  },
+  {
     "env": "LilyGo_TBeam_1W_repeater",
     "name": "LilyGo T-Beam 1W Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/LilyGo_TBeam_1W_repeater/manifest.json"
+  },
+  {
+    "env": "LilyGo_TBeam_1W_room_server",
+    "name": "LilyGo T-Beam 1W Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam 1W (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/LilyGo_TBeam_1W_room_server/manifest.json"
   },
   {
     "env": "LilyGo_TDeck_repeater",
@@ -168,6 +280,14 @@
     "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/manifest.json"
   },
   {
+    "env": "LilyGo_TETH_Elite_sx1262_room_server",
+    "name": "LilyGo T-ETH Elite SX1262 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/manifest.json"
+  },
+  {
     "env": "LilyGo_TLora_V2_1_1_6_repeater",
     "name": "LilyGo T-LoRa V2.1.1.6 Repeater",
     "chipFamily": "ESP32",
@@ -184,12 +304,36 @@
     "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232/manifest.json"
   },
   {
+    "env": "LilyGo_TLora_V2_1_1_6_room_server",
+    "name": "LilyGo T-LoRa V2.1.1.6 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/manifest.json"
+  },
+  {
     "env": "M5Stack_Unit_C6L_repeater",
     "name": "M5Stack Unit C6L Repeater",
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "repeater",
     "manifest": "./firmware/M5Stack_Unit_C6L_repeater/manifest.json"
+  },
+  {
+    "env": "M5Stack_Unit_C6L_repeater_bridge_tcp",
+    "name": "M5Stack Unit C6L Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
+    "category": "bridge_tcp",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/manifest.json"
+  },
+  {
+    "env": "M5Stack_Unit_C6L_room_server",
+    "name": "M5Stack Unit C6L Room Server",
+    "chipFamily": "ESP32-C6",
+    "description": "MeshCoreNG Room Server firmware for M5Stack Unit C6L (ESP32-C6).",
+    "category": "room_server",
+    "manifest": "./firmware/M5Stack_Unit_C6L_room_server/manifest.json"
   },
   {
     "env": "Meshadventurer_sx1262_repeater",
@@ -200,12 +344,28 @@
     "manifest": "./firmware/Meshadventurer_sx1262_repeater/manifest.json"
   },
   {
+    "env": "Meshadventurer_sx1262_room_server",
+    "name": "Mesh Adventurer SX1262 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1262 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Meshadventurer_sx1262_room_server/manifest.json"
+  },
+  {
     "env": "Meshadventurer_sx1268_repeater",
     "name": "Mesh Adventurer SX1268 Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Meshadventurer_sx1268_repeater/manifest.json"
+  },
+  {
+    "env": "Meshadventurer_sx1268_room_server",
+    "name": "Mesh Adventurer SX1268 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1268 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Meshadventurer_sx1268_room_server/manifest.json"
   },
   {
     "env": "RAK_3112_repeater",
@@ -224,6 +384,14 @@
     "manifest": "./firmware/RAK_3112_repeater_bridge_rs232/manifest.json"
   },
   {
+    "env": "RAK_3112_room_server",
+    "name": "RAK3112 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for RAK3112 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/RAK_3112_room_server/manifest.json"
+  },
+  {
     "env": "Station_G2_logging_repeater",
     "name": "Station G2 Repeater (Debug Logging)",
     "chipFamily": "ESP32",
@@ -240,12 +408,28 @@
     "manifest": "./firmware/Station_G2_repeater/manifest.json"
   },
   {
+    "env": "Station_G2_room_server",
+    "name": "Station G2 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for Station G2 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Station_G2_room_server/manifest.json"
+  },
+  {
     "env": "T_Beam_S3_Supreme_SX1262_repeater",
     "name": "LilyGo T-Beam S3 Supreme SX1262 Repeater",
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "repeater",
     "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/manifest.json"
+  },
+  {
+    "env": "T_Beam_S3_Supreme_SX1262_room_server",
+    "name": "LilyGo T-Beam S3 Supreme SX1262 Room Server",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
+    "category": "room_server",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/manifest.json"
   },
   {
     "env": "Tbeam_SX1262_repeater",
@@ -256,12 +440,28 @@
     "manifest": "./firmware/Tbeam_SX1262_repeater/manifest.json"
   },
   {
+    "env": "Tbeam_SX1262_room_server",
+    "name": "LilyGo T-Beam SX1262 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1262 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Tbeam_SX1262_room_server/manifest.json"
+  },
+  {
     "env": "Tbeam_SX1276_repeater",
     "name": "LilyGo T-Beam SX1276 Repeater",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Tbeam_SX1276_repeater/manifest.json"
+  },
+  {
+    "env": "Tbeam_SX1276_room_server",
+    "name": "LilyGo T-Beam SX1276 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1276 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/Tbeam_SX1276_room_server/manifest.json"
   },
   {
     "env": "ThinkNode_M5_Repeater",
@@ -272,6 +472,14 @@
     "manifest": "./firmware/ThinkNode_M5_Repeater/manifest.json"
   },
   {
+    "env": "ThinkNode_M5_room_server",
+    "name": "ThinkNode M5 Room Server",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Room Server firmware for ThinkNode M5 (ESP32).",
+    "category": "room_server",
+    "manifest": "./firmware/ThinkNode_M5_room_server/manifest.json"
+  },
+  {
     "env": "Xiao_C3_repeater",
     "name": "Seeed XIAO ESP32-C3 Repeater",
     "chipFamily": "ESP32-C3",
@@ -280,11 +488,35 @@
     "manifest": "./firmware/Xiao_C3_repeater/manifest.json"
   },
   {
+    "env": "Xiao_C3_repeater_bridge_tcp",
+    "name": "Seeed XIAO ESP32-C3 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
+    "category": "bridge_tcp",
+    "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/manifest.json"
+  },
+  {
+    "env": "Xiao_C3_room_server",
+    "name": "Seeed XIAO ESP32-C3 Room Server",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
+    "category": "room_server",
+    "manifest": "./firmware/Xiao_C3_room_server/manifest.json"
+  },
+  {
     "env": "Xiao_S3_WIO_repeater",
     "name": "Seeed XIAO ESP32-S3 WIO Repeater",
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "repeater",
     "manifest": "./firmware/Xiao_S3_WIO_repeater/manifest.json"
+  },
+  {
+    "env": "Xiao_S3_WIO_room_server",
+    "name": "Seeed XIAO ESP32-S3 WIO Room Server",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
+    "category": "room_server",
+    "manifest": "./firmware/Xiao_S3_WIO_room_server/manifest.json"
   }
 ]
