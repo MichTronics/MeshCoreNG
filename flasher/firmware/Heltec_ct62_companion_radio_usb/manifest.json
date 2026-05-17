@@ -1,0 +1,16 @@
+{
+  "name": "Heltec CT62 Companion Radio (USB)",
+  "version": "2026-05-17",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_ct62_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

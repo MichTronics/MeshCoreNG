@@ -1,0 +1,16 @@
+{
+  "name": "Mesh Adventurer SX1268 Room Server",
+  "version": "2026-05-17",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Seeed XIAO ESP32-C6 Repeater (TCP Bridge)",
+  "version": "2026-05-17",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "Xiao_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

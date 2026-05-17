@@ -1,0 +1,16 @@
+{
+  "name": "ThinkNode M5 Repeater (TCP Bridge)",
+  "version": "2026-05-17",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
