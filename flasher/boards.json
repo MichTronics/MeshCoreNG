@@ -72,6 +72,14 @@
     "manifest": "./firmware/Heltec_v3_repeater/manifest.json"
   },
   {
+    "env": "Heltec_v3_repeater_bridge_rs232",
+    "name": "Heltec LoRa V3 Repeater (RS232 Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec LoRa V3 (ESP32).",
+    "category": "bridge_rs232",
+    "manifest": "./firmware/Heltec_v3_repeater_bridge_rs232/manifest.json"
+  },
+  {
     "env": "heltec_v4_repeater",
     "name": "Heltec LoRa V4 Repeater",
     "chipFamily": "ESP32",
@@ -110,6 +118,14 @@
     "description": "MeshCoreNG Repeater firmware for Heltec WSL3 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/Heltec_WSL3_repeater/manifest.json"
+  },
+  {
+    "env": "Heltec_WSL3_repeater_bridge_rs232",
+    "name": "Heltec WSL3 Repeater (RS232 Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec WSL3 (ESP32).",
+    "category": "bridge_rs232",
+    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_rs232/manifest.json"
   },
   {
     "env": "LilyGo_T3S3_sx1262_repeater",
@@ -160,6 +176,14 @@
     "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/manifest.json"
   },
   {
+    "env": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232",
+    "name": "LilyGo T-LoRa V2.1.1.6 Repeater (RS232 Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
+    "category": "bridge_rs232",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232/manifest.json"
+  },
+  {
     "env": "M5Stack_Unit_C6L_repeater",
     "name": "M5Stack Unit C6L Repeater",
     "chipFamily": "ESP32-C6",
@@ -190,6 +214,14 @@
     "description": "MeshCoreNG Repeater firmware for RAK3112 (ESP32).",
     "category": "repeater",
     "manifest": "./firmware/RAK_3112_repeater/manifest.json"
+  },
+  {
+    "env": "RAK_3112_repeater_bridge_rs232",
+    "name": "RAK3112 Repeater (RS232 Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for RAK3112 (ESP32).",
+    "category": "bridge_rs232",
+    "manifest": "./firmware/RAK_3112_repeater_bridge_rs232/manifest.json"
   },
   {
     "env": "Station_G2_logging_repeater",
