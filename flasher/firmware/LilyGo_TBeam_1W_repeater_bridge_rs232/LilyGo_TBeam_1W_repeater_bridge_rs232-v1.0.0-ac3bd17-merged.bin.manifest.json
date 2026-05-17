@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T-Beam 1W RS232 Bridge",
+  "version": "bridge-rs232-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "LilyGo_TBeam_1W_repeater_bridge_rs232-v1.0.0-ac3bd17-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

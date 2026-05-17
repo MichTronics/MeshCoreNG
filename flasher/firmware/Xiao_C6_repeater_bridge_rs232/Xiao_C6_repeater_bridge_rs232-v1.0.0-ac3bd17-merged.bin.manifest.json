@@ -1,0 +1,16 @@
+{
+  "name": "Xiao ESP32-C6 RS232 Bridge",
+  "version": "bridge-rs232-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "Xiao_C6_repeater_bridge_rs232-v1.0.0-ac3bd17-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
