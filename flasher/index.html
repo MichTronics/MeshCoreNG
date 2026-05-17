@@ -37,9 +37,19 @@
       </div>
     </section>
 
-    <!-- Step 3: flash -->
+    <!-- Step 3: version -->
     <section class="step">
-      <h2><span class="step-num">3</span> Connect &amp; flash</h2>
+      <h2><span class="step-num">3</span> Choose firmware version</h2>
+      <div id="version-section">
+        <p class="hint" id="version-hint">Select a board first.</p>
+        <select id="version-select" style="display:none"></select>
+        <p class="version-desc" id="version-desc"></p>
+      </div>
+    </section>
+
+    <!-- Step 4: flash -->
+    <section class="step">
+      <h2><span class="step-num">4</span> Connect &amp; flash</h2>
       <p class="hint">Plug your board into USB, then press the button below.</p>
       <div class="flash-row">
         <esp-web-install-button id="install-btn" manifest="">
@@ -57,9 +67,9 @@
       </p>
     </section>
 
-    <!-- Step 4: first use -->
+    <!-- Step 5: first use -->
     <section class="step">
-      <h2><span class="step-num">4</span> First use</h2>
+      <h2><span class="step-num">5</span> First use</h2>
       <ol>
         <li>Connect via USB serial at <strong>115 200 baud</strong> (e.g. <a href="https://config.meshcore.io" target="_blank">config.meshcore.io</a>).</li>
         <li>For bridge firmware: <code>set bridge.enabled on</code></li>

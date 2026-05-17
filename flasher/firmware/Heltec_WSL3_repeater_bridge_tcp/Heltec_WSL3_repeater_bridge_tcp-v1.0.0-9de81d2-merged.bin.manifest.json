@@ -1,0 +1,16 @@
+{
+  "name": "Heltec WSL3 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_WSL3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

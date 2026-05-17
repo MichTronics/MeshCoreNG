@@ -1,0 +1,16 @@
+{
+  "name": "Mesh Adventurer SX1262 Repeater",
+  "version": "repeater-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

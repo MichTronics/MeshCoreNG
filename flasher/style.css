@@ -178,7 +178,8 @@ select:focus {
   border-color: var(--accent);
 }
 
-.board-desc {
+.board-desc,
+.version-desc {
   color: var(--muted);
   font-size: 0.82rem;
   margin-top: 0.5rem;

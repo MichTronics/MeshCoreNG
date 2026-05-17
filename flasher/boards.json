@@ -5,7 +5,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "companion_ble",
-    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/Ebyte_EoRa-S3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/Ebyte_EoRa-S3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Ebyte_EoRa-S3_companion_radio_usb",
@@ -13,7 +24,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "companion_usb",
-    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/Ebyte_EoRa-S3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/Ebyte_EoRa-S3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Ebyte_EoRa-S3_Repeater",
@@ -21,7 +43,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "repeater",
-    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/Ebyte_EoRa-S3_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/Ebyte_EoRa-S3_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Ebyte_EoRa-S3_Repeater_bridge_rs232",
@@ -29,7 +62,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for Ebyte EoRa-S3.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_rs232/Ebyte_EoRa-S3_Repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_rs232/Ebyte_EoRa-S3_Repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Ebyte_EoRa-S3_Repeater_bridge_tcp",
@@ -37,7 +81,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_tcp/Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_Repeater_bridge_tcp/Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Ebyte_EoRa-S3_room_server",
@@ -45,7 +100,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "room_server",
-    "manifest": "./firmware/Ebyte_EoRa-S3_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Ebyte_EoRa-S3_room_server/Ebyte_EoRa-S3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_room_server/Ebyte_EoRa-S3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Generic_E22_sx1262_repeater",
@@ -53,7 +119,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Generic E22 SX1262 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Generic_E22_sx1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1262_repeater/Generic_E22_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_repeater/Generic_E22_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Generic_E22_sx1262_repeater_bridge_tcp",
@@ -61,7 +138,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1262 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Generic_E22_sx1268_repeater",
@@ -69,7 +157,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Generic E22 SX1268 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Generic_E22_sx1268_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Generic_E22_sx1268_repeater_bridge_tcp",
@@ -77,7 +176,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1268 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Generic_E22_sx1268_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Generic_E22_sx1268_repeater_bridge_tcp/Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_repeater_bridge_tcp/Generic_E22_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_ct62_companion_radio_ble",
@@ -85,7 +195,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec CT62 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_ct62_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_ct62_companion_radio_ble/Heltec_ct62_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_companion_radio_ble/Heltec_ct62_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_ct62_companion_radio_usb",
@@ -93,7 +214,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec CT62 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_ct62_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_ct62_companion_radio_usb/Heltec_ct62_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_companion_radio_usb/Heltec_ct62_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_ct62_repeater",
@@ -101,7 +233,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec CT62 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_ct62_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_ct62_repeater/Heltec_ct62_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_repeater/Heltec_ct62_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_ct62_repeater_bridge_tcp",
@@ -109,7 +252,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec CT62 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_ct62_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_ct62_repeater_bridge_tcp/Heltec_ct62_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_repeater_bridge_tcp/Heltec_ct62_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E213_companion_radio_ble",
@@ -117,7 +271,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec E213 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_E213_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_companion_radio_ble/Heltec_E213_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E213_companion_radio_ble/Heltec_E213_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E213_companion_radio_usb",
@@ -125,7 +290,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec E213 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_E213_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_companion_radio_usb/Heltec_E213_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E213_companion_radio_usb/Heltec_E213_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E213_repeater",
@@ -133,7 +309,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec E213 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_E213_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_repeater/Heltec_E213_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E213_repeater/Heltec_E213_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E213_repeater_bridge_tcp",
@@ -141,7 +328,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E213 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_E213_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_repeater_bridge_tcp/Heltec_E213_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_E213_repeater_bridge_tcp/Heltec_E213_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E213_room_server",
@@ -149,7 +347,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec E213 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_E213_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_E213_room_server/Heltec_E213_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E213_room_server/Heltec_E213_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E290_repeater",
@@ -157,7 +366,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec E290 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_E290_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_E290_repeater/Heltec_E290_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E290_repeater/Heltec_E290_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E290_repeater_bridge_tcp",
@@ -165,7 +385,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E290 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_E290_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_E290_repeater_bridge_tcp/Heltec_E290_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_E290_repeater_bridge_tcp/Heltec_E290_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_E290_room_server",
@@ -173,7 +404,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec E290 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_E290_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_T190_repeater_bridge_tcp",
@@ -181,7 +423,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec T190 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_T190_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_T190_repeater_bridge_tcp/Heltec_T190_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_T190_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_T190_repeater_bridge_tcp/Heltec_T190_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_companion_radio_ble",
@@ -189,7 +442,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Tracker V2 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/heltec_tracker_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/heltec_tracker_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_companion_radio_usb",
@@ -197,7 +461,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Tracker V2 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/heltec_tracker_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/heltec_tracker_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_repeater",
@@ -205,7 +480,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Tracker V2 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/heltec_tracker_v2_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_repeater_bridge_rs232",
@@ -213,7 +499,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Wireless Tracker v2.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_rs232/heltec_tracker_v2_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_rs232/heltec_tracker_v2_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_repeater_bridge_tcp",
@@ -221,7 +518,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Tracker V2 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_tcp/heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_repeater_bridge_tcp/heltec_tracker_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_tracker_v2_room_server",
@@ -229,7 +537,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Tracker V2 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/heltec_tracker_v2_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/heltec_tracker_v2_room_server/heltec_tracker_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_room_server/heltec_tracker_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v2_companion_radio_ble",
@@ -237,7 +556,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V2 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_v2_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_companion_radio_ble/Heltec_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v2_companion_radio_ble/Heltec_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v2_companion_radio_usb",
@@ -245,7 +575,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V2 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_v2_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_companion_radio_usb/Heltec_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v2_companion_radio_usb/Heltec_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v2_repeater",
@@ -253,7 +594,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V2 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_v2_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_repeater/Heltec_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v2_repeater/Heltec_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v2_repeater_bridge_tcp",
@@ -261,7 +613,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V2 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_v2_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_repeater_bridge_tcp/Heltec_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_v2_repeater_bridge_tcp/Heltec_v2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v2_room_server",
@@ -269,7 +632,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V2 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_v2_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_v2_room_server/Heltec_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v2_room_server/Heltec_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_companion_radio_ble",
@@ -277,7 +651,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V3 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_v3_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_companion_radio_ble/Heltec_v3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v3_companion_radio_ble/Heltec_v3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_companion_radio_usb",
@@ -285,7 +670,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V3 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_v3_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_companion_radio_usb/Heltec_v3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v3_companion_radio_usb/Heltec_v3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_repeater",
@@ -293,7 +689,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V3 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_v3_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_repeater_bridge_rs232",
@@ -301,7 +708,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_rs232",
-    "manifest": "./firmware/Heltec_v3_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_repeater_bridge_rs232/Heltec_v3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v3_repeater_bridge_rs232/Heltec_v3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_repeater_bridge_tcp",
@@ -309,7 +727,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_v3_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_repeater_bridge_tcp/Heltec_v3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_v3_repeater_bridge_tcp/Heltec_v3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_v3_room_server",
@@ -317,7 +746,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V3 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_v3_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_v3_room_server/Heltec_v3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_v3_room_server/Heltec_v3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_companion_radio_ble",
@@ -325,7 +765,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V4 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/heltec_v4_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_v4_companion_radio_ble/heltec_v4_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_companion_radio_ble/heltec_v4_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_companion_radio_usb",
@@ -333,7 +784,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V4 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/heltec_v4_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_v4_companion_radio_usb/heltec_v4_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_companion_radio_usb/heltec_v4_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_repeater",
@@ -341,7 +803,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V4 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/heltec_v4_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/heltec_v4_repeater/heltec_v4_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_repeater/heltec_v4_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_repeater_bridge_rs232",
@@ -349,7 +822,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 OLED.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/heltec_v4_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/heltec_v4_repeater_bridge_rs232/heltec_v4_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_repeater_bridge_rs232/heltec_v4_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_repeater_bridge_tcp",
@@ -357,7 +841,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/heltec_v4_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_v4_repeater_bridge_tcp/heltec_v4_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/heltec_v4_repeater_bridge_tcp/heltec_v4_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_room_server",
@@ -365,7 +860,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/heltec_v4_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/heltec_v4_room_server/heltec_v4_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_room_server/heltec_v4_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_companion_radio_ble",
@@ -373,7 +879,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/heltec_v4_tft_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/heltec_v4_tft_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_companion_radio_usb",
@@ -381,7 +898,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/heltec_v4_tft_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/heltec_v4_tft_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_repeater",
@@ -389,7 +917,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/heltec_v4_tft_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_repeater_bridge_rs232",
@@ -397,7 +936,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 TFT.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/heltec_v4_tft_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_repeater_bridge_rs232/heltec_v4_tft_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_repeater_bridge_rs232/heltec_v4_tft_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_repeater_bridge_tcp",
@@ -405,7 +955,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/heltec_v4_tft_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_repeater_bridge_tcp/heltec_v4_tft_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_repeater_bridge_tcp/heltec_v4_tft_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "heltec_v4_tft_room_server",
@@ -413,7 +974,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/heltec_v4_tft_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/heltec_v4_tft_room_server/heltec_v4_tft_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_room_server/heltec_v4_tft_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Paper_companion_radio_ble",
@@ -421,7 +993,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Wireless Paper (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/Heltec_Wireless_Paper_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/Heltec_Wireless_Paper_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Paper_companion_radio_usb",
@@ -429,7 +1012,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Wireless Paper (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/Heltec_Wireless_Paper_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/Heltec_Wireless_Paper_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Paper_repeater",
@@ -437,7 +1031,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Wireless Paper (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_Wireless_Paper_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_repeater/Heltec_Wireless_Paper_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_repeater/Heltec_Wireless_Paper_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Paper_repeater_bridge_tcp",
@@ -445,7 +1050,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Paper (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_Wireless_Paper_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_repeater_bridge_tcp/Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_repeater_bridge_tcp/Heltec_Wireless_Paper_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Paper_room_server",
@@ -453,7 +1069,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Wireless Paper (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_Wireless_Paper_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Paper_room_server/Heltec_Wireless_Paper_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_room_server/Heltec_Wireless_Paper_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Tracker_companion_radio_ble",
@@ -461,7 +1088,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/Heltec_Wireless_Tracker_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/Heltec_Wireless_Tracker_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Tracker_companion_radio_usb",
@@ -469,7 +1107,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/Heltec_Wireless_Tracker_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/Heltec_Wireless_Tracker_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Tracker_repeater",
@@ -477,7 +1126,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Wireless Tracker (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Tracker_repeater_bridge_tcp",
@@ -485,7 +1145,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater_bridge_tcp/Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_repeater_bridge_tcp/Heltec_Wireless_Tracker_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_Wireless_Tracker_room_server",
@@ -493,7 +1164,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Wireless Tracker (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/Heltec_Wireless_Tracker_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/Heltec_Wireless_Tracker_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_companion_radio_ble",
@@ -501,7 +1183,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec WSL3 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/Heltec_WSL3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/Heltec_WSL3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_companion_radio_usb",
@@ -509,7 +1202,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec WSL3 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/Heltec_WSL3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/Heltec_WSL3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_repeater",
@@ -517,7 +1221,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec WSL3 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Heltec_WSL3_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_repeater/Heltec_WSL3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_repeater/Heltec_WSL3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_repeater_bridge_rs232",
@@ -525,7 +1240,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_rs232",
-    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_rs232/Heltec_WSL3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_repeater_bridge_rs232/Heltec_WSL3_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_repeater_bridge_tcp",
@@ -533,7 +1259,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_repeater_bridge_tcp/Heltec_WSL3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_repeater_bridge_tcp/Heltec_WSL3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Heltec_WSL3_room_server",
@@ -541,7 +1278,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec WSL3 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Heltec_WSL3_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Heltec_WSL3_room_server/Heltec_WSL3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_room_server/Heltec_WSL3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1262_companion_radio_ble",
@@ -549,7 +1297,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "companion_ble",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1262_companion_radio_usb",
@@ -557,7 +1316,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1262_repeater",
@@ -565,7 +1335,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1262_repeater_bridge_tcp",
@@ -573,7 +1354,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater_bridge_tcp/LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater_bridge_tcp/LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1262_room_server",
@@ -581,7 +1373,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "room_server",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/LilyGo_T3S3_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/LilyGo_T3S3_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1276_companion_radio_ble",
@@ -589,7 +1392,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "companion_ble",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1276_companion_radio_usb",
@@ -597,7 +1411,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1276_repeater",
@@ -605,7 +1430,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/LilyGo_T3S3_sx1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/LilyGo_T3S3_sx1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1276_repeater_bridge_tcp",
@@ -613,7 +1449,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater_bridge_tcp/LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater_bridge_tcp/LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_T3S3_sx1276_room_server",
@@ -621,7 +1468,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "room_server",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/LilyGo_T3S3_sx1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/LilyGo_T3S3_sx1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_companion_radio_ble",
@@ -629,7 +1487,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/LilyGo_TBeam_1W_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/LilyGo_TBeam_1W_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_companion_radio_usb",
@@ -637,7 +1506,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/LilyGo_TBeam_1W_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/LilyGo_TBeam_1W_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_repeater",
@@ -645,7 +1525,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_TBeam_1W_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_repeater_bridge_rs232",
@@ -653,7 +1544,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Beam 1W.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_rs232/LilyGo_TBeam_1W_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_rs232/LilyGo_TBeam_1W_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_repeater_bridge_tcp",
@@ -661,7 +1563,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_tcp/LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_repeater_bridge_tcp/LilyGo_TBeam_1W_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TBeam_1W_room_server",
@@ -669,7 +1582,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/LilyGo_TBeam_1W_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/LilyGo_TBeam_1W_room_server/LilyGo_TBeam_1W_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_room_server/LilyGo_TBeam_1W_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TDeck_companion_radio_ble",
@@ -677,7 +1601,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Deck (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/LilyGo_TDeck_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/LilyGo_TDeck_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TDeck_companion_radio_usb",
@@ -685,7 +1620,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-Deck (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/LilyGo_TDeck_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/LilyGo_TDeck_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TDeck_repeater",
@@ -693,7 +1639,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Deck (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_TDeck_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_repeater/LilyGo_TDeck_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_repeater/LilyGo_TDeck_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TDeck_repeater_bridge_rs232",
@@ -701,7 +1658,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Deck.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_rs232/LilyGo_TDeck_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_rs232/LilyGo_TDeck_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TDeck_repeater_bridge_tcp",
@@ -709,7 +1677,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Deck (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_tcp/LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_repeater_bridge_tcp/LilyGo_TDeck_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_companion_radio_ble",
@@ -717,7 +1696,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_companion_radio_usb",
@@ -725,7 +1715,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_repeater",
@@ -733,7 +1734,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/LilyGo_TETH_Elite_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/LilyGo_TETH_Elite_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232",
@@ -741,7 +1753,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-ETH Elite.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232/LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232/LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp",
@@ -749,7 +1772,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp/LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TETH_Elite_sx1262_room_server",
@@ -757,7 +1791,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_Tlora_C6_repeater_bridge_tcp",
@@ -765,7 +1810,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa C6 (ESP32-C6).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_Tlora_C6_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_Tlora_C6_repeater_bridge_tcp/LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_Tlora_C6_repeater_bridge_tcp/LilyGo_Tlora_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TLora_V2_1_1_6_companion_radio_usb",
@@ -773,7 +1829,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TLora_V2_1_1_6_repeater",
@@ -781,7 +1848,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232",
@@ -789,7 +1867,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_rs232",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232/LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp",
@@ -797,7 +1886,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp/LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "LilyGo_TLora_V2_1_1_6_room_server",
@@ -805,7 +1905,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/LilyGo_TLora_V2_1_1_6_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/LilyGo_TLora_V2_1_1_6_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_companion_radio_ble",
@@ -813,7 +1924,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "companion_ble",
-    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/M5Stack_Unit_C6L_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/M5Stack_Unit_C6L_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_companion_radio_usb",
@@ -821,7 +1943,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Companion Radio (USB) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "companion_usb",
-    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/M5Stack_Unit_C6L_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/M5Stack_Unit_C6L_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_repeater",
@@ -829,7 +1962,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "repeater",
-    "manifest": "./firmware/M5Stack_Unit_C6L_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater/M5Stack_Unit_C6L_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_repeater/M5Stack_Unit_C6L_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_repeater_bridge_rs232",
@@ -837,7 +1981,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG RS232 Bridge firmware for M5Stack Unit C6L.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_rs232/M5Stack_Unit_C6L_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_rs232/M5Stack_Unit_C6L_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_repeater_bridge_tcp",
@@ -845,7 +2000,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_repeater_bridge_tcp/M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "M5Stack_Unit_C6L_room_server",
@@ -853,7 +2019,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Room Server firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "room_server",
-    "manifest": "./firmware/M5Stack_Unit_C6L_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/M5Stack_Unit_C6L_room_server/M5Stack_Unit_C6L_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_room_server/M5Stack_Unit_C6L_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1262_companion_radio_ble",
@@ -861,7 +2038,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/Meshadventurer_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/Meshadventurer_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1262_companion_radio_usb",
@@ -869,7 +2057,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/Meshadventurer_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/Meshadventurer_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1262_repeater",
@@ -877,7 +2076,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Meshadventurer_sx1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1262_repeater_bridge_tcp",
@@ -885,7 +2095,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Meshadventurer_sx1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_repeater_bridge_tcp/Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_repeater_bridge_tcp/Meshadventurer_sx1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1262_room_server",
@@ -893,7 +2114,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Meshadventurer_sx1262_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1262_room_server/Meshadventurer_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_room_server/Meshadventurer_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1268_companion_radio_ble",
@@ -901,7 +2133,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/Meshadventurer_sx1268_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/Meshadventurer_sx1268_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1268_companion_radio_usb",
@@ -909,7 +2152,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/Meshadventurer_sx1268_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/Meshadventurer_sx1268_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1268_repeater",
@@ -917,7 +2171,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Meshadventurer_sx1268_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_repeater/Meshadventurer_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_repeater/Meshadventurer_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1268_repeater_bridge_tcp",
@@ -925,7 +2190,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Meshadventurer_sx1268_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_repeater_bridge_tcp/Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_repeater_bridge_tcp/Meshadventurer_sx1268_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshadventurer_sx1268_room_server",
@@ -933,7 +2209,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Meshadventurer_sx1268_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Meshimi_repeater_bridge_tcp",
@@ -941,7 +2228,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Meshimi (ESP32-C6).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Meshimi_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Meshimi_repeater_bridge_tcp/Meshimi_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Meshimi_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Meshimi_repeater_bridge_tcp/Meshimi_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_companion_radio_ble",
@@ -949,7 +2247,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for RAK3112 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/RAK_3112_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/RAK_3112_companion_radio_ble/RAK_3112_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/RAK_3112_companion_radio_ble/RAK_3112_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_companion_radio_usb",
@@ -957,7 +2266,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for RAK3112 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/RAK_3112_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/RAK_3112_companion_radio_usb/RAK_3112_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/RAK_3112_companion_radio_usb/RAK_3112_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_repeater",
@@ -965,7 +2285,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for RAK3112 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/RAK_3112_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_repeater_bridge_rs232",
@@ -973,7 +2304,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_rs232",
-    "manifest": "./firmware/RAK_3112_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/RAK_3112_repeater_bridge_rs232/RAK_3112_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/RAK_3112_repeater_bridge_rs232/RAK_3112_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_repeater_bridge_tcp",
@@ -981,7 +2323,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/RAK_3112_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/RAK_3112_repeater_bridge_tcp/RAK_3112_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/RAK_3112_repeater_bridge_tcp/RAK_3112_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "RAK_3112_room_server",
@@ -989,7 +2342,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for RAK3112 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/RAK_3112_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/RAK_3112_room_server/RAK_3112_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/RAK_3112_room_server/RAK_3112_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_companion_radio_ble",
@@ -997,7 +2361,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Station G2 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Station_G2_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Station_G2_companion_radio_ble/Station_G2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Station_G2_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Station_G2_companion_radio_ble/Station_G2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_companion_radio_usb",
@@ -1005,7 +2380,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Station G2 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/Station_G2_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Station_G2_companion_radio_usb/Station_G2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Station_G2_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Station_G2_companion_radio_usb/Station_G2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_logging_repeater",
@@ -1013,7 +2399,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (Debug Logging) firmware for Station G2 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Station_G2_logging_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Station_G2_logging_repeater/Station_G2_logging_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Station_G2_logging_repeater/Station_G2_logging_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_logging_repeater_bridge_tcp",
@@ -1021,7 +2418,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge, Debug Logging) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Station_G2_logging_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Station_G2_logging_repeater_bridge_tcp/Station_G2_logging_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Station_G2_logging_repeater_bridge_tcp/Station_G2_logging_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_repeater",
@@ -1029,7 +2437,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Station G2 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Station_G2_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_repeater_bridge_tcp",
@@ -1037,7 +2456,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Station_G2_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Station_G2_repeater_bridge_tcp/Station_G2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Station_G2_repeater_bridge_tcp/Station_G2_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Station_G2_room_server",
@@ -1045,7 +2475,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Station G2 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Station_G2_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Station_G2_room_server/Station_G2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Station_G2_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Station_G2_room_server/Station_G2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "T_Beam_S3_Supreme_SX1262_companion_radio_ble",
@@ -1053,7 +2494,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "companion_ble",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "T_Beam_S3_Supreme_SX1262_repeater",
@@ -1061,7 +2513,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "repeater",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/T_Beam_S3_Supreme_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/T_Beam_S3_Supreme_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp",
@@ -1069,7 +2532,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp/T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "T_Beam_S3_Supreme_SX1262_room_server",
@@ -1077,7 +2551,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "room_server",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/T_Beam_S3_Supreme_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/T_Beam_S3_Supreme_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1262_companion_radio_ble",
@@ -1085,7 +2570,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/Tbeam_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/Tbeam_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1262_repeater",
@@ -1093,7 +2589,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Tbeam_SX1262_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1262_repeater/Tbeam_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_repeater/Tbeam_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1262_repeater_bridge_tcp",
@@ -1101,7 +2608,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Tbeam_SX1262_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1262_repeater_bridge_tcp/Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_repeater_bridge_tcp/Tbeam_SX1262_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1262_room_server",
@@ -1109,7 +2627,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Tbeam_SX1262_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1262_room_server/Tbeam_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_room_server/Tbeam_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1276_companion_radio_ble",
@@ -1117,7 +2646,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/Tbeam_SX1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/Tbeam_SX1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1276_repeater",
@@ -1125,7 +2665,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/Tbeam_SX1276_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1276_repeater_bridge_tcp",
@@ -1133,7 +2684,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Tbeam_SX1276_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1276_repeater_bridge_tcp/Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_repeater_bridge_tcp/Tbeam_SX1276_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Tbeam_SX1276_room_server",
@@ -1141,7 +2703,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/Tbeam_SX1276_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Tbeam_SX1276_room_server/Tbeam_SX1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_room_server/Tbeam_SX1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M2_companion_radio_ble",
@@ -1149,7 +2722,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for ThinkNode M2 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/ThinkNode_M2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/ThinkNode_M2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M2_companion_radio_usb",
@@ -1157,7 +2741,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for ThinkNode M2 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/ThinkNode_M2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/ThinkNode_M2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M5_companion_radio_ble",
@@ -1165,7 +2760,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for ThinkNode M5 (ESP32).",
     "category": "companion_ble",
-    "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/ThinkNode_M5_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/ThinkNode_M5_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M5_companion_radio_usb",
@@ -1173,7 +2779,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for ThinkNode M5 (ESP32).",
     "category": "companion_usb",
-    "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/ThinkNode_M5_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/ThinkNode_M5_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M5_Repeater",
@@ -1181,7 +2798,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for ThinkNode M5 (ESP32).",
     "category": "repeater",
-    "manifest": "./firmware/ThinkNode_M5_Repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_Repeater/ThinkNode_M5_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_Repeater/ThinkNode_M5_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M5_Repeater_bridge_tcp",
@@ -1189,7 +2817,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M5 (ESP32).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/ThinkNode_M5_Repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_Repeater_bridge_tcp/ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_Repeater_bridge_tcp/ThinkNode_M5_Repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "ThinkNode_M5_room_server",
@@ -1197,7 +2836,18 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for ThinkNode M5 (ESP32).",
     "category": "room_server",
-    "manifest": "./firmware/ThinkNode_M5_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "WHY2025_badge_repeater_bridge_tcp",
@@ -1205,7 +2855,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for WHY2025 Badge (ESP32-C6).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/WHY2025_badge_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/WHY2025_badge_repeater_bridge_tcp/WHY2025_badge_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "WHY2025_badge_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/WHY2025_badge_repeater_bridge_tcp/WHY2025_badge_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C3_companion_radio_ble",
@@ -1213,7 +2874,18 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "companion_ble",
-    "manifest": "./firmware/Xiao_C3_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_companion_radio_ble/Xiao_C3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_C3_companion_radio_ble/Xiao_C3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C3_companion_radio_usb",
@@ -1221,7 +2893,18 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "companion_usb",
-    "manifest": "./firmware/Xiao_C3_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_companion_radio_usb/Xiao_C3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_C3_companion_radio_usb/Xiao_C3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C3_repeater",
@@ -1229,7 +2912,18 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Repeater firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "repeater",
-    "manifest": "./firmware/Xiao_C3_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_repeater/Xiao_C3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_C3_repeater/Xiao_C3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C3_repeater_bridge_tcp",
@@ -1237,7 +2931,18 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/Xiao_C3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Xiao_C3_repeater_bridge_tcp/Xiao_C3_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C3_room_server",
@@ -1245,7 +2950,18 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "room_server",
-    "manifest": "./firmware/Xiao_C3_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C6_repeater_bridge_rs232",
@@ -1253,7 +2969,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao ESP32-C6.",
     "category": "bridge_rs232",
-    "manifest": "./firmware/Xiao_C6_repeater_bridge_rs232/manifest.json"
+    "version": "bridge-rs232-v1.0.0",
+    "manifest": "./firmware/Xiao_C6_repeater_bridge_rs232/Xiao_C6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:11:37Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_C6_repeater_bridge_rs232/Xiao_C6_repeater_bridge_rs232-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_C6_repeater_bridge_tcp",
@@ -1261,7 +2988,18 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C6 (ESP32-C6).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Xiao_C6_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_C6_repeater_bridge_tcp/Xiao_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Xiao_C6_repeater_bridge_tcp/Xiao_C6_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_S3_WIO_companion_radio_ble",
@@ -1269,7 +3007,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "companion_ble",
-    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/Xiao_S3_WIO_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_companion_radio_ble-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/Xiao_S3_WIO_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_S3_WIO_companion_radio_usb",
@@ -1277,7 +3026,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "companion_usb",
-    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/manifest.json"
+    "version": "companion-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/Xiao_S3_WIO_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/Xiao_S3_WIO_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_S3_WIO_repeater",
@@ -1285,7 +3045,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "repeater",
-    "manifest": "./firmware/Xiao_S3_WIO_repeater/manifest.json"
+    "version": "repeater-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_S3_WIO_repeater_bridge_tcp",
@@ -1293,7 +3064,18 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "bridge_tcp",
-    "manifest": "./firmware/Xiao_S3_WIO_repeater_bridge_tcp/manifest.json"
+    "version": "bridge-tcp-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_repeater_bridge_tcp/Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.0",
+        "name": "TCP Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T01:41:29Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_repeater_bridge_tcp/Xiao_S3_WIO_repeater_bridge_tcp-v1.0.0-9de81d2-merged.bin.manifest.json"
+      }
+    ]
   },
   {
     "env": "Xiao_S3_WIO_room_server",
@@ -1301,6 +3083,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "room_server",
-    "manifest": "./firmware/Xiao_S3_WIO_room_server/manifest.json"
+    "version": "room-server-v1.0.0",
+    "manifest": "./firmware/Xiao_S3_WIO_room_server/Xiao_S3_WIO_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_room_server-v1.0.0-80abfbb-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_room_server/Xiao_S3_WIO_room_server-v1.0.0-80abfbb-merged.bin.manifest.json"
+      }
+    ]
   }
 ]

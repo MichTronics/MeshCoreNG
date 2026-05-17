@@ -1,0 +1,16 @@
+{
+  "name": "Heltec E213 Companion Radio (USB)",
+  "version": "companion-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_E213_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

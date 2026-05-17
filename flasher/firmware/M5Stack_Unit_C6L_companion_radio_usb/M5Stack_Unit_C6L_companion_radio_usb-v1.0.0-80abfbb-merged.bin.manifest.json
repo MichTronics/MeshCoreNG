@@ -1,0 +1,16 @@
+{
+  "name": "M5Stack Unit C6L Companion Radio (USB)",
+  "version": "companion-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "M5Stack_Unit_C6L_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "Seeed XIAO ESP32-C3 Room Server",
+  "version": "room-server-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C3",
+      "parts": [
+        {
+          "path": "Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

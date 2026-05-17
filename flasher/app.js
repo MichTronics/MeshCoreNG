@@ -41,6 +41,9 @@ const typeGrid    = document.getElementById('type-grid');
 const boardSelect = document.getElementById('board-select');
 const boardHint   = document.getElementById('board-hint');
 const boardDesc   = document.getElementById('board-desc');
+const versionSelect = document.getElementById('version-select');
+const versionHint   = document.getElementById('version-hint');
+const versionDesc   = document.getElementById('version-desc');
 const installBtn  = document.getElementById('install-btn');
 const installAct  = document.getElementById('install-activate');
 
@@ -90,12 +93,13 @@ function selectType(typeId) {
   const filtered = allBoards.filter(b => b.category === typeId);
 
   boardSelect.innerHTML = '';
+  resetVersionSelect('Select a board first.');
   if (filtered.length === 0) {
     boardHint.textContent = 'No firmware available for this type yet.';
+    boardHint.style.display = 'block';
     boardSelect.style.display = 'none';
     boardDesc.textContent = '';
-    installAct.disabled = true;
-    installBtn.setAttribute('manifest', '');
+    setInstallManifest('');
     return;
   }
 
@@ -120,14 +124,84 @@ function selectType(typeId) {
 // ── Select board ──────────────────────────────────────────────────────────
 function selectBoard(board) {
   boardDesc.textContent = board.description || '';
-  if (board.manifest) {
-    installBtn.setAttribute('manifest', board.manifest);
-    installAct.disabled = false;
-  } else {
-    installBtn.setAttribute('manifest', '');
-    installAct.disabled = true;
+  const releases = getBoardReleases(board);
+
+  versionSelect.innerHTML = '';
+  if (releases.length === 0) {
+    resetVersionSelect('Firmware not yet released for this board.');
     boardDesc.textContent = 'Firmware not yet released for this board.';
+    setInstallManifest('');
+    return;
   }
+
+  versionHint.style.display = 'none';
+  versionSelect.style.display = 'block';
+
+  releases.forEach((release, i) => {
+    const opt = document.createElement('option');
+    opt.value = String(i);
+    opt.textContent = formatReleaseLabel(release, i === 0);
+    versionSelect.appendChild(opt);
+  });
+
+  versionSelect.value = '0';
+  selectRelease(releases[0]);
+
+  versionSelect.onchange = () => {
+    selectRelease(releases[Number(versionSelect.value)]);
+  };
+}
+
+function getBoardReleases(board) {
+  if (Array.isArray(board.releases) && board.releases.length > 0) {
+    return board.releases;
+  }
+  if (board.manifest) {
+    return [{
+      version: board.version || 'latest',
+      manifest: board.manifest,
+      published_at: board.published_at || '',
+      prerelease: false,
+    }];
+  }
+  return [];
+}
+
+function selectRelease(release) {
+  setInstallManifest(release.manifest || '');
+  versionDesc.textContent = formatReleaseDetails(release);
+}
+
+function resetVersionSelect(message) {
+  versionSelect.innerHTML = '';
+  versionSelect.style.display = 'none';
+  versionHint.textContent = message;
+  versionHint.style.display = 'block';
+  versionDesc.textContent = '';
+  setInstallManifest('');
+}
+
+function setInstallManifest(manifest) {
+  installBtn.setAttribute('manifest', manifest || '');
+  installAct.disabled = !manifest;
+}
+
+function formatReleaseLabel(release, isLatest) {
+  const bits = [release.version || release.name || 'release'];
+  if (isLatest) bits.push('latest');
+  if (release.prerelease) bits.push('pre-release');
+  return bits.join(' - ');
+}
+
+function formatReleaseDetails(release) {
+  const parts = [];
+  if (release.published_at) {
+    parts.push(`Published ${release.published_at.slice(0, 10)}`);
+  }
+  if (release.firmware) {
+    parts.push(release.firmware);
+  }
+  return parts.join(' - ');
 }
 
 loadBoards();

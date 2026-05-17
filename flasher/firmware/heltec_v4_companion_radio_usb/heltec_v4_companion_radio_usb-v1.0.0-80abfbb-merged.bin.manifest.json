@@ -1,0 +1,16 @@
+{
+  "name": "Heltec LoRa V4 Companion Radio (USB)",
+  "version": "companion-v1.0.0",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "heltec_v4_companion_radio_usb-v1.0.0-80abfbb-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
