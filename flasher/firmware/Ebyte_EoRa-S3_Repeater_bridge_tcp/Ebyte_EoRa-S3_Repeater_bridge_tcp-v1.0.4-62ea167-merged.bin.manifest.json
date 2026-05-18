@@ -1,0 +1,16 @@
+{
+  "name": "Ebyte EoRa-S3 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.4",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "Ebyte_EoRa-S3_Repeater_bridge_tcp-v1.0.4-62ea167-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

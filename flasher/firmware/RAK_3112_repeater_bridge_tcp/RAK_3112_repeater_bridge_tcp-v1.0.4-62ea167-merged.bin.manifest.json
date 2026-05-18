@@ -1,0 +1,16 @@
+{
+  "name": "RAK3112 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.4",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "RAK_3112_repeater_bridge_tcp-v1.0.4-62ea167-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
