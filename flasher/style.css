@@ -224,6 +224,73 @@ select:focus {
   cursor: not-allowed;
 }
 
+/* ── Flash progress ───────────────────────────────────── */
+#flash-status {
+  margin-top: 1rem;
+  display: none;
+}
+
+#flash-status.active {
+  display: block;
+}
+
+.progress-track {
+  height: 8px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  overflow: hidden;
+  margin-bottom: 0.6rem;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--accent);
+  border-radius: 4px;
+  transition: width 0.2s ease;
+}
+
+.flash-msg {
+  font-size: 0.875rem;
+  color: var(--muted);
+  margin-bottom: 0.5rem;
+  min-height: 1.4em;
+}
+
+.flash-error {
+  color: #f85149;
+}
+
+.log-toggle {
+  background: none;
+  border: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.78rem;
+  padding: 2px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+}
+
+.log-toggle:hover {
+  border-color: var(--link);
+  color: var(--link);
+}
+
+#flash-log pre {
+  background: #010409;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  font-size: 0.75rem;
+  line-height: 1.5;
+  max-height: 280px;
+  overflow-y: auto;
+  white-space: pre-wrap;
+  word-break: break-all;
+  color: var(--muted);
+}
+
 /* ── First use ────────────────────────────────────────── */
 .step ol {
   padding-left: 1.35rem;

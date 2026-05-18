@@ -6,7 +6,6 @@
   <title>MeshCoreNG – Web Flasher</title>
   <link rel="icon" href="/MeshCoreNG/favicon.svg" />
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="https://unpkg.com/esp-web-tools@10/dist/web/install-button.js"></script>
 </head>
 <body>
 
@@ -52,14 +51,22 @@
       <h2><span class="step-num">4</span> Connect &amp; flash</h2>
       <p class="hint">Plug your board into USB, then press the button below.</p>
       <div class="flash-row">
-        <esp-web-install-button id="install-btn" manifest="">
-          <button slot="activate" class="install-btn" disabled id="install-activate">Install MeshCoreNG</button>
-          <span slot="unsupported">
-            Your browser does not support Web Serial.
-            Use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or
-            <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>.
-          </span>
-        </esp-web-install-button>
+        <button id="flash-btn" class="install-btn" disabled>Flash MeshCoreNG</button>
+        <span id="no-serial-msg" class="hint" style="display:none">
+          Your browser does not support Web Serial.
+          Use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or
+          <a href="https://www.microsoft.com/edge" target="_blank">Edge</a>.
+        </span>
+      </div>
+      <div id="flash-status">
+        <div class="progress-track">
+          <div class="progress-bar" id="flash-progress-bar" style="width:0%"></div>
+        </div>
+        <p class="flash-msg" id="flash-msg"></p>
+        <button class="log-toggle" id="flash-log-toggle">Show log ▼</button>
+        <div id="flash-log" style="display:none">
+          <pre id="flash-log-pre"></pre>
+        </div>
       </div>
       <p class="hint notice-nonesp32">
         nRF52, RP2040 and STM32 boards cannot be flashed here. Download the <code>.uf2</code>, <code>.zip</code> or <code>.hex</code> from
@@ -91,6 +98,6 @@
     <p class="small">MeshCoreNG is open-source firmware. Flash at your own risk.</p>
   </footer>
 
-  <script src="app.js"></script>
+  <script type="module" src="app.js"></script>
 </body>
 </html>

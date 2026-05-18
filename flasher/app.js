@@ -1,3 +1,5 @@
+import { ESPLoader, Transport, HardReset } from './esp32.js';
+
 // ── Firmware type definitions ─────────────────────────────────────────────
 const TYPES = [
   { id: 'repeater',      name: 'Repeater',         desc: 'Standard mesh repeater' },
@@ -36,16 +38,29 @@ function getCategory(env) {
 // ── State ─────────────────────────────────────────────────────────────────
 let allBoards = [];
 let selectedType = null;
+let currentManifestUrl = '';
 
-const typeGrid    = document.getElementById('type-grid');
-const boardSelect = document.getElementById('board-select');
-const boardHint   = document.getElementById('board-hint');
-const boardDesc   = document.getElementById('board-desc');
+const typeGrid      = document.getElementById('type-grid');
+const boardSelect   = document.getElementById('board-select');
+const boardHint     = document.getElementById('board-hint');
+const boardDesc     = document.getElementById('board-desc');
 const versionSelect = document.getElementById('version-select');
 const versionHint   = document.getElementById('version-hint');
 const versionDesc   = document.getElementById('version-desc');
-const installBtn  = document.getElementById('install-btn');
-const installAct  = document.getElementById('install-activate');
+const flashBtn      = document.getElementById('flash-btn');
+const flashStatus   = document.getElementById('flash-status');
+const flashProgressBar = document.getElementById('flash-progress-bar');
+const flashMsg      = document.getElementById('flash-msg');
+const flashLog      = document.getElementById('flash-log');
+const flashLogPre   = document.getElementById('flash-log-pre');
+const flashLogToggle = document.getElementById('flash-log-toggle');
+const noSerialMsg   = document.getElementById('no-serial-msg');
+
+// ── Web Serial support check ──────────────────────────────────────────────
+if (!navigator.serial) {
+  flashBtn.style.display = 'none';
+  noSerialMsg.style.display = 'inline';
+}
 
 // ── Load boards ───────────────────────────────────────────────────────────
 async function loadBoards() {
@@ -82,7 +97,6 @@ function buildTypeGrid() {
     typeGrid.appendChild(label);
   });
 
-  // Auto-select first type
   const firstType = TYPES.find(t => available.has(t.id));
   if (firstType) selectType(firstType.id);
 }
@@ -99,7 +113,7 @@ function selectType(typeId) {
     boardHint.style.display = 'block';
     boardSelect.style.display = 'none';
     boardDesc.textContent = '';
-    setInstallManifest('');
+    setManifest('');
     return;
   }
 
@@ -130,7 +144,7 @@ function selectBoard(board) {
   if (releases.length === 0) {
     resetVersionSelect('Firmware not yet released for this board.');
     boardDesc.textContent = 'Firmware not yet released for this board.';
-    setInstallManifest('');
+    setManifest('');
     return;
   }
 
@@ -168,7 +182,7 @@ function getBoardReleases(board) {
 }
 
 function selectRelease(release) {
-  setInstallManifest(release.manifest || '');
+  setManifest(release.manifest || '');
   versionDesc.textContent = formatReleaseDetails(release);
 }
 
@@ -178,12 +192,12 @@ function resetVersionSelect(message) {
   versionHint.textContent = message;
   versionHint.style.display = 'block';
   versionDesc.textContent = '';
-  setInstallManifest('');
+  setManifest('');
 }
 
-function setInstallManifest(manifest) {
-  installBtn.setAttribute('manifest', manifest || '');
-  installAct.disabled = !manifest;
+function setManifest(manifestUrl) {
+  currentManifestUrl = manifestUrl || '';
+  flashBtn.disabled = !currentManifestUrl || !navigator.serial;
 }
 
 function formatReleaseLabel(release, isLatest) {
@@ -203,5 +217,140 @@ function formatReleaseDetails(release) {
   }
   return parts.join(' - ');
 }
+
+// ── Flash log helpers ─────────────────────────────────────────────────────
+function logAppend(text) {
+  flashLogPre.textContent += text;
+  flashLogPre.scrollTop = flashLogPre.scrollHeight;
+}
+
+function setProgress(pct) {
+  flashProgressBar.style.width = `${pct}%`;
+}
+
+function setStatus(msg, isError = false) {
+  flashMsg.textContent = msg;
+  flashMsg.className = 'flash-msg' + (isError ? ' flash-error' : '');
+}
+
+flashLogToggle.addEventListener('click', () => {
+  const hidden = flashLog.style.display === 'none';
+  flashLog.style.display = hidden ? 'block' : 'none';
+  flashLogToggle.textContent = hidden ? 'Hide log ▲' : 'Show log ▼';
+});
+
+// ── Flash firmware ────────────────────────────────────────────────────────
+async function blobToBinaryString(blob) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    reader.onload = () => resolve(reader.result);
+    reader.onerror = reject;
+    reader.readAsBinaryString(blob);
+  });
+}
+
+flashBtn.addEventListener('click', async () => {
+  if (!currentManifestUrl || !navigator.serial) return;
+
+  flashBtn.disabled = true;
+  flashLogPre.textContent = '';
+  flashLog.style.display = 'none';
+  flashLogToggle.textContent = 'Show log ▼';
+  setProgress(0);
+  setStatus('');
+  flashStatus.classList.add('active');
+
+  let transport = null;
+  try {
+    // Fetch manifest to get binary filename and chip family
+    setStatus('Loading firmware info…');
+    const manifestResp = await fetch(currentManifestUrl);
+    if (!manifestResp.ok) throw new Error(`Cannot load manifest: ${manifestResp.status}`);
+    const manifest = await manifestResp.json();
+    const part = manifest.builds?.[0]?.parts?.[0];
+    if (!part) throw new Error('No firmware part found in manifest');
+
+    // Binary lives next to the manifest
+    const manifestDir = currentManifestUrl.substring(0, currentManifestUrl.lastIndexOf('/') + 1);
+    const binaryUrl = manifestDir + part.path;
+
+    // Download firmware binary
+    setStatus('Downloading firmware…');
+    const binaryResp = await fetch(binaryUrl);
+    if (!binaryResp.ok) throw new Error(`Cannot download firmware: ${binaryResp.status}`);
+    const blob = await binaryResp.blob();
+    setProgress(5);
+
+    const data = await blobToBinaryString(blob);
+    setProgress(8);
+
+    // Open serial port
+    setStatus('Select your device in the port picker…');
+    const port = await navigator.serial.requestPort();
+
+    // Create ESPLoader
+    transport = new Transport(port, true);
+
+    const terminal = {
+      clean: () => { flashLogPre.textContent = ''; },
+      writeLine: (line) => logAppend(line + '\n'),
+      write: (text) => logAppend(text),
+    };
+
+    const flashOptions = {
+      transport,
+      baudrate: 921600,
+      romBaudrate: 115200,
+      terminal,
+      compress: true,
+      eraseAll: false,
+      flashSize: 'keep',
+      flashMode: 'keep',
+      flashFreq: 'keep',
+      enableTracing: false,
+      fileArray: [{ data, address: 0x0 }],
+      reportProgress: (_fileIndex, written, total) => {
+        const pct = 10 + Math.round((written / total) * 87);
+        setProgress(pct);
+        setStatus(`Flashing… ${Math.round((written / total) * 100)}%`);
+      },
+    };
+
+    const esploader = new ESPLoader(flashOptions);
+    esploader.hr = new HardReset(transport);
+
+    // Connect (auto-resets device into bootloader mode)
+    setStatus('Connecting…');
+    await esploader.main();
+    setProgress(10);
+
+    // Write firmware
+    setStatus('Flashing firmware…');
+    await esploader.writeFlash(flashOptions);
+    setProgress(99);
+
+    // Reboot into normal operation
+    setStatus('Resetting device…');
+    await esploader.after('hard_reset');
+    setProgress(100);
+    setStatus('Done! Device is running MeshCoreNG.');
+
+  } catch (err) {
+    if (err.name === 'NotFoundError') {
+      setStatus('Port selection cancelled.');
+      setProgress(0);
+    } else {
+      setStatus(`Error: ${err.message}`, true);
+      flashLog.style.display = 'block';
+      flashLogToggle.textContent = 'Hide log ▲';
+      console.error(err);
+    }
+  } finally {
+    if (transport) {
+      try { await transport.disconnect(); } catch {}
+    }
+    flashBtn.disabled = !currentManifestUrl || !navigator.serial;
+  }
+});
 
 loadBoards();
