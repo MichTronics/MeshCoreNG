@@ -1,0 +1,16 @@
+{
+  "name": "Seeed XIAO ESP32-S3 WIO Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.5",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "Xiao_S3_WIO_repeater_bridge_tcp-v1.0.5-0e37c14-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

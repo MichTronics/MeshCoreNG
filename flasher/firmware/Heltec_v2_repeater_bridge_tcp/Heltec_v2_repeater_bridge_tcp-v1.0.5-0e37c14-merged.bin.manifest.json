@@ -1,0 +1,16 @@
+{
+  "name": "Heltec LoRa V2 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.5",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_v2_repeater_bridge_tcp-v1.0.5-0e37c14-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

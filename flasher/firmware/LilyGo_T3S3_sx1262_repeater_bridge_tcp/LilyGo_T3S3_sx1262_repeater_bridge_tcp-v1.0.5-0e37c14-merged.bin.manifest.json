@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T3S3 SX1262 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.5",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-v1.0.5-0e37c14-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
