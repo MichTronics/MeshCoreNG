@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T-Beam S3 Supreme SX1262 Companion Radio (BLE)",
+  "version": "companion-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

@@ -5,9 +5,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/Ebyte_EoRa-S3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/Ebyte_EoRa-S3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_ble/Ebyte_EoRa-S3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -24,9 +32,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/Ebyte_EoRa-S3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/Ebyte_EoRa-S3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_companion_radio_usb/Ebyte_EoRa-S3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -186,6 +202,44 @@
     ]
   },
   {
+    "env": "Generic_E22_sx1262_companion_radio_ble",
+    "name": "Generic E22 SX1262 Companion Radio (BLE)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Companion Radio (BLE) firmware for Generic E22 SX1262 (ESP32).",
+    "category": "companion_ble",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1262_companion_radio_ble/Generic_E22_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_companion_radio_ble/Generic_E22_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Generic_E22_sx1262_companion_radio_usb",
+    "name": "Generic E22 SX1262 Companion Radio (USB)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Companion Radio (USB) firmware for Generic E22 SX1262 (ESP32).",
+    "category": "companion_usb",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1262_companion_radio_usb/Generic_E22_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_companion_radio_usb/Generic_E22_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "Generic_E22_sx1262_repeater",
     "name": "Generic E22 SX1262 Repeater",
     "chipFamily": "ESP32",
@@ -295,6 +349,44 @@
         "prerelease": false,
         "firmware": "Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin",
         "manifest": "./firmware/Generic_E22_sx1262_repeater_bridge_tcp/Generic_E22_sx1262_repeater_bridge_tcp-v1.0.0-ac3bd17-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Generic_E22_sx1268_companion_radio_ble",
+    "name": "Generic E22 SX1268 Companion Radio (BLE)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Companion Radio (BLE) firmware for Generic E22 SX1268 (ESP32).",
+    "category": "companion_ble",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1268_companion_radio_ble/Generic_E22_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_companion_radio_ble/Generic_E22_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
+    "env": "Generic_E22_sx1268_companion_radio_usb",
+    "name": "Generic E22 SX1268 Companion Radio (USB)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Companion Radio (USB) firmware for Generic E22 SX1268 (ESP32).",
+    "category": "companion_usb",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1268_companion_radio_usb/Generic_E22_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_companion_radio_usb/Generic_E22_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
       }
     ]
   },
@@ -417,9 +509,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec CT62 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_ct62_companion_radio_ble/Heltec_ct62_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_ct62_companion_radio_ble/Heltec_ct62_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_companion_radio_ble/Heltec_ct62_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -436,9 +536,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec CT62 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_ct62_companion_radio_usb/Heltec_ct62_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_ct62_companion_radio_usb/Heltec_ct62_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_companion_radio_usb/Heltec_ct62_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -549,9 +657,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec E213 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_E213_companion_radio_ble/Heltec_E213_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_E213_companion_radio_ble/Heltec_E213_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E213_companion_radio_ble/Heltec_E213_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -568,9 +684,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec E213 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_E213_companion_radio_usb/Heltec_E213_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_E213_companion_radio_usb/Heltec_E213_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E213_companion_radio_usb/Heltec_E213_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -953,9 +1077,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Tracker V2 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/heltec_tracker_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/heltec_tracker_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_companion_radio_ble/heltec_tracker_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -972,9 +1104,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Tracker V2 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/heltec_tracker_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/heltec_tracker_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_companion_radio_usb/heltec_tracker_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1158,9 +1298,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V2 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_v2_companion_radio_ble/Heltec_v2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_v2_companion_radio_ble/Heltec_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v2_companion_radio_ble/Heltec_v2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1177,9 +1325,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V2 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_v2_companion_radio_usb/Heltec_v2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_v2_companion_radio_usb/Heltec_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v2_companion_radio_usb/Heltec_v2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1336,9 +1492,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V3 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_v3_companion_radio_ble/Heltec_v3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_v3_companion_radio_ble/Heltec_v3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v3_companion_radio_ble/Heltec_v3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1355,9 +1519,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V3 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_v3_companion_radio_usb/Heltec_v3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_v3_companion_radio_usb/Heltec_v3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v3_companion_radio_usb/Heltec_v3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1541,9 +1713,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V4 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_v4_companion_radio_ble/heltec_v4_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_v4_companion_radio_ble/heltec_v4_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_companion_radio_ble/heltec_v4_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1560,9 +1740,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V4 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_v4_companion_radio_usb/heltec_v4_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_v4_companion_radio_usb/heltec_v4_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_companion_radio_usb/heltec_v4_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1746,9 +1934,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/heltec_v4_tft_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/heltec_v4_tft_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_companion_radio_ble/heltec_v4_tft_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1765,9 +1961,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/heltec_v4_tft_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/heltec_v4_tft_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_companion_radio_usb/heltec_v4_tft_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1951,9 +2155,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Wireless Paper (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/Heltec_Wireless_Paper_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/Heltec_Wireless_Paper_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_ble/Heltec_Wireless_Paper_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -1970,9 +2182,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Wireless Paper (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/Heltec_Wireless_Paper_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/Heltec_Wireless_Paper_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_companion_radio_usb/Heltec_Wireless_Paper_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2129,9 +2349,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/Heltec_Wireless_Tracker_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/Heltec_Wireless_Tracker_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_ble/Heltec_Wireless_Tracker_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2148,9 +2376,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/Heltec_Wireless_Tracker_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/Heltec_Wireless_Tracker_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_companion_radio_usb/Heltec_Wireless_Tracker_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2307,9 +2543,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Heltec WSL3 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/Heltec_WSL3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/Heltec_WSL3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_companion_radio_ble/Heltec_WSL3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2326,9 +2570,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Heltec WSL3 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/Heltec_WSL3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/Heltec_WSL3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_companion_radio_usb/Heltec_WSL3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2512,9 +2764,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_ble/LilyGo_T3S3_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2531,9 +2791,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_companion_radio_usb/LilyGo_T3S3_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2690,9 +2958,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_ble/LilyGo_T3S3_sx1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2709,9 +2985,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_companion_radio_usb/LilyGo_T3S3_sx1276_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2868,9 +3152,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/LilyGo_TBeam_1W_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/LilyGo_TBeam_1W_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_ble/LilyGo_TBeam_1W_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -2887,9 +3179,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/LilyGo_TBeam_1W_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/LilyGo_TBeam_1W_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_companion_radio_usb/LilyGo_TBeam_1W_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3073,9 +3373,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Deck (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/LilyGo_TDeck_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/LilyGo_TDeck_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_companion_radio_ble/LilyGo_TDeck_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3092,9 +3400,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-Deck (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/LilyGo_TDeck_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/LilyGo_TDeck_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_companion_radio_usb/LilyGo_TDeck_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3232,9 +3548,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_ble/LilyGo_TETH_Elite_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3251,9 +3575,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_companion_radio_usb/LilyGo_TETH_Elite_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3480,14 +3812,41 @@
     ]
   },
   {
+    "env": "LilyGo_TLora_V2_1_1_6_companion_radio_ble",
+    "name": "LilyGo T-LoRa V2.1.1.6 Companion Radio (BLE)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
+    "category": "companion_ble",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_ble/LilyGo_TLora_V2_1_1_6_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
+    "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_ble/LilyGo_TLora_V2_1_1_6_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      }
+    ]
+  },
+  {
     "env": "LilyGo_TLora_V2_1_1_6_companion_radio_usb",
     "name": "LilyGo T-LoRa V2.1.1.6 Companion Radio (USB)",
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_companion_radio_usb/LilyGo_TLora_V2_1_1_6_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3671,9 +4030,17 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/M5Stack_Unit_C6L_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/M5Stack_Unit_C6L_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_ble/M5Stack_Unit_C6L_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3690,9 +4057,17 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Companion Radio (USB) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/M5Stack_Unit_C6L_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/M5Stack_Unit_C6L_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_companion_radio_usb/M5Stack_Unit_C6L_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3857,9 +4232,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/Meshadventurer_sx1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/Meshadventurer_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_ble/Meshadventurer_sx1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -3876,9 +4259,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/Meshadventurer_sx1262_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/Meshadventurer_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_companion_radio_usb/Meshadventurer_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4035,9 +4426,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/Meshadventurer_sx1268_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/Meshadventurer_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_ble/Meshadventurer_sx1268_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4054,9 +4453,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/Meshadventurer_sx1268_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/Meshadventurer_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_companion_radio_usb/Meshadventurer_sx1268_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4280,9 +4687,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for RAK3112 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/RAK_3112_companion_radio_ble/RAK_3112_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/RAK_3112_companion_radio_ble/RAK_3112_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/RAK_3112_companion_radio_ble/RAK_3112_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4299,9 +4714,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for RAK3112 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/RAK_3112_companion_radio_usb/RAK_3112_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/RAK_3112_companion_radio_usb/RAK_3112_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/RAK_3112_companion_radio_usb/RAK_3112_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4485,9 +4908,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Station G2 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Station_G2_companion_radio_ble/Station_G2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Station_G2_companion_radio_ble/Station_G2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Station_G2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Station_G2_companion_radio_ble/Station_G2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4504,9 +4935,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Station G2 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Station_G2_companion_radio_usb/Station_G2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Station_G2_companion_radio_usb/Station_G2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Station_G2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Station_G2_companion_radio_usb/Station_G2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4776,9 +5215,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_companion_radio_ble/T_Beam_S3_Supreme_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -4935,9 +5382,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/Tbeam_SX1262_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/Tbeam_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_companion_radio_ble/Tbeam_SX1262_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5094,9 +5549,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/Tbeam_SX1276_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/Tbeam_SX1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_companion_radio_ble/Tbeam_SX1276_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5253,9 +5716,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for ThinkNode M2 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/ThinkNode_M2_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/ThinkNode_M2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M2_companion_radio_ble/ThinkNode_M2_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5272,9 +5743,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for ThinkNode M2 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/ThinkNode_M2_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/ThinkNode_M2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M2_companion_radio_usb/ThinkNode_M2_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5291,9 +5770,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for ThinkNode M5 (ESP32).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/ThinkNode_M5_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/ThinkNode_M5_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_companion_radio_ble/ThinkNode_M5_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5310,9 +5797,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Companion Radio (USB) firmware for ThinkNode M5 (ESP32).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/ThinkNode_M5_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/ThinkNode_M5_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_companion_radio_usb/ThinkNode_M5_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5536,9 +6031,17 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Xiao_C3_companion_radio_ble/Xiao_C3_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Xiao_C3_companion_radio_ble/Xiao_C3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_C3_companion_radio_ble/Xiao_C3_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5555,9 +6058,17 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Xiao_C3_companion_radio_usb/Xiao_C3_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Xiao_C3_companion_radio_usb/Xiao_C3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_C3_companion_radio_usb/Xiao_C3_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5789,9 +6300,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "companion_ble",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/Xiao_S3_WIO_companion_radio_ble-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/Xiao_S3_WIO_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_companion_radio_ble/Xiao_S3_WIO_companion_radio_ble-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",
@@ -5808,9 +6327,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Companion Radio (USB) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "companion_usb",
-    "version": "companion-v1.0.0",
-    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/Xiao_S3_WIO_companion_radio_usb-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "companion-v1.0.1",
+    "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/Xiao_S3_WIO_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_companion_radio_usb/Xiao_S3_WIO_companion_radio_usb-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "companion-v1.0.0",
         "name": "Companion Firmware v1.0.0",

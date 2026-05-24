@@ -1,0 +1,16 @@
+{
+  "name": "Mesh Adventurer SX1262 Companion Radio (USB)",
+  "version": "companion-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Meshadventurer_sx1262_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

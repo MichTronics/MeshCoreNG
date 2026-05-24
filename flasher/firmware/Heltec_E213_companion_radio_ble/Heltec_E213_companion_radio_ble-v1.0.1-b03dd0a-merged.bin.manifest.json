@@ -1,0 +1,16 @@
+{
+  "name": "Heltec E213 Companion Radio (BLE)",
+  "version": "companion-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_E213_companion_radio_ble-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

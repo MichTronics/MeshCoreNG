@@ -1,0 +1,16 @@
+{
+  "name": "Seeed XIAO ESP32-S3 WIO Companion Radio (USB)",
+  "version": "companion-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "Xiao_S3_WIO_companion_radio_usb-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
