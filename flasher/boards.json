@@ -43,9 +43,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/Ebyte_EoRa-S3_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/Ebyte_EoRa-S3_Repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_Repeater/Ebyte_EoRa-S3_Repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -183,9 +191,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Generic E22 SX1262 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Generic_E22_sx1262_repeater/Generic_E22_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1262_repeater/Generic_E22_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1262_repeater/Generic_E22_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -288,9 +304,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Generic E22 SX1268 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Generic_E22_sx1268_repeater/Generic_E22_sx1268_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -431,9 +455,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec CT62 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_ct62_repeater/Heltec_ct62_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_ct62_repeater/Heltec_ct62_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_ct62_repeater/Heltec_ct62_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -555,9 +587,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec E213 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_E213_repeater/Heltec_E213_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_E213_repeater/Heltec_E213_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E213_repeater/Heltec_E213_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -687,9 +727,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec E290 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_E290_repeater/Heltec_E290_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_E290_repeater/Heltec_E290_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E290_repeater/Heltec_E290_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -943,9 +991,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Tracker V2 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_repeater/heltec_tracker_v2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -1140,9 +1196,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V2 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_v2_repeater/Heltec_v2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_v2_repeater/Heltec_v2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v2_repeater/Heltec_v2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -1310,9 +1374,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V3 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v3_repeater/Heltec_v3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -1507,9 +1579,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V4 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/heltec_v4_repeater/heltec_v4_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/heltec_v4_repeater/heltec_v4_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_repeater/heltec_v4_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -1704,9 +1784,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_repeater/heltec_v4_tft_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -1901,9 +1989,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Wireless Paper (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Paper_repeater/Heltec_Wireless_Paper_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Paper_repeater/Heltec_Wireless_Paper_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_repeater/Heltec_Wireless_Paper_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2071,9 +2167,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec Wireless Tracker (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_repeater/Heltec_Wireless_Tracker_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2241,9 +2345,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Heltec WSL3 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Heltec_WSL3_repeater/Heltec_WSL3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Heltec_WSL3_repeater/Heltec_WSL3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_repeater/Heltec_WSL3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2438,9 +2550,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_repeater/LilyGo_T3S3_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2608,9 +2728,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/LilyGo_T3S3_sx1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/LilyGo_T3S3_sx1276_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_repeater/LilyGo_T3S3_sx1276_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2778,9 +2906,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_repeater/LilyGo_TBeam_1W_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -2975,9 +3111,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Deck (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_TDeck_repeater/LilyGo_TDeck_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_TDeck_repeater/LilyGo_TDeck_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TDeck_repeater/LilyGo_TDeck_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -3126,9 +3270,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/LilyGo_TETH_Elite_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/LilyGo_TETH_Elite_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_repeater/LilyGo_TETH_Elite_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -3352,9 +3504,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_repeater/LilyGo_TLora_V2_1_1_6_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -3549,9 +3709,17 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Repeater firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/M5Stack_Unit_C6L_repeater/M5Stack_Unit_C6L_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/M5Stack_Unit_C6L_repeater/M5Stack_Unit_C6L_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_repeater/M5Stack_Unit_C6L_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -3727,9 +3895,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_repeater/Meshadventurer_sx1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -3897,9 +4073,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1268_repeater/Meshadventurer_sx1268_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1268_repeater/Meshadventurer_sx1268_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_repeater/Meshadventurer_sx1268_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4134,9 +4318,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for RAK3112 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/RAK_3112_repeater/RAK_3112_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4331,9 +4523,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater (Debug Logging) firmware for Station G2 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Station_G2_logging_repeater/Station_G2_logging_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Station_G2_logging_repeater/Station_G2_logging_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Station_G2_logging_repeater/Station_G2_logging_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4436,9 +4636,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for Station G2 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Station_G2_repeater/Station_G2_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4587,9 +4795,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/T_Beam_S3_Supreme_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/T_Beam_S3_Supreme_SX1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_repeater/T_Beam_S3_Supreme_SX1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4738,9 +4954,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1262_repeater/Tbeam_SX1262_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1262_repeater/Tbeam_SX1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_repeater/Tbeam_SX1262_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -4889,9 +5113,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_repeater/Tbeam_SX1276_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -5097,9 +5329,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Repeater firmware for ThinkNode M5 (ESP32).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M5_Repeater/ThinkNode_M5_Repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M5_Repeater/ThinkNode_M5_Repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_Repeater/ThinkNode_M5_Repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -5334,9 +5574,17 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Repeater firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Xiao_C3_repeater/Xiao_C3_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Xiao_C3_repeater/Xiao_C3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_C3_repeater/Xiao_C3_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",
@@ -5579,9 +5827,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Repeater firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "repeater",
-    "version": "repeater-v1.0.0",
-    "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "repeater-v1.0.1",
+    "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_repeater/Xiao_S3_WIO_repeater-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "repeater-v1.0.0",
         "name": "Repeater Firmware v1.0.0",

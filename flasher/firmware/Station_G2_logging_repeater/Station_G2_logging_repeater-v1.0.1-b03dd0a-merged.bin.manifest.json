@@ -1,0 +1,16 @@
+{
+  "name": "Station G2 Repeater (Debug Logging)",
+  "version": "repeater-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Station_G2_logging_repeater-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
