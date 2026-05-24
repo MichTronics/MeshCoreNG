@@ -1,0 +1,16 @@
+{
+  "name": "Heltec LoRa V2 Room Server",
+  "version": "room-server-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "Heltec_v2_room_server-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

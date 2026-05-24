@@ -148,9 +148,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Ebyte_EoRa-S3_room_server/Ebyte_EoRa-S3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Ebyte_EoRa-S3_room_server/Ebyte_EoRa-S3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Ebyte_EoRa-S3_room_server/Ebyte_EoRa-S3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -644,9 +652,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec E213 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_E213_room_server/Heltec_E213_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_E213_room_server/Heltec_E213_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E213_room_server/Heltec_E213_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -768,9 +784,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec E290 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_E290_room_server/Heltec_E290_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1035,9 +1059,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Tracker V2 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/heltec_tracker_v2_room_server/heltec_tracker_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/heltec_tracker_v2_room_server/heltec_tracker_v2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_tracker_v2_room_server/heltec_tracker_v2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1197,9 +1229,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V2 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_v2_room_server/Heltec_v2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_v2_room_server/Heltec_v2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v2_room_server/Heltec_v2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1378,9 +1418,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V3 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_v3_room_server/Heltec_v3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_v3_room_server/Heltec_v3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_v3_room_server/Heltec_v3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1559,9 +1607,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/heltec_v4_room_server/heltec_v4_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/heltec_v4_room_server/heltec_v4_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_room_server/heltec_v4_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1740,9 +1796,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/heltec_v4_tft_room_server/heltec_v4_tft_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/heltec_v4_tft_room_server/heltec_v4_tft_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/heltec_v4_tft_room_server/heltec_v4_tft_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -1902,9 +1966,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Wireless Paper (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Paper_room_server/Heltec_Wireless_Paper_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Paper_room_server/Heltec_Wireless_Paper_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Paper_room_server/Heltec_Wireless_Paper_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -2064,9 +2136,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec Wireless Tracker (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/Heltec_Wireless_Tracker_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/Heltec_Wireless_Tracker_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_Wireless_Tracker_room_server/Heltec_Wireless_Tracker_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -2245,9 +2325,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Heltec WSL3 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Heltec_WSL3_room_server/Heltec_WSL3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Heltec_WSL3_room_server/Heltec_WSL3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Heltec_WSL3_room_server/Heltec_WSL3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -2407,9 +2495,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/LilyGo_T3S3_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/LilyGo_T3S3_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1262_room_server/LilyGo_T3S3_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -2569,9 +2665,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/LilyGo_T3S3_sx1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/LilyGo_T3S3_sx1276_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_T3S3_sx1276_room_server/LilyGo_T3S3_sx1276_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -2750,9 +2854,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/LilyGo_TBeam_1W_room_server/LilyGo_TBeam_1W_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/LilyGo_TBeam_1W_room_server/LilyGo_TBeam_1W_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TBeam_1W_room_server/LilyGo_TBeam_1W_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -3055,9 +3167,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TETH_Elite_sx1262_room_server/LilyGo_TETH_Elite_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -3284,9 +3404,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/LilyGo_TLora_V2_1_1_6_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/LilyGo_TLora_V2_1_1_6_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/LilyGo_TLora_V2_1_1_6_room_server/LilyGo_TLora_V2_1_1_6_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -3446,9 +3574,17 @@
     "chipFamily": "ESP32-C6",
     "description": "MeshCoreNG Room Server firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/M5Stack_Unit_C6L_room_server/M5Stack_Unit_C6L_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/M5Stack_Unit_C6L_room_server/M5Stack_Unit_C6L_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/M5Stack_Unit_C6L_room_server/M5Stack_Unit_C6L_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -3608,9 +3744,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1262_room_server/Meshadventurer_sx1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1262_room_server/Meshadventurer_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1262_room_server/Meshadventurer_sx1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -3770,9 +3914,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Meshadventurer_sx1268_room_server/Meshadventurer_sx1268_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4018,9 +4170,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for RAK3112 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/RAK_3112_room_server/RAK_3112_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/RAK_3112_room_server/RAK_3112_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/RAK_3112_room_server/RAK_3112_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4285,9 +4445,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for Station G2 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Station_G2_room_server/Station_G2_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Station_G2_room_server/Station_G2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Station_G2_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Station_G2_room_server/Station_G2_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4428,9 +4596,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/T_Beam_S3_Supreme_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/T_Beam_S3_Supreme_SX1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/T_Beam_S3_Supreme_SX1262_room_server/T_Beam_S3_Supreme_SX1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4571,9 +4747,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1262_room_server/Tbeam_SX1262_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1262_room_server/Tbeam_SX1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1262_room_server/Tbeam_SX1262_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4714,9 +4898,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Tbeam_SX1276_room_server/Tbeam_SX1276_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Tbeam_SX1276_room_server/Tbeam_SX1276_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Tbeam_SX1276_room_server/Tbeam_SX1276_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -4914,9 +5106,17 @@
     "chipFamily": "ESP32",
     "description": "MeshCoreNG Room Server firmware for ThinkNode M5 (ESP32).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/ThinkNode_M5_room_server/ThinkNode_M5_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -5124,9 +5324,17 @@
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_C3_room_server/Xiao_C3_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
@@ -5372,9 +5580,17 @@
     "chipFamily": "ESP32-S3",
     "description": "MeshCoreNG Room Server firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "room_server",
-    "version": "room-server-v1.0.0",
-    "manifest": "./firmware/Xiao_S3_WIO_room_server/Xiao_S3_WIO_room_server-v1.0.0-80abfbb-merged.bin.manifest.json",
+    "version": "room-server-v1.0.1",
+    "manifest": "./firmware/Xiao_S3_WIO_room_server/Xiao_S3_WIO_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json",
     "releases": [
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_room_server-v1.0.1-b03dd0a-merged.bin",
+        "manifest": "./firmware/Xiao_S3_WIO_room_server/Xiao_S3_WIO_room_server-v1.0.1-b03dd0a-merged.bin.manifest.json"
+      },
       {
         "version": "room-server-v1.0.0",
         "name": "Room Server Firmware v1.0.0",
