@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T-Deck RS232 Bridge",
+  "version": "bridge-rs232-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "LilyGo_TDeck_repeater_bridge_rs232-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

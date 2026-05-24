@@ -1,0 +1,16 @@
+{
+  "name": "RAK3112 Repeater (RS232 Bridge)",
+  "version": "bridge-rs232-v1.0.1",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32",
+      "parts": [
+        {
+          "path": "RAK_3112_repeater_bridge_rs232-v1.0.1-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
