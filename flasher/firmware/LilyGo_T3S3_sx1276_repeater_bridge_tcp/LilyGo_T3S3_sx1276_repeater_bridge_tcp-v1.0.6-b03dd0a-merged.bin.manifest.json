@@ -1,0 +1,16 @@
+{
+  "name": "LilyGo T3S3 SX1276 Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.6",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-S3",
+      "parts": [
+        {
+          "path": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-v1.0.6-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}

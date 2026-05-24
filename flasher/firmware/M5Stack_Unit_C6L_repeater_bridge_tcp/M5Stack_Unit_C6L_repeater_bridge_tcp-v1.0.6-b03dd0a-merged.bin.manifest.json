@@ -1,0 +1,16 @@
+{
+  "name": "M5Stack Unit C6L Repeater (TCP Bridge)",
+  "version": "bridge-tcp-v1.0.6",
+  "new_install_prompt_erase": true,
+  "builds": [
+    {
+      "chipFamily": "ESP32-C6",
+      "parts": [
+        {
+          "path": "M5Stack_Unit_C6L_repeater_bridge_tcp-v1.0.6-b03dd0a-merged.bin",
+          "offset": 0
+        }
+      ]
+    }
+  ]
+}
