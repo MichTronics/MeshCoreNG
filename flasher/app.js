@@ -325,7 +325,15 @@ function resetStatus() {
 }
 
 async function fetchBlob(url) {
-  const resp = await fetch(url);
+  let resp;
+  try {
+    resp = await fetch(url);
+  } catch (err) {
+    if (/^https?:\/\//i.test(url)) {
+      throw new Error('Firmware download was blocked by browser CORS. Mirror this release asset under /flasher/firmware/ before flashing.');
+    }
+    throw err;
+  }
   if (resp.status !== 200) {
     throw new Error(`Could not download firmware: HTTP ${resp.status}`);
   }
