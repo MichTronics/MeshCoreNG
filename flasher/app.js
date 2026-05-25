@@ -246,7 +246,7 @@ function updateActionState() {
   } else if (type === 'download') {
     deviceNotice.textContent = 'This board family is not flashable through Web Serial here. Use the download links below.';
   } else if (type === 'esp32') {
-    deviceNotice.textContent = 'ESP32 flashing supports update and full erase files when both are available.';
+    deviceNotice.textContent = 'ESP32 flashing updates the firmware by default. Enable erase only when you want a clean device.';
   } else {
     deviceNotice.textContent = '';
   }
@@ -373,10 +373,10 @@ async function loadEspFirmware() {
   const file = chooseEspFile(files);
   if (!file) throw new Error('Cannot find an ESP32 flash file for this release.');
 
-  const isWipeFile = file.type === 'flash-wipe' || /-merged\.bin$/i.test(file.name || '');
-  const address = isWipeFile || wipeCheck.checked ? ESP_WIPE_ADDRESS : ESP_UPDATE_ADDRESS;
+  const isMergedFile = file.type === 'flash-wipe' || /-merged\.bin$/i.test(file.name || '');
+  const address = isMergedFile ? ESP_WIPE_ADDRESS : ESP_UPDATE_ADDRESS;
   const blob = file.file || await fetchBlob(getFirmwarePath(file));
-  return { blob, address, eraseAll: Boolean(wipeCheck.checked || isWipeFile) };
+  return { blob, address, eraseAll: Boolean(wipeCheck.checked) };
 }
 
 async function flashEsp32() {
@@ -533,9 +533,6 @@ function loadCustomFirmware(ev) {
     version: firmwareFile.name,
     files: [{ type: 'flash', name: firmwareFile.name, title: firmwareFile.name, file: firmwareFile }],
   };
-  if (firmwareFile.name.endsWith('-merged.bin')) {
-    wipeCheck.checked = true;
-  }
   boardDesc.textContent = `Custom firmware: ${firmwareFile.name}`;
   versionDesc.textContent = type === 'esp32' ? 'ESP32 custom firmware' : 'nRF52 DFU ZIP';
   updateActionState();
