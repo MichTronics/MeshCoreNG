@@ -193,11 +193,6 @@ select:focus {
   margin-bottom: 1rem;
 }
 
-.notice-nonesp32 {
-  margin-top: 1rem;
-  font-size: 0.82rem;
-}
-
 .flash-row {
   display: flex;
   align-items: center;
@@ -205,7 +200,23 @@ select:focus {
   flex-wrap: wrap;
 }
 
-.install-btn {
+.option-row {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+  margin: 0 0 1rem;
+}
+
+.option-row input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--accent);
+}
+
+.install-btn,
+.secondary-btn {
   background: var(--accent);
   color: #fff;
   border: none;
@@ -219,9 +230,72 @@ select:focus {
 
 .install-btn:hover:not(:disabled) { background: var(--accent-h); }
 
-.install-btn:disabled {
+.secondary-btn {
+  display: inline-flex;
+  align-items: center;
+  min-height: 42px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  color: var(--text);
+  font-size: 0.9rem;
+  padding: 0.55rem 1rem;
+}
+
+.secondary-btn:hover:not(:disabled) {
+  background: var(--bg-hover);
+  border-color: var(--link);
+}
+
+.secondary-btn.danger:hover:not(:disabled) {
+  border-color: #f85149;
+  color: #f85149;
+}
+
+.install-btn:disabled,
+.secondary-btn:disabled {
   opacity: 0.45;
   cursor: not-allowed;
+}
+
+.download-list {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.download-list a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 34px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--text);
+  font-size: 0.82rem;
+  padding: 0.35rem 0.75rem;
+  text-decoration: none;
+}
+
+.download-list a:hover {
+  border-color: var(--link);
+  color: var(--link);
+}
+
+.custom-row {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+
+.custom-row input {
+  color: var(--muted);
+  font-size: 0.82rem;
+  max-width: 100%;
 }
 
 /* ── Flash progress ───────────────────────────────────── */

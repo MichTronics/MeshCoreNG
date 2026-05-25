@@ -50,8 +50,15 @@
     <section class="step">
       <h2><span class="step-num">4</span> Connect &amp; flash</h2>
       <p class="hint">Plug your board into USB, then press the button below.</p>
+      <p class="hint" id="device-notice"></p>
+      <label class="option-row" id="wipe-row" style="display:none">
+        <input type="checkbox" id="wipe-check">
+        <span>Erase device before flashing</span>
+      </label>
       <div class="flash-row">
         <button id="flash-btn" class="install-btn" disabled>Flash MeshCoreNG</button>
+        <button id="dfu-btn" class="secondary-btn" style="display:none">Enter DFU mode</button>
+        <button id="erase-btn" class="secondary-btn danger" style="display:none">Erase nRF52 flash</button>
         <span id="no-serial-msg" class="hint" style="display:none">
           Your browser does not support Web Serial.
           Use <a href="https://www.google.com/chrome/" target="_blank">Chrome</a> or
@@ -63,15 +70,16 @@
           <div class="progress-bar" id="flash-progress-bar" style="width:0%"></div>
         </div>
         <p class="flash-msg" id="flash-msg"></p>
-        <button class="log-toggle" id="flash-log-toggle">Show log ▼</button>
+        <button class="log-toggle" id="flash-log-toggle">Show log</button>
         <div id="flash-log" style="display:none">
           <pre id="flash-log-pre"></pre>
         </div>
       </div>
-      <p class="hint notice-nonesp32">
-        nRF52, RP2040 and STM32 boards cannot be flashed here. Download the <code>.uf2</code>, <code>.zip</code> or <code>.hex</code> from
-        <a href="https://github.com/MichTronics/MeshCoreNG/releases" target="_blank">GitHub Releases</a>.
-      </p>
+      <div class="download-list" id="download-list"></div>
+      <label class="custom-row">
+        <span>Custom firmware</span>
+        <input type="file" id="custom-file" accept=".bin,.zip">
+      </label>
     </section>
 
     <!-- Step 5: first use -->
