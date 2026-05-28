@@ -1,5 +1,5 @@
 # target|version|size|url|name
-Ebyte_EoRa-S3_companion_radio_ble|companion-v1.0.1|1200464|https://github.com/MichTronics/MeshCoreNG/releases/download/companion-v1.0.1/Ebyte_EoRa-S3_companion_radio_ble-v1.0.1-b03dd0a.bin|Ebyte_EoRa-S3_companion_radio_ble-v1.0.1-b03dd0a.bin
+Ebyte_EoRa-S3_companion_radio_ble|companion-v1.0.2|1200848|https://github.com/MichTronics/MeshCoreNG/releases/download/companion-v1.0.2/Ebyte_EoRa-S3_companion_radio_ble-nl-v1.0.2-bff9ec9.bin|Ebyte_EoRa-S3_companion_radio_ble-nl-v1.0.2-bff9ec9.bin
 Ebyte_EoRa-S3_companion_radio_usb|companion-v1.0.2|569008|https://github.com/MichTronics/MeshCoreNG/releases/download/companion-v1.0.2/Ebyte_EoRa-S3_companion_radio_usb-nl-v1.0.2-bff9ec9.bin|Ebyte_EoRa-S3_companion_radio_usb-nl-v1.0.2-bff9ec9.bin
 Ebyte_EoRa-S3_Repeater|repeater-v1.0.2|1267936|https://github.com/MichTronics/MeshCoreNG/releases/download/repeater-v1.0.2/Ebyte_EoRa-S3_Repeater-nl-v1.0.2-bff9ec9.bin|Ebyte_EoRa-S3_Repeater-nl-v1.0.2-bff9ec9.bin
 Ebyte_EoRa-S3_Repeater_bridge_rs232|bridge-rs232-v1.0.2|1288896|https://github.com/MichTronics/MeshCoreNG/releases/download/bridge-rs232-v1.0.2/Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin|Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin

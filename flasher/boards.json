@@ -606,8 +606,22 @@
     "description": "MeshCoreNG Companion Radio (BLE) firmware for Generic E22 SX1262 (ESP32).",
     "category": "companion_ble",
     "type": "esp32",
-    "version": "companion-v1.0.1",
+    "version": "companion-v1.0.2",
     "releases": [
+      {
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_companion_radio_ble-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1262_companion_radio_ble-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Generic_E22_sx1262_companion_radio_ble-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "companion-v1.0.1",
         "name": "Companion Firmware v1.0.1",
