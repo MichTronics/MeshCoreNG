@@ -123,8 +123,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ebyte EoRa-S3.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -162,8 +176,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -310,8 +338,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 30S Mesh Kit.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -349,8 +391,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh EVB Pro.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -388,8 +444,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh Tracker Pro.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -427,8 +497,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh Watch13.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -594,8 +678,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -831,8 +929,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1268 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -1082,8 +1194,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec CT62 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -1347,8 +1473,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E213 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -1573,8 +1713,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E290 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -1721,8 +1875,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Mesh Solar.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -1799,8 +1967,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec T190 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -2064,8 +2246,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Wireless Tracker v2.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -2103,8 +2299,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Tracker V2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -2407,8 +2617,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -2711,8 +2935,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -2750,8 +2988,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -3054,8 +3306,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 OLED.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "heltec_v4_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -3093,8 +3359,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "heltec_v4_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -3397,8 +3677,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 TFT.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -3436,8 +3730,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -3740,8 +4048,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Paper (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -4044,8 +4366,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -4348,8 +4684,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4387,8 +4737,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -4535,8 +4899,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Handheld nRF E22 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4574,8 +4952,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 22dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4613,8 +5005,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4652,8 +5058,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 33dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4691,8 +5111,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 22dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4730,8 +5164,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4769,8 +5217,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 33dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4808,8 +5270,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for KeepteenLT1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4847,8 +5323,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Echo Lite.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -4886,8 +5376,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Echo.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -5081,8 +5585,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -5385,8 +5903,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -5689,8 +6221,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Beam 1W.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -5728,8 +6274,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -5993,8 +6553,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Deck.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -6032,8 +6606,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Deck (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -6258,8 +6846,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-ETH Elite.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -6297,8 +6899,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -6445,8 +7061,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa C6 (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -6696,8 +7326,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -6735,8 +7379,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -7000,8 +7658,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for M5Stack Unit C6L.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -7039,8 +7711,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -7187,8 +7873,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Mesh Pocket.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -7382,8 +8082,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -7686,8 +8400,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -7834,8 +8562,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Meshimi (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Meshimi_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshimi_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Meshimi_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -7943,8 +8685,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Meshtiny.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Meshtiny_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshtiny_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Meshtiny_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -7982,8 +8738,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Minewsemi ME25LS01.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8015,6 +8785,31 @@
     ]
   },
   {
+    "env": "Nano_G2_Ultra_repeater_bridge_rs232",
+    "name": "Nano G2 Ultra RS232 Bridge",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG RS232 Bridge firmware for Nano G2 Ultra.",
+    "category": "bridge_rs232",
+    "type": "nrf52",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "nibble_screen_connect_repeater_bridge_espnow",
     "name": "Nibble Screen Connect Repeater (ESPNow Bridge)",
     "chipFamily": "ESP32",
@@ -8040,14 +8835,92 @@
     ]
   },
   {
+    "env": "nibble_screen_connect_repeater_bridge_rs232",
+    "name": "Nibble Screen Connect RS232 Bridge",
+    "chipFamily": "ESP32-S3",
+    "description": "MeshCoreNG RS232 Bridge firmware for Nibble Screen Connect.",
+    "category": "bridge_rs232",
+    "type": "esp32",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "nibble_screen_connect_repeater_bridge_tcp",
+    "name": "Nibble Screen Connect Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Nibble Screen Connect (ESP32).",
+    "category": "bridge_tcp",
+    "type": "esp32",
+    "version": "bridge-tcp-v1.0.7",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "PicoW_repeater_bridge_rs232",
     "name": "Raspberry Pi Pico W RS232 Bridge",
     "chipFamily": "RP2040",
     "description": "MeshCoreNG RS232 Bridge firmware for Raspberry Pi Pico W.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8113,8 +8986,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Muziworks R1 Neo.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "R1Neo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "R1Neo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "R1Neo_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8308,8 +9195,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3112_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "RAK_3112_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8347,8 +9248,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3112_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "RAK_3112_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -8495,8 +9410,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK3401.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "RAK_3401_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3401_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "RAK_3401_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8534,8 +9463,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK3x72.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.0",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+            "title": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.0",
         "name": "RS232 Bridge Firmware v1.0.0",
@@ -8573,8 +9530,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK WisMesh Tag.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8612,8 +9583,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for SenseCap Solar.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -8807,8 +9792,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge, Debug Logging) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -8994,8 +9993,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Station_G2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Station_G2_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -9136,6 +10149,31 @@
     ]
   },
   {
+    "env": "t1000e_repeater_bridge_rs232",
+    "name": "T1000-E RS232 Bridge",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG RS232 Bridge firmware for T1000-E.",
+    "category": "bridge_rs232",
+    "type": "nrf52",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "t1000e_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "t1000e_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "t1000e_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "T_Beam_S3_Supreme_SX1262_companion_radio_ble",
     "name": "LilyGo T-Beam S3 Supreme SX1262 Companion Radio (BLE)",
     "chipFamily": "ESP32-S3",
@@ -9259,8 +10297,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -9524,8 +10576,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -9789,8 +10855,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -9956,6 +11036,31 @@
     ]
   },
   {
+    "env": "Tenstar_C3_sx1262_repeater_bridge_tcp",
+    "name": "Tenstar C3 SX1262 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Tenstar C3 SX1262 (ESP32-C3).",
+    "category": "bridge_tcp",
+    "type": "esp32",
+    "version": "bridge-tcp-v1.0.7",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "Tenstar_C3_sx1268_repeater_bridge_espnow",
     "name": "Tenstar C3 SX1268 Repeater (ESPNow Bridge)",
     "chipFamily": "ESP32-C3",
@@ -9981,14 +11086,53 @@
     ]
   },
   {
+    "env": "Tenstar_C3_sx1268_repeater_bridge_tcp",
+    "name": "Tenstar C3 SX1268 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Tenstar C3 SX1268 (ESP32-C3).",
+    "category": "bridge_tcp",
+    "type": "esp32",
+    "version": "bridge-tcp-v1.0.7",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "ThinkNode_M1_Repeater_bridge_rs232",
     "name": "ThinkNode M1 RS232 Bridge",
     "chipFamily": "nRF52",
     "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -10117,6 +11261,56 @@
             "type": "flash",
             "name": "ThinkNode_M2_Repeater_bridge_espnow-nl-v1.0.1-bff9ec9-merged.bin",
             "title": "ThinkNode_M2_Repeater_bridge_espnow-nl-v1.0.1-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "ThinkNode_M2_Repeater_bridge_tcp",
+    "name": "ThinkNode M2 Repeater (TCP Bridge)",
+    "chipFamily": "ESP32",
+    "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M2 (ESP32).",
+    "category": "bridge_tcp",
+    "type": "esp32",
+    "version": "bridge-tcp-v1.0.7",
+    "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "ThinkNode_M3_Repeater_bridge_rs232",
+    "name": "ThinkNode M3 RS232 Bridge",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M3.",
+    "category": "bridge_rs232",
+    "type": "nrf52",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
           }
         ]
       }
@@ -10285,8 +11479,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M5 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -10433,8 +11641,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M6.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -10472,8 +11694,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Tiny Relay.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.0",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+            "title": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.0",
         "name": "RS232 Bridge Firmware v1.0.0",
@@ -10511,8 +11761,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for WHY2025 Badge (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -10614,14 +11878,67 @@
     ]
   },
   {
+    "env": "wio-e5-mini_repeater_bridge_rs232",
+    "name": "Wio-E5 Mini RS232 Bridge",
+    "chipFamily": "STM32",
+    "description": "MeshCoreNG RS232 Bridge firmware for Wio-E5 Mini.",
+    "category": "bridge_rs232",
+    "type": "download",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "WioTrackerL1_repeater_bridge_rs232",
     "name": "Wio Tracker L1 RS232 Bridge",
     "chipFamily": "nRF52",
     "description": "MeshCoreNG RS232 Bridge firmware for Wio Tracker L1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -10659,8 +11976,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Wio Tracker L1 E-Ink.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -10809,14 +12140,53 @@
     ]
   },
   {
+    "env": "Xiao_C3_repeater_bridge_rs232",
+    "name": "Xiao ESP32-C3 RS232 Bridge",
+    "chipFamily": "ESP32-C3",
+    "description": "MeshCoreNG RS232 Bridge firmware for Xiao ESP32-C3.",
+    "category": "bridge_rs232",
+    "type": "esp32",
+    "version": "bridge-rs232-v1.0.2",
+    "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "Xiao_C3_repeater_bridge_tcp",
     "name": "Seeed XIAO ESP32-C3 Repeater (TCP Bridge)",
     "chipFamily": "ESP32-C3",
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -10963,8 +12333,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao ESP32-C6.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin",
+            "title": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.2-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -11002,8 +12386,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C6 (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
@@ -11111,8 +12509,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao nRF52.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip",
+            "title": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -11150,8 +12562,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao RP2040.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.1",
+    "version": "bridge-rs232-v1.0.2",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.1",
         "name": "RS232 Bridge Firmware v1.0.1",
@@ -11373,8 +12813,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.6",
+    "version": "bridge-tcp-v1.0.7",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.7",
+        "name": "TCP Bridge Firmware v1.0.7",
+        "published_at": "2026-05-28T10:43:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin",
+            "title": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.7-bff9ec9-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.6",
         "name": "TCP Bridge Firmware v1.0.6",
