@@ -13657,6 +13657,218 @@
     ]
   },
   {
+    "env": "WioTrackerL1_companion_radio_ble",
+    "name": "Wio Tracker L1 Companion Radio (BLE)",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG Companion Radio (BLE) firmware for Wio Tracker L1 / L1 Pro.",
+    "category": "companion_ble",
+    "type": "nrf52",
+    "version": "companion-v1.0.2",
+    "releases": [
+      {
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_ble-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_ble-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1_companion_radio_ble-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_ble-v1.0.1-b03dd0a.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_ble-v1.0.1-b03dd0a.zip",
+            "title": "WioTrackerL1_companion_radio_ble-v1.0.1-b03dd0a.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_ble-v1.0.0-80abfbb.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_ble-v1.0.0-80abfbb.zip",
+            "title": "WioTrackerL1_companion_radio_ble-v1.0.0-80abfbb.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "WioTrackerL1_companion_radio_usb",
+    "name": "Wio Tracker L1 Companion Radio (USB)",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG Companion Radio (USB) firmware for Wio Tracker L1 / L1 Pro.",
+    "category": "companion_usb",
+    "type": "nrf52",
+    "version": "companion-v1.0.2",
+    "releases": [
+      {
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_usb-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_usb-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1_companion_radio_usb-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_usb-v1.0.1-b03dd0a.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_usb-v1.0.1-b03dd0a.zip",
+            "title": "WioTrackerL1_companion_radio_usb-v1.0.1-b03dd0a.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_companion_radio_usb-v1.0.0-80abfbb.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_companion_radio_usb-v1.0.0-80abfbb.zip",
+            "title": "WioTrackerL1_companion_radio_usb-v1.0.0-80abfbb.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "WioTrackerL1_repeater",
+    "name": "Wio Tracker L1 Repeater",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG Repeater firmware for Wio Tracker L1 / L1 Pro.",
+    "category": "repeater",
+    "type": "nrf52",
+    "version": "repeater-v1.0.2",
+    "releases": [
+      {
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_repeater-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_repeater-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1_repeater-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_repeater-v1.0.1-b03dd0a.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_repeater-v1.0.1-b03dd0a.zip",
+            "title": "WioTrackerL1_repeater-v1.0.1-b03dd0a.zip"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.0",
+        "name": "Repeater Firmware v1.0.0",
+        "published_at": "2026-05-17T01:13:42Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_repeater-v1.0.0-80abfbb.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_repeater-v1.0.0-80abfbb.zip",
+            "title": "WioTrackerL1_repeater-v1.0.0-80abfbb.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "WioTrackerL1_room_server",
+    "name": "Wio Tracker L1 Room Server",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG Room Server firmware for Wio Tracker L1 / L1 Pro.",
+    "category": "room_server",
+    "type": "nrf52",
+    "version": "room-server-v1.0.2",
+    "releases": [
+      {
+        "version": "room-server-v1.0.2",
+        "name": "Room Server Firmware v1.0.2",
+        "published_at": "2026-05-28T10:37:47Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_room_server-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_room_server-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1_room_server-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
+      {
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_room_server-v1.0.1-b03dd0a.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_room_server-v1.0.1-b03dd0a.zip",
+            "title": "WioTrackerL1_room_server-v1.0.1-b03dd0a.zip"
+          }
+        ]
+      },
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_room_server-v1.0.0-80abfbb.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_room_server-v1.0.0-80abfbb.zip",
+            "title": "WioTrackerL1_room_server-v1.0.0-80abfbb.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
     "env": "WioTrackerL1_repeater_bridge_rs232",
     "name": "Wio Tracker L1 RS232 Bridge",
     "chipFamily": "nRF52",
@@ -13704,6 +13916,59 @@
             "type": "flash",
             "name": "WioTrackerL1_repeater_bridge_rs232-v1.0.0-ac3bd17.zip",
             "title": "WioTrackerL1_repeater_bridge_rs232-v1.0.0-ac3bd17.zip"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "env": "WioTrackerL1Eink_companion_radio_ble",
+    "name": "Wio Tracker L1 E-Ink Companion Radio (BLE)",
+    "chipFamily": "nRF52",
+    "description": "MeshCoreNG Companion Radio (BLE) firmware for Wio Tracker L1 E-Ink.",
+    "category": "companion_ble",
+    "type": "nrf52",
+    "version": "companion-v1.0.2",
+    "releases": [
+      {
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1Eink_companion_radio_ble-nl-v1.0.2-bff9ec9.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1Eink_companion_radio_ble-nl-v1.0.2-bff9ec9.zip",
+            "title": "WioTrackerL1Eink_companion_radio_ble-nl-v1.0.2-bff9ec9.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1Eink_companion_radio_ble-v1.0.1-b03dd0a.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1Eink_companion_radio_ble-v1.0.1-b03dd0a.zip",
+            "title": "WioTrackerL1Eink_companion_radio_ble-v1.0.1-b03dd0a.zip"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1Eink_companion_radio_ble-v1.0.0-80abfbb.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1Eink_companion_radio_ble-v1.0.0-80abfbb.zip",
+            "title": "WioTrackerL1Eink_companion_radio_ble-v1.0.0-80abfbb.zip"
           }
         ]
       }
