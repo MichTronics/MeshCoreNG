@@ -218,8 +218,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Ebyte EoRa-S3 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Ebyte_EoRa-S3_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -790,8 +804,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Generic_E22_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -1097,8 +1125,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Generic E22 SX1268 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Generic_E22_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -1418,8 +1460,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec CT62 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_ct62_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -1753,8 +1809,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E213 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_E213_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -2035,8 +2105,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec E290 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_E290_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -2317,8 +2401,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec T190 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_T190_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -2705,8 +2803,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Tracker V2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "heltec_tracker_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -3093,8 +3205,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_v2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -3534,8 +3660,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_v3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -3975,8 +4115,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "heltec_v4_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -4416,8 +4570,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec LoRa V4 TFT (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "heltec_v4_tft_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -4804,8 +4972,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Paper (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_Wireless_Paper_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -5192,8 +5374,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec Wireless Tracker (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_Wireless_Tracker_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -5633,8 +5829,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Heltec_WSL3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -6551,8 +6761,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_T3S3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -6939,8 +7163,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T3S3 SX1276 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_T3S3_sx1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -7380,8 +7618,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam 1W (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_TBeam_1W_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -7768,8 +8020,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Deck (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_TDeck_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -8103,8 +8369,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-ETH Elite SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_TETH_Elite_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -8279,8 +8559,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa C6 (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_Tlora_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -8653,8 +8947,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "LilyGo_TLora_V2_1_1_6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -9041,8 +9349,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for M5Stack Unit C6L (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "M5Stack_Unit_C6L_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -9482,8 +9804,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Meshadventurer_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -9870,8 +10206,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Mesh Adventurer SX1268 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Meshadventurer_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -10046,8 +10396,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Meshimi (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Meshimi_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshimi_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Meshimi_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -10439,8 +10803,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Nibble Screen Connect (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "nibble_screen_connect_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -10496,20 +10874,6 @@
         "name": "RS232 Bridge Firmware v1.0.2",
         "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
-        "prerelease": false,
         "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -10520,16 +10884,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
-            "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -10544,6 +10908,20 @@
             "type": "download",
             "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
             "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+            "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -10902,8 +11280,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3112_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "RAK_3112_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -11166,12 +11558,12 @@
         "name": "RS232 Bridge Firmware v1.0.0",
         "published_at": "2026-05-17T14:02:56Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
-            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
+            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex"
           }
         ]
       },
@@ -11180,12 +11572,12 @@
         "name": "RS232 Bridge Firmware v1.0.0",
         "published_at": "2026-05-17T14:02:56Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
+        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
-            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex"
+            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
           }
         ]
       }
@@ -11516,8 +11908,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge, Debug Logging) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Station_G2_logging_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -11745,8 +12151,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Station G2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Station_G2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Station_G2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Station_G2_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -12105,8 +12525,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam S3 Supreme SX1262 (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "T_Beam_S3_Supreme_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -12440,8 +12874,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1262 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Tbeam_SX1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -12775,8 +13223,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for LilyGo T-Beam SX1276 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Tbeam_SX1276_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -13015,8 +13477,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Tenstar C3 SX1262 (ESP32-C3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Tenstar_C3_sx1262_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -13104,8 +13580,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Tenstar C3 SX1268 (ESP32-C3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Tenstar_C3_sx1268_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -13352,8 +13842,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M2 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "ThinkNode_M2_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -13639,8 +14143,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for ThinkNode M5 (ESP32).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "ThinkNode_M5_Repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -13935,8 +14453,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for WHY2025 Badge (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "WHY2025_badge_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -14065,12 +14597,12 @@
         "name": "RS232 Bridge Firmware v1.0.2",
         "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
@@ -14079,12 +14611,12 @@
         "name": "RS232 Bridge Firmware v1.0.2",
         "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
-            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       }
@@ -14705,8 +15237,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C3 (ESP32-C3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Xiao_C3_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -14934,8 +15480,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-C6 (ESP32-C6).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Xiao_C6_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -15117,20 +15677,6 @@
         "name": "RS232 Bridge Firmware v1.0.2",
         "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
-        "prerelease": false,
         "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -15141,16 +15687,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -15169,16 +15715,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.0",
-        "name": "RS232 Bridge Firmware v1.0.0",
-        "published_at": "2026-05-17T14:02:56Z",
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -15193,6 +15739,20 @@
             "type": "download",
             "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
             "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:02:56Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
           }
         ]
       }
@@ -15417,8 +15977,22 @@
     "description": "MeshCoreNG Repeater (TCP Bridge) firmware for Seeed XIAO ESP32-S3 WIO (ESP32-S3).",
     "category": "bridge_tcp",
     "type": "esp32",
-    "version": "bridge-tcp-v1.0.7",
+    "version": "bridge-tcp-v1.0.8",
     "releases": [
+      {
+        "version": "bridge-tcp-v1.0.8",
+        "name": "TCP Bridge Firmware v1.0.8",
+        "published_at": "2026-06-02T17:10:48Z",
+        "prerelease": false,
+        "firmware": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin",
+            "title": "Xiao_S3_WIO_repeater_bridge_tcp-nl-v1.0.8-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-tcp-v1.0.7",
         "name": "TCP Bridge Firmware v1.0.7",
@@ -18515,12 +19089,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
+            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
+            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -18529,12 +19103,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
-            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2"
+            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       }
@@ -18554,20 +19128,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin",
-            "title": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -18578,16 +19138,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater-v1.0.1-b03dd0a.bin",
+        "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_repeater-v1.0.1-b03dd0a.bin",
-            "title": "PicoW_repeater-v1.0.1-b03dd0a.bin"
+            "name": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin",
+            "title": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -18602,6 +19162,20 @@
             "type": "download",
             "name": "PicoW_repeater-v1.0.1-b03dd0a.uf2",
             "title": "PicoW_repeater-v1.0.1-b03dd0a.uf2"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater-v1.0.1-b03dd0a.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater-v1.0.1-b03dd0a.bin",
+            "title": "PicoW_repeater-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -18677,12 +19251,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.bin",
+        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_room_server-v1.0.1-b03dd0a.bin",
-            "title": "PicoW_room_server-v1.0.1-b03dd0a.bin"
+            "name": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
+            "title": "PicoW_room_server-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -18691,12 +19265,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
+        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
-            "title": "PicoW_room_server-v1.0.1-b03dd0a.uf2"
+            "name": "PicoW_room_server-v1.0.1-b03dd0a.bin",
+            "title": "PicoW_room_server-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -19330,20 +19904,6 @@
         "name": "RS232 Bridge Firmware v1.0.1",
         "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
-            "title": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
-          }
-        ]
-      },
-      {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
-        "prerelease": false,
         "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
         "files": [
           {
@@ -19354,16 +19914,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.0",
-        "name": "RS232 Bridge Firmware v1.0.0",
-        "published_at": "2026-05-17T14:02:56Z",
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
-            "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+            "name": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+            "title": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -19378,6 +19938,20 @@
             "type": "download",
             "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
             "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:02:56Z",
+        "prerelease": false,
+        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+            "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
           }
         ]
       }
@@ -19425,12 +19999,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
+        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
-            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.bin"
+            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
+            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -19439,12 +20013,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
+        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
-            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2"
+            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
+            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -19704,20 +20278,6 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-            "title": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "companion-v1.0.2",
-        "name": "Companion Firmware v1.0.2",
-        "published_at": "2026-05-28T10:32:35Z",
-        "prerelease": false,
         "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
@@ -19728,16 +20288,16 @@
         ]
       },
       {
-        "version": "companion-v1.0.1",
-        "name": "Companion Firmware v1.0.1",
-        "published_at": "2026-05-23T23:23:22Z",
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin",
+        "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin",
-            "title": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin"
+            "name": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+            "title": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -19756,16 +20316,16 @@
         ]
       },
       {
-        "version": "companion-v1.0.0",
-        "name": "Companion Firmware v1.0.0",
-        "published_at": "2026-05-17T01:15:08Z",
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin",
+        "firmware": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin",
-            "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin"
+            "name": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin",
+            "title": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -19780,6 +20340,20 @@
             "type": "download",
             "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex",
             "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin",
+            "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin"
           }
         ]
       }
@@ -19827,12 +20401,12 @@
         "name": "Repeater Firmware v1.0.0",
         "published_at": "2026-05-17T01:13:42Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
+        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
-            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.bin"
+            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
+            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.hex"
           }
         ]
       },
@@ -19841,12 +20415,12 @@
         "name": "Repeater Firmware v1.0.0",
         "published_at": "2026-05-17T01:13:42Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
+        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
-            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.hex"
+            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
+            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.bin"
           }
         ]
       }
@@ -21138,12 +21712,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
+            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
+            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
@@ -21152,12 +21726,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
-            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
+            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -21551,20 +22125,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin",
-            "title": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -21575,16 +22135,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin",
+        "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin",
-            "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin"
+            "name": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin",
+            "title": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -21599,6 +22159,20 @@
             "type": "download",
             "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2",
             "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin",
+            "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -21674,20 +22248,6 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin",
-            "title": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin"
-          }
-        ]
-      },
-      {
-        "version": "room-server-v1.0.1",
-        "name": "Room Server Firmware v1.0.1",
-        "published_at": "2026-05-23T23:21:32Z",
-        "prerelease": false,
         "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
@@ -21698,16 +22258,16 @@
         ]
       },
       {
-        "version": "room-server-v1.0.0",
-        "name": "Room Server Firmware v1.0.0",
-        "published_at": "2026-05-17T01:16:55Z",
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin",
+        "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin",
-            "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin"
+            "name": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin",
+            "title": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -21722,6 +22282,20 @@
             "type": "download",
             "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2",
             "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2"
+          }
+        ]
+      },
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin",
+            "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin"
           }
         ]
       }
@@ -23582,20 +24156,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin",
-            "title": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -23606,16 +24166,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin",
+        "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin",
-            "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin"
+            "name": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin",
+            "title": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -23630,6 +24190,20 @@
             "type": "download",
             "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2",
             "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin",
+            "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -23677,20 +24251,6 @@
         "name": "RS232 Bridge Firmware v1.0.2",
         "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-        "files": [
-          {
-            "type": "download",
-            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
-            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
-          }
-        ]
-      },
-      {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
-        "prerelease": false,
         "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
@@ -23701,16 +24261,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
-            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -23725,6 +24285,20 @@
             "type": "download",
             "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
             "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
+        "prerelease": false,
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -23772,12 +24346,12 @@
         "name": "Room Server Firmware v1.0.2",
         "published_at": "2026-05-28T10:37:47Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
-            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin"
+            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
+            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -23786,12 +24360,12 @@
         "name": "Room Server Firmware v1.0.2",
         "published_at": "2026-05-28T10:37:47Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
-            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2"
+            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
+            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -23828,12 +24402,12 @@
         "name": "Room Server Firmware v1.0.0",
         "published_at": "2026-05-17T01:16:55Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
+        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
-            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin"
+            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
+            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2"
           }
         ]
       },
@@ -23842,12 +24416,12 @@
         "name": "Room Server Firmware v1.0.0",
         "published_at": "2026-05-17T01:16:55Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
+        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
-            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2"
+            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
+            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin"
           }
         ]
       }
@@ -23923,12 +24497,12 @@
         "name": "Companion Firmware v1.0.0",
         "published_at": "2026-05-17T01:15:08Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
+        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
-            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin"
+            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
+            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex"
           }
         ]
       },
@@ -23937,12 +24511,12 @@
         "name": "Companion Firmware v1.0.0",
         "published_at": "2026-05-17T01:15:08Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
+        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
-            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex"
+            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
+            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin"
           }
         ]
       }
@@ -23990,12 +24564,12 @@
         "name": "Repeater Firmware v1.0.1",
         "published_at": "2026-05-23T23:22:35Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
+        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
-            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin"
+            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
+            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex"
           }
         ]
       },
@@ -24004,12 +24578,12 @@
         "name": "Repeater Firmware v1.0.1",
         "published_at": "2026-05-23T23:22:35Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
+        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
-            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex"
+            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
+            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -24085,12 +24659,12 @@
         "name": "Companion Firmware v1.0.1",
         "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
+        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
-            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin"
+            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
+            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex"
           }
         ]
       },
@@ -24099,12 +24673,12 @@
         "name": "Companion Firmware v1.0.1",
         "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
+        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
-            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex"
+            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
+            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -24152,12 +24726,12 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
-            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin"
+            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
+            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
@@ -24166,12 +24740,12 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
-            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex"
+            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
+            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
