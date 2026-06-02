@@ -165,8 +165,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ebyte EoRa-S3.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Ebyte_EoRa-S3_Repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -408,8 +422,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 30S Mesh Kit.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "GAT562_30S_Mesh_Kit_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -461,8 +489,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh EVB Pro.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "GAT562_Mesh_EVB_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -514,8 +556,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh Tracker Pro.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "GAT562_Mesh_Tracker_Pro_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -567,8 +623,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for GAT562 Mesh Watch13.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "GAT562_Mesh_Watch13_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -2295,8 +2365,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Mesh Solar.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Heltec_mesh_solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -2750,8 +2834,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Wireless Tracker v2.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "heltec_tracker_v2_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -3607,8 +3705,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec LoRa V3 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Heltec_v3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -4062,8 +4174,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 OLED.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "heltec_v4_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -4517,8 +4643,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec LoRa32 v4 TFT.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "heltec_v4_tft_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -5776,8 +5916,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for Heltec WSL3 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Heltec_WSL3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6019,8 +6173,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Handheld nRF E22 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_handheld_nrf_e22_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6072,8 +6240,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 22dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_nano_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6125,8 +6307,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_nano_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6178,8 +6374,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Nano nRF 33dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_nano_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6231,8 +6441,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 22dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_stick_nrf_22dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6284,8 +6508,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 30dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_stick_nrf_30dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6337,8 +6575,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Ikoka Stick nRF 33dBm.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ikoka_stick_nrf_33dbm_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6390,8 +6642,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for KeepteenLT1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "KeepteenLT1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6443,8 +6709,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Echo Lite.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "LilyGo_T-Echo-Lite_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -6496,8 +6776,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Echo.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "LilyGo_T-Echo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -7565,8 +7859,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Beam 1W.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "LilyGo_TBeam_1W_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -7967,8 +8275,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-Deck.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "LilyGo_TDeck_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -8316,8 +8638,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for LilyGo T-ETH Elite.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "LilyGo_TETH_Elite_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -8894,8 +9230,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for LilyGo T-LoRa V2.1.1.6 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "LilyGo_TLora_V2_1_1_6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -9296,8 +9646,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for M5Stack Unit C6L.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "M5Stack_Unit_C6L_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -9539,8 +9903,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec Mesh Pocket.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Mesh_pocket_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -10533,8 +10911,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Meshtiny.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Meshtiny_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Meshtiny_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Meshtiny_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -10586,8 +10978,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Minewsemi ME25LS01.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Minewsemi_me25ls01_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -10639,8 +11045,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Nano G2 Ultra.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Nano_G2_Ultra_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -10778,8 +11198,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Nibble Screen Connect.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "nibble_screen_connect_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -10867,19 +11301,33 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Raspberry Pi Pico W.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
       {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
-            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2"
           }
         ]
       },
@@ -10898,16 +11346,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+        "firmware": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
-            "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
+            "name": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+            "title": "PicoW_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -10922,6 +11370,20 @@
             "type": "download",
             "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
             "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+            "title": "PicoW_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -10962,8 +11424,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Muziworks R1 Neo.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "R1Neo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "R1Neo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "R1Neo_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -11227,8 +11703,22 @@
     "description": "MeshCoreNG Repeater (RS232 Bridge) firmware for RAK3112 (ESP32).",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_3112_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3112_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "RAK_3112_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -11470,8 +11960,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK3401.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_3401_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_3401_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "RAK_3401_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -11523,8 +12027,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK3x72.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+            "title": "RAK_3x72_repeater_bridge_rs232-nl-v1.0.3-3724575.hex"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -11558,12 +12090,12 @@
         "name": "RS232 Bridge Firmware v1.0.0",
         "published_at": "2026-05-17T14:02:56Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
+        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
-            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex"
+            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
           }
         ]
       },
@@ -11572,12 +12104,12 @@
         "name": "RS232 Bridge Firmware v1.0.0",
         "published_at": "2026-05-17T14:02:56Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
+        "firmware": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
-            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+            "name": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex",
+            "title": "RAK_3x72_repeater_bridge_rs232-v1.0.0-ac3bd17.hex"
           }
         ]
       }
@@ -11590,8 +12122,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK WisMesh Tag.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "RAK_WisMesh_Tag_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -11643,8 +12189,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for SenseCap Solar.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "SenseCap_Solar_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -12341,8 +12901,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for T1000-E.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "t1000e_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "t1000e_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "t1000e_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -13619,8 +14193,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ThinkNode_M1_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -13906,8 +14494,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M3.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ThinkNode_M3_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -14333,8 +14935,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for ThinkNode M6.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "ThinkNode_M6_Repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -14386,8 +15002,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Tiny Relay.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+            "title": "Tiny_Relay_repeater_bridge_rs232-nl-v1.0.3-3724575.hex"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -14590,19 +15234,33 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Wio-E5 Mini.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
       {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
-            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.hex",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.3-3724575.hex"
           }
         ]
       },
@@ -14619,6 +15277,20 @@
             "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.bin"
           }
         ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
+        "prerelease": false,
+        "firmware": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex",
+            "title": "wio-e5-mini_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.hex"
+          }
+        ]
       }
     ]
   },
@@ -14629,8 +15301,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Wio WM1110.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "wio_wm1110_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "wio_wm1110_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+            "title": "wio_wm1110_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -14894,8 +15580,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Wio Tracker L1.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "WioTrackerL1_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -15000,8 +15700,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Wio Tracker L1 E-Ink.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "WioTrackerL1Eink_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -15212,8 +15926,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao ESP32-C3.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Xiao_C3_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -15427,8 +16155,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao ESP32-C6.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Xiao_C6_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -15617,8 +16359,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao nRF52.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Xiao_nrf52_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -15670,19 +16426,33 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Xiao RP2040.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
       {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2"
           }
         ]
       },
@@ -15701,16 +16471,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
+            "name": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -15729,16 +16499,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.0",
-        "name": "RS232 Bridge Firmware v1.0.0",
-        "published_at": "2026-05-17T14:02:56Z",
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
-            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
+            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -15753,6 +16523,20 @@
             "type": "download",
             "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
             "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:02:56Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+            "title": "Xiao_rp2040_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
           }
         ]
       }
@@ -16750,8 +17534,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Generic E22 SX1262.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Generic_E22_sx1262_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -16803,8 +17601,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Generic E22 SX1268.",
     "category": "bridge_rs232",
     "type": "esp32",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Generic_E22_sx1268_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Generic_E22_sx1268_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin",
+            "title": "Generic_E22_sx1268_repeater_bridge_rs232-nl-v1.0.3-3724575-merged.bin"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -17227,8 +18039,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec T096.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_t096_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_t096_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Heltec_t096_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -17492,8 +18318,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec T114.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_t114_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_t114_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Heltec_t114_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -17757,8 +18597,22 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Heltec T114 Without Display.",
     "category": "bridge_rs232",
     "type": "nrf52",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "Heltec_t114_without_display_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+        "files": [
+          {
+            "type": "flash",
+            "name": "Heltec_t114_without_display_repeater_bridge_rs232-nl-v1.0.3-3724575.zip",
+            "title": "Heltec_t114_without_display_repeater_bridge_rs232-nl-v1.0.3-3724575.zip"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -19089,12 +19943,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
-            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2"
+            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -19103,12 +19957,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
+            "name": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2",
+            "title": "PicoW_companion_radio_usb-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       }
@@ -19128,20 +19982,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2",
-        "files": [
-          {
-            "type": "download",
-            "name": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2",
-            "title": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
@@ -19152,16 +19992,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "PicoW_repeater-v1.0.1-b03dd0a.uf2",
+        "firmware": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_repeater-v1.0.1-b03dd0a.uf2",
-            "title": "PicoW_repeater-v1.0.1-b03dd0a.uf2"
+            "name": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2",
+            "title": "PicoW_repeater-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -19176,6 +20016,20 @@
             "type": "download",
             "name": "PicoW_repeater-v1.0.1-b03dd0a.bin",
             "title": "PicoW_repeater-v1.0.1-b03dd0a.bin"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "PicoW_repeater-v1.0.1-b03dd0a.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "PicoW_repeater-v1.0.1-b03dd0a.uf2",
+            "title": "PicoW_repeater-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -19251,12 +20105,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
+        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
-            "title": "PicoW_room_server-v1.0.1-b03dd0a.uf2"
+            "name": "PicoW_room_server-v1.0.1-b03dd0a.bin",
+            "title": "PicoW_room_server-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -19265,12 +20119,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.bin",
+        "firmware": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "PicoW_room_server-v1.0.1-b03dd0a.bin",
-            "title": "PicoW_room_server-v1.0.1-b03dd0a.bin"
+            "name": "PicoW_room_server-v1.0.1-b03dd0a.uf2",
+            "title": "PicoW_room_server-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -19869,8 +20723,36 @@
     "description": "MeshCoreNG RS232 Bridge firmware for RAK 11310.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+            "title": "RAK_11310_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2"
+          }
+        ]
+      },
       {
         "version": "bridge-rs232-v1.0.2",
         "name": "RS232 Bridge Firmware v1.0.2",
@@ -19904,20 +20786,6 @@
         "name": "RS232 Bridge Firmware v1.0.1",
         "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
-        "files": [
-          {
-            "type": "download",
-            "name": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
-            "title": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
-          }
-        ]
-      },
-      {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
-        "prerelease": false,
         "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
         "files": [
           {
@@ -19928,16 +20796,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.0",
-        "name": "RS232 Bridge Firmware v1.0.0",
-        "published_at": "2026-05-17T14:02:56Z",
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
         "prerelease": false,
-        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
-            "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
+            "name": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+            "title": "RAK_11310_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -19952,6 +20820,20 @@
             "type": "download",
             "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin",
             "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.0",
+        "name": "RS232 Bridge Firmware v1.0.0",
+        "published_at": "2026-05-17T14:02:56Z",
+        "prerelease": false,
+        "firmware": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2",
+            "title": "RAK_11310_repeater_bridge_rs232-v1.0.0-ac3bd17.uf2"
           }
         ]
       }
@@ -19999,12 +20881,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
+        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
-            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2"
+            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
+            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -20013,12 +20895,12 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
+        "firmware": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.bin",
-            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.bin"
+            "name": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2",
+            "title": "RAK_11310_room_server-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -20278,20 +21160,6 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
-        "files": [
-          {
-            "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
-            "title": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
-          }
-        ]
-      },
-      {
-        "version": "companion-v1.0.2",
-        "name": "Companion Firmware v1.0.2",
-        "published_at": "2026-05-28T10:32:35Z",
-        "prerelease": false,
         "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
@@ -20302,16 +21170,16 @@
         ]
       },
       {
-        "version": "companion-v1.0.1",
-        "name": "Companion Firmware v1.0.1",
-        "published_at": "2026-05-23T23:23:22Z",
+        "version": "companion-v1.0.2",
+        "name": "Companion Firmware v1.0.2",
+        "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex",
+        "firmware": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex",
-            "title": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex"
+            "name": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
+            "title": "RAK_3x72_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
@@ -20330,16 +21198,16 @@
         ]
       },
       {
-        "version": "companion-v1.0.0",
-        "name": "Companion Firmware v1.0.0",
-        "published_at": "2026-05-17T01:15:08Z",
+        "version": "companion-v1.0.1",
+        "name": "Companion Firmware v1.0.1",
+        "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex",
+        "firmware": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex",
-            "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex"
+            "name": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex",
+            "title": "RAK_3x72_companion_radio_usb-v1.0.1-b03dd0a.hex"
           }
         ]
       },
@@ -20354,6 +21222,20 @@
             "type": "download",
             "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin",
             "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.bin"
+          }
+        ]
+      },
+      {
+        "version": "companion-v1.0.0",
+        "name": "Companion Firmware v1.0.0",
+        "published_at": "2026-05-17T01:15:08Z",
+        "prerelease": false,
+        "firmware": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex",
+        "files": [
+          {
+            "type": "download",
+            "name": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex",
+            "title": "RAK_3x72_companion_radio_usb-v1.0.0-80abfbb.hex"
           }
         ]
       }
@@ -20401,12 +21283,12 @@
         "name": "Repeater Firmware v1.0.0",
         "published_at": "2026-05-17T01:13:42Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
+        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
-            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.hex"
+            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
+            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.bin"
           }
         ]
       },
@@ -20415,12 +21297,12 @@
         "name": "Repeater Firmware v1.0.0",
         "published_at": "2026-05-17T01:13:42Z",
         "prerelease": false,
-        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
+        "firmware": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
         "files": [
           {
             "type": "download",
-            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.bin",
-            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.bin"
+            "name": "RAK_3x72_repeater-v1.0.0-80abfbb.hex",
+            "title": "RAK_3x72_repeater-v1.0.0-80abfbb.hex"
           }
         ]
       }
@@ -21712,12 +22594,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
-            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
+            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -21726,12 +22608,12 @@
         "name": "Companion Firmware v1.0.2",
         "published_at": "2026-05-28T10:32:35Z",
         "prerelease": false,
-        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin",
-            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.bin"
+            "name": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex",
+            "title": "Tiny_Relay_companion_radio_usb-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
@@ -22125,20 +23007,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2",
-        "files": [
-          {
-            "type": "download",
-            "name": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2",
-            "title": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
@@ -22149,16 +23017,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2",
+        "firmware": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2",
-            "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2"
+            "name": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2",
+            "title": "Xiao_rp2040_repeater-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -22173,6 +23041,20 @@
             "type": "download",
             "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin",
             "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.bin"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2",
+            "title": "Xiao_rp2040_repeater-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -22248,20 +23130,6 @@
         "name": "Room Server Firmware v1.0.1",
         "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2",
-        "files": [
-          {
-            "type": "download",
-            "name": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2",
-            "title": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2"
-          }
-        ]
-      },
-      {
-        "version": "room-server-v1.0.1",
-        "name": "Room Server Firmware v1.0.1",
-        "published_at": "2026-05-23T23:21:32Z",
-        "prerelease": false,
         "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.bin",
         "files": [
           {
@@ -22272,16 +23140,16 @@
         ]
       },
       {
-        "version": "room-server-v1.0.0",
-        "name": "Room Server Firmware v1.0.0",
-        "published_at": "2026-05-17T01:16:55Z",
+        "version": "room-server-v1.0.1",
+        "name": "Room Server Firmware v1.0.1",
+        "published_at": "2026-05-23T23:21:32Z",
         "prerelease": false,
-        "firmware": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2",
+        "firmware": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2",
         "files": [
           {
             "type": "download",
-            "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2",
-            "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2"
+            "name": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2",
+            "title": "Xiao_rp2040_room_server-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -22296,6 +23164,20 @@
             "type": "download",
             "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin",
             "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.bin"
+          }
+        ]
+      },
+      {
+        "version": "room-server-v1.0.0",
+        "name": "Room Server Firmware v1.0.0",
+        "published_at": "2026-05-17T01:16:55Z",
+        "prerelease": false,
+        "firmware": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2",
+            "title": "Xiao_rp2040_room_server-v1.0.0-80abfbb.uf2"
           }
         ]
       }
@@ -24156,20 +25038,6 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2",
-        "files": [
-          {
-            "type": "download",
-            "name": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2",
-            "title": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2"
-          }
-        ]
-      },
-      {
-        "version": "repeater-v1.0.2",
-        "name": "Repeater Firmware v1.0.2",
-        "published_at": "2026-05-28T10:35:30Z",
-        "prerelease": false,
         "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
@@ -24180,16 +25048,16 @@
         ]
       },
       {
-        "version": "repeater-v1.0.1",
-        "name": "Repeater Firmware v1.0.1",
-        "published_at": "2026-05-23T23:22:35Z",
+        "version": "repeater-v1.0.2",
+        "name": "Repeater Firmware v1.0.2",
+        "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2",
+        "firmware": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2",
-            "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2"
+            "name": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2",
+            "title": "waveshare_rp2040_lora_repeater-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -24204,6 +25072,20 @@
             "type": "download",
             "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin",
             "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.bin"
+          }
+        ]
+      },
+      {
+        "version": "repeater-v1.0.1",
+        "name": "Repeater Firmware v1.0.1",
+        "published_at": "2026-05-23T23:22:35Z",
+        "prerelease": false,
+        "firmware": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2",
+            "title": "waveshare_rp2040_lora_repeater-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -24244,19 +25126,33 @@
     "description": "MeshCoreNG RS232 Bridge firmware for Waveshare Rp2040 Lora.",
     "category": "bridge_rs232",
     "type": "download",
-    "version": "bridge-rs232-v1.0.2",
+    "version": "bridge-rs232-v1.0.3",
     "releases": [
       {
-        "version": "bridge-rs232-v1.0.2",
-        "name": "RS232 Bridge Firmware v1.0.2",
-        "published_at": "2026-05-28T10:46:38Z",
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
-            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.bin",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.3",
+        "name": "RS232 Bridge Firmware v1.0.3",
+        "published_at": "2026-06-02T17:12:17Z",
+        "prerelease": false,
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.3-3724575.uf2"
           }
         ]
       },
@@ -24275,16 +25171,16 @@
         ]
       },
       {
-        "version": "bridge-rs232-v1.0.1",
-        "name": "RS232 Bridge Firmware v1.0.1",
-        "published_at": "2026-05-23T23:27:51Z",
+        "version": "bridge-rs232-v1.0.2",
+        "name": "RS232 Bridge Firmware v1.0.2",
+        "published_at": "2026-05-28T10:46:38Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
-            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -24299,6 +25195,20 @@
             "type": "download",
             "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin",
             "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.bin"
+          }
+        ]
+      },
+      {
+        "version": "bridge-rs232-v1.0.1",
+        "name": "RS232 Bridge Firmware v1.0.1",
+        "published_at": "2026-05-23T23:27:51Z",
+        "prerelease": false,
+        "firmware": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+        "files": [
+          {
+            "type": "download",
+            "name": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2",
+            "title": "waveshare_rp2040_lora_repeater_bridge_rs232-v1.0.1-b03dd0a.uf2"
           }
         ]
       },
@@ -24346,12 +25256,12 @@
         "name": "Room Server Firmware v1.0.2",
         "published_at": "2026-05-28T10:37:47Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
+        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
-            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2"
+            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
+            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -24360,12 +25270,12 @@
         "name": "Room Server Firmware v1.0.2",
         "published_at": "2026-05-28T10:37:47Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin",
-            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.bin"
+            "name": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2",
+            "title": "waveshare_rp2040_lora_room_server-nl-v1.0.2-bff9ec9.uf2"
           }
         ]
       },
@@ -24402,12 +25312,12 @@
         "name": "Room Server Firmware v1.0.0",
         "published_at": "2026-05-17T01:16:55Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
+        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
-            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2"
+            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
+            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin"
           }
         ]
       },
@@ -24416,12 +25326,12 @@
         "name": "Room Server Firmware v1.0.0",
         "published_at": "2026-05-17T01:16:55Z",
         "prerelease": false,
-        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
+        "firmware": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
         "files": [
           {
             "type": "download",
-            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin",
-            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.bin"
+            "name": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2",
+            "title": "waveshare_rp2040_lora_room_server-v1.0.0-80abfbb.uf2"
           }
         ]
       }
@@ -24497,12 +25407,12 @@
         "name": "Companion Firmware v1.0.0",
         "published_at": "2026-05-17T01:15:08Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
+        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
-            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex"
+            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
+            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin"
           }
         ]
       },
@@ -24511,12 +25421,12 @@
         "name": "Companion Firmware v1.0.0",
         "published_at": "2026-05-17T01:15:08Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
+        "firmware": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin",
-            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.bin"
+            "name": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex",
+            "title": "wio-e5-mini_companion_radio_usb-v1.0.0-80abfbb.hex"
           }
         ]
       }
@@ -24564,12 +25474,12 @@
         "name": "Repeater Firmware v1.0.1",
         "published_at": "2026-05-23T23:22:35Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
+        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
-            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex"
+            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
+            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -24578,12 +25488,12 @@
         "name": "Repeater Firmware v1.0.1",
         "published_at": "2026-05-23T23:22:35Z",
         "prerelease": false,
-        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
+        "firmware": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin",
-            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.bin"
+            "name": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex",
+            "title": "wio-e5-mini_repeater-v1.0.1-b03dd0a.hex"
           }
         ]
       },
@@ -24659,12 +25569,12 @@
         "name": "Companion Firmware v1.0.1",
         "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
+        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
-            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex"
+            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
+            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin"
           }
         ]
       },
@@ -24673,12 +25583,12 @@
         "name": "Companion Firmware v1.0.1",
         "published_at": "2026-05-23T23:23:22Z",
         "prerelease": false,
-        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
+        "firmware": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin",
-            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.bin"
+            "name": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex",
+            "title": "wio-e5_companion_radio_usb-v1.0.1-b03dd0a.hex"
           }
         ]
       },
@@ -24726,12 +25636,12 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
+        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
-            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex"
+            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
+            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin"
           }
         ]
       },
@@ -24740,12 +25650,12 @@
         "name": "Repeater Firmware v1.0.2",
         "published_at": "2026-05-28T10:35:30Z",
         "prerelease": false,
-        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
+        "firmware": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
         "files": [
           {
             "type": "download",
-            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin",
-            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.bin"
+            "name": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex",
+            "title": "wio-e5_repeater-nl-v1.0.2-bff9ec9.hex"
           }
         ]
       },
