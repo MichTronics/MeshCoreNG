@@ -4,8 +4,8 @@ import { Dfu } from './dfu.js';
 const TYPES = [
   { id: 'repeater', name: 'Repeater', desc: 'Standard mesh repeater' },
   { id: 'bridge_tcp', name: 'TCP Bridge', desc: 'Internet bridge via WiFi' },
-  { id: 'bridge_ble', name: 'ble bridge', desc: 'Local bridge via Bluetooth' },
-  { id: 'bridge_tcp_ble', name: 'tcp+ble bridge', desc: 'WiFi TCP and Bluetooth bridge' },
+  { id: 'bridge_ble', name: 'BLE Bridge', desc: 'Local bridge via Bluetooth' },
+  { id: 'bridge_tcp_ble', name: 'TCP+BLE Bridge', desc: 'WiFi TCP and Bluetooth bridge' },
   { id: 'bridge_rs232', name: 'RS232 Bridge', desc: 'Internet bridge via USB cable' },
   { id: 'bridge_espnow', name: 'ESPNow Bridge', desc: 'Local bridge via ESPNow' },
   { id: 'companion_ble', name: 'Companion (BLE)', desc: 'Companion radio, Bluetooth' },
