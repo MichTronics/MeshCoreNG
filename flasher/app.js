@@ -4,6 +4,8 @@ import { Dfu } from './dfu.js';
 const TYPES = [
   { id: 'repeater', name: 'Repeater', desc: 'Standard mesh repeater' },
   { id: 'bridge_tcp', name: 'TCP Bridge', desc: 'Internet bridge via WiFi' },
+  { id: 'bridge_ble', name: 'ble bridge', desc: 'Local bridge via Bluetooth' },
+  { id: 'bridge_tcp_ble', name: 'tcp+ble bridge', desc: 'WiFi TCP and Bluetooth bridge' },
   { id: 'bridge_rs232', name: 'RS232 Bridge', desc: 'Internet bridge via USB cable' },
   { id: 'bridge_espnow', name: 'ESPNow Bridge', desc: 'Local bridge via ESPNow' },
   { id: 'companion_ble', name: 'Companion (BLE)', desc: 'Companion radio, Bluetooth' },
@@ -21,6 +23,8 @@ const ESP_WIPE_ADDRESS = 0x0;
 
 function getCategory(env) {
   const n = env.replace(/_+$/, '').toLowerCase();
+  if (n.endsWith('_repeater_bridge_tcp_ble')) return 'bridge_tcp_ble';
+  if (n.endsWith('_repeater_bridge_ble')) return 'bridge_ble';
   if (n.endsWith('_repeater_bridge_tcp')) return 'bridge_tcp';
   if (n.endsWith('_repeater_bridge_rs232')) return 'bridge_rs232';
   if (n.endsWith('_repeater_bridge_espnow')) return 'bridge_espnow';
