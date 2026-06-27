@@ -191,6 +191,7 @@ class MyMesh : public mesh::Mesh, public CommonCLICallbacks
   RegionEntry* load_stack[8];
   RegionEntry* recv_pkt_region;
   DenseMeshStats dense_stats;
+  uint32_t _flood_hop_limit_drops = 0;
   PowerSavingStats power_stats;
   SpamStats spam_stats;
   PathBlockEntry path_blocks[MAX_PATH_BLOCKS];
@@ -255,6 +256,7 @@ class MyMesh : public mesh::Mesh, public CommonCLICallbacks
   void recordDenseRxAirtime(uint32_t airtime_ms);
   void recordDenseTxAirtime(uint32_t airtime_ms);
   uint16_t getDenseNeighborCount() const;
+  uint32_t getFloodHopLimitDrops() const { return _flood_hop_limit_drops; }
   void getDenseStats(dense_mesh_stats_t* stats);
   void clearSpamStatsLocked();
   void recordSpamDrop(const char* reason, uint8_t score, uint8_t entropy);
@@ -295,6 +297,11 @@ protected:
   void logRx(mesh::Packet* pkt, int len, float score) override;
   void logTx(mesh::Packet* pkt, int len) override;
   void logTxFail(mesh::Packet* pkt, int len) override;
+  void onFloodHopLimitDrop(const mesh::Packet* packet) override {
+    _flood_hop_limit_drops++;
+    if (packet && packet->getPayloadType() == PAYLOAD_TYPE_ADVERT) dense_stats.n_drop_flood_adverts++;
+    recordDenseSuppressedTx();
+  }
   void onRxAirTime(uint32_t air_time_ms) override;
   void onTxAirTime(uint32_t air_time_ms) override;
   void onPacketSeen(mesh::Packet* packet, bool duplicate) override;
@@ -512,12 +519,14 @@ public:
                               getDutyCycleLimitCentiPct(), getTxBudgetUsedCentiPct(), getTotalAirTime(),
                               (int16_t)_radio->getNoiseFloor(), (int16_t)radio_driver.getLastRSSI(),
                               (int16_t)(radio_driver.getLastSNR() * 4), getDenseNeighborCount());
+    tcp_bridge.setFloodHopLimitDrops(getFloodHopLimitDrops());
     tcp_bridge.getStatusStr(reply);
 #else
     bridge.setRfDutyStats(used_tx_budget, max_tx_budget, getDutyCycleWindowMs(),
                           getDutyCycleLimitCentiPct(), getTxBudgetUsedCentiPct(), getTotalAirTime(),
                           (int16_t)_radio->getNoiseFloor(), (int16_t)radio_driver.getLastRSSI(),
                           (int16_t)(radio_driver.getLastSNR() * 4), getDenseNeighborCount());
+    bridge.setFloodHopLimitDrops(getFloodHopLimitDrops());
     bridge.getStatusStr(reply);
 #endif
   }

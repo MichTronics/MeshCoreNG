@@ -52,6 +52,7 @@ public:
   void setNodeId(const uint8_t *node_id, size_t len);
   void setRfDutyStats(uint32_t used_ms, uint32_t max_ms, uint32_t window_ms, uint16_t limit_centi_pct, uint16_t used_centi_pct, uint32_t total_tx_ms,
                       int16_t noise_floor = 0, int16_t last_rssi = 0, int16_t last_snr_quarter_db = 0, uint16_t neighbor_count = 0);
+  void setFloodHopLimitDrops(uint32_t drops) { _flood_hop_limit_drops = drops; }
   void resetGuardStats();
   void setCommandHandler(TCPBridgeCommandHandler *handler) { _command_handler = handler; }
 
@@ -124,6 +125,7 @@ private:
   int16_t     _radio_last_rssi = 0;
   int16_t     _radio_last_snr_quarter_db = 0;
   uint16_t    _neighbor_count = 0;
+  uint32_t    _flood_hop_limit_drops = 0;
   uint32_t    _rf_inject_minute_start_ms = 0;
   uint16_t    _rf_inject_minute_count = 0;
   uint32_t    _rf_inject_hour_start_ms = 0;

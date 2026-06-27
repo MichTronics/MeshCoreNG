@@ -413,7 +413,7 @@ void TCPBridge::sendNodeInfo() {
 }
 
 void TCPBridge::sendHeartbeat() {
-  uint8_t payload[45];
+  uint8_t payload[52];
   payload[0] = 'M';
   payload[1] = 'C';
   payload[2] = 'N';
@@ -460,6 +460,13 @@ void TCPBridge::sendHeartbeat() {
   payload[42] = 1;
   payload[43] = (_neighbor_count >> 8) & 0xFF;
   payload[44] = _neighbor_count & 0xFF;
+  payload[45] = 'H';
+  payload[46] = 'L';
+  payload[47] = 1;
+  payload[48] = (_flood_hop_limit_drops >> 24) & 0xFF;
+  payload[49] = (_flood_hop_limit_drops >> 16) & 0xFF;
+  payload[50] = (_flood_hop_limit_drops >> 8) & 0xFF;
+  payload[51] = _flood_hop_limit_drops & 0xFF;
 
   if (sendPayloadFrame(payload, sizeof(payload))) {
     BRIDGE_DEBUG_PRINTLN("TCP bridge: heartbeat\n");

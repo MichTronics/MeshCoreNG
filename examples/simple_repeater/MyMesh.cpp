@@ -2534,6 +2534,7 @@ void MyMesh::loop() {
                               getDutyCycleLimitCentiPct(), getTxBudgetUsedCentiPct(), getTotalAirTime(),
                               (int16_t)_radio->getNoiseFloor(), (int16_t)radio_driver.getLastRSSI(),
                               (int16_t)(radio_driver.getLastSNR() * 4), getDenseNeighborCount());
+    tcp_bridge.setFloodHopLimitDrops(getFloodHopLimitDrops());
   }
   tcp_bridge.loop();
   ble_bridge.loop();
@@ -2547,6 +2548,7 @@ void MyMesh::loop() {
                           getDutyCycleLimitCentiPct(), getTxBudgetUsedCentiPct(), getTotalAirTime(),
                           (int16_t)_radio->getNoiseFloor(), (int16_t)radio_driver.getLastRSSI(),
                           (int16_t)(radio_driver.getLastSNR() * 4), getDenseNeighborCount());
+    bridge.setFloodHopLimitDrops(getFloodHopLimitDrops());
   }
   bridge.loop();
   if (bridge.pollJustConnected()) sendSelfAdvertisement(500, true);

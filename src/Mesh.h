@@ -77,6 +77,8 @@ protected:
 
   virtual void onPacketSeen(Packet* packet, bool duplicate) { }
 
+  virtual void onFloodHopLimitDrop(const Packet* packet) { }
+
   virtual bool isDuplicateSuppressionEnabled() const { return true; }
 
   virtual bool isNodeDelayOffsetEnabled() const { return true; }

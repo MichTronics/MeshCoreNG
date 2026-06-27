@@ -764,6 +764,8 @@ def parse_heartbeat(payload: bytes) -> dict | None:
         }
     if len(payload) >= 45 and payload[40:42] == b"NB" and payload[42] >= 1:
         heartbeat["neighbor_count"] = struct.unpack(">H", payload[43:45])[0]
+    if len(payload) >= 52 and payload[45:47] == b"HL" and payload[47] >= 1:
+        heartbeat["flood_hop_limit_drops"] = struct.unpack(">I", payload[48:52])[0]
     return heartbeat
 
 
@@ -1711,6 +1713,7 @@ def new_node_stats(key: str) -> dict:
         "rf_duty": {},
         "radio_stats": {},
         "neighbor_count": None,
+        "flood_hop_limit_drops": 0,
         "rf_tx_total_baseline_ms": None,
         "rf_tx_total_baseline_at": 0.0,
         "rf_tx_hour_baseline_ms": None,
@@ -1751,6 +1754,10 @@ def merge_node_stats(target: dict, source: dict) -> None:
             target[field] = source[field]
     if source.get("neighbor_count") is not None:
         target["neighbor_count"] = source["neighbor_count"]
+    target["flood_hop_limit_drops"] = max(
+        int(target.get("flood_hop_limit_drops") or 0),
+        int(source.get("flood_hop_limit_drops") or 0),
+    )
     target["supports_bridge_v2"] = target.get("supports_bridge_v2", False) or source.get("supports_bridge_v2", False)
     target["bridge_proto_ver"] = max(target.get("bridge_proto_ver", 1), source.get("bridge_proto_ver", 1))
     target["connected"] = target.get("connected", False) or source.get("connected", False)
@@ -1846,6 +1853,8 @@ def record_node_heartbeat(client: "BridgeClient", heartbeat: dict, now: float | 
         stats["radio_stats"] = dict(heartbeat["radio_stats"])
     if "neighbor_count" in heartbeat:
         stats["neighbor_count"] = int(heartbeat["neighbor_count"])
+    if "flood_hop_limit_drops" in heartbeat:
+        stats["flood_hop_limit_drops"] = int(heartbeat["flood_hop_limit_drops"])
 
 
 def mark_node_disconnected(client: "BridgeClient", now: float | None = None) -> None:
@@ -1882,6 +1891,7 @@ def node_stats_status_dict(stats: dict, now: float) -> dict:
         "rf_duty": dict(stats.get("rf_duty") or {}),
         "radio_stats": dict(stats.get("radio_stats") or {}),
         "neighbor_count": stats.get("neighbor_count"),
+        "flood_hop_limit_drops": stats.get("flood_hop_limit_drops", 0),
         "packets_rx": stats.get("packets_rx", 0),
         "packets_tx": stats.get("packets_tx", 0),
         "packets_rx_24h": len(stats["rx_times"]),
@@ -1962,6 +1972,7 @@ class BridgeClient:
         self.rf_duty: dict = {}
         self.radio_stats: dict = {}
         self.neighbor_count: int | None = None
+        self.flood_hop_limit_drops = 0
         self.node_name = ""
         self.node_id = ""
         self.firmware_version = ""
@@ -2147,6 +2158,7 @@ class BridgeClient:
             "rf_duty": dict(self.rf_duty),
             "radio_stats": dict(self.radio_stats),
             "neighbor_count": self.neighbor_count if self.neighbor_count is not None else stats.get("neighbor_count"),
+            "flood_hop_limit_drops": self.flood_hop_limit_drops or stats.get("flood_hop_limit_drops", 0),
             "packets_rx": self.packets_rx,
             "packets_tx": self.packets_tx,
             "packets_rx_24h": len(stats["rx_times"]),
@@ -2620,6 +2632,8 @@ async def handle_client(reader: asyncio.StreamReader, writer: asyncio.StreamWrit
                     client.radio_stats = dict(heartbeat["radio_stats"])
                 if "neighbor_count" in heartbeat:
                     client.neighbor_count = int(heartbeat["neighbor_count"])
+                if "flood_hop_limit_drops" in heartbeat:
+                    client.flood_hop_limit_drops = int(heartbeat["flood_hop_limit_drops"])
                 log.debug("%s: heartbeat uptime=%dms", client.addr, client.last_heartbeat_uptime_ms)
                 continue
             command_reply = parse_command_reply(payload)
@@ -3433,6 +3447,10 @@ def build_status_html(base_path: str = "") -> str:
         const neighborTitle = Number.isFinite(neighborCount)
           ? `Neighbours heard locally by this bridge node: ${{neighborCount}}.`
           : "firmware update needed";
+        const floodHopLimitDrops = Number.isFinite(client.flood_hop_limit_drops) ? client.flood_hop_limit_drops : NaN;
+        const floodHopLimitTitle = Number.isFinite(floodHopLimitDrops)
+          ? "Flood packets this bridge node did not retransmit because their path had reached the configured hop limit."
+          : "firmware update needed";
         const footer = isOnline
           ? `connected ${{escapeHtml(client.connected_for)}} · idle ${{client.idle_seconds}}s · heartbeat ${{heartbeat}}`
           : `offline · last seen ${{age(client.last_seen_seconds)}} ago · heartbeat ${{heartbeat}}`;
@@ -3459,6 +3477,7 @@ def build_status_html(base_path: str = "") -> str:
               <div class="mini" title="${{escapeHtml(bridgeTrafficTitle)}}"><span class="label">Bridge RX 24h</span><b>${{client.packets_rx_24h}}</b></div>
               <div class="mini" title="${{escapeHtml(bridgeTrafficTitle)}}"><span class="label">Bridge TX 24h</span><b>${{client.packets_tx_24h}}</b></div>
               <div class="mini" title="${{escapeHtml(neighborTitle)}}"><span class="label">Neighbours</span><b>${{Number.isFinite(neighborCount) ? neighborCount : "--"}}</b></div>
+              <div class="mini" title="${{escapeHtml(floodHopLimitTitle)}}"><span class="label">Hop-limit drops</span><b>${{Number.isFinite(floodHopLimitDrops) ? floodHopLimitDrops : "--"}}</b></div>
               <div class="mini" title="${{escapeHtml(rfTitle)}}"><span class="label">Duty used</span><b>${{duration(rfUsedMs)}}</b></div>
               <div class="mini" title="${{escapeHtml(rfTitle)}}"><span class="label">Duty left</span><b>${{duration(rfLeftMs)}}</b></div>
               <div class="mini" title="${{escapeHtml(queueTitle)}}"><span class="label">Queue</span><b>${{client.tx_queue_depth || 0}}/${{client.tx_queue_max || 0}}</b></div>

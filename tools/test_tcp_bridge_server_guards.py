@@ -301,6 +301,12 @@ async def test_heartbeat_radio_stats_parse() -> None:
         + int(-118).to_bytes(2, "big", signed=True)
         + int(-73).to_bytes(2, "big", signed=True)
         + int(31).to_bytes(1, "big", signed=True)
+        + b"NB"
+        + bytes([1])
+        + (12).to_bytes(2, "big")
+        + b"HL"
+        + bytes([1])
+        + (345).to_bytes(4, "big")
     )
     heartbeat = server.parse_heartbeat(payload)
     assert heartbeat is not None
@@ -308,6 +314,8 @@ async def test_heartbeat_radio_stats_parse() -> None:
     assert heartbeat["radio_stats"]["noise_floor"] == -118
     assert heartbeat["radio_stats"]["last_rssi"] == -73
     assert heartbeat["radio_stats"]["last_snr"] == 7.75
+    assert heartbeat["neighbor_count"] == 12
+    assert heartbeat["flood_hop_limit_drops"] == 345
 
 
 async def test_status_hides_unnamed_offline_placeholders() -> None:

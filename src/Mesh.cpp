@@ -466,6 +466,7 @@ DispatcherAction Mesh::routeRecvPacket(Packet* packet) {
   }
 
   if (packet->isRouteFlood() && isFloodPathAtRelayLimit(packet)) {
+    onFloodHopLimitDrop(packet);
     return ACTION_RELEASE;
   }
 
