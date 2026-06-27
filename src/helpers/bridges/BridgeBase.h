@@ -29,6 +29,9 @@ public:
    */
   bool isRunning() const override;
 
+  /** True when a flood packet is at or past flood.max (before this node would relay). */
+  static bool exceedsFloodMaxPath(const NodePrefs *prefs, const mesh::Packet *packet);
+
   void setSelfHash(const uint8_t *pub_key) {
     memcpy(_self_hash, pub_key, sizeof(_self_hash));
     _has_self_hash = true;

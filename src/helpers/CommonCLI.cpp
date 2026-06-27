@@ -653,7 +653,7 @@ void CommonCLI::loadPrefsInt(FILESYSTEM* fs, const char* filename) {
     _prefs->bridge_export_filter = constrain(_prefs->bridge_export_filter, 0, 3);
     _prefs->bridge_export_max_hops = constrain(_prefs->bridge_export_max_hops, 0, 63);
     _prefs->bridge_tcp_ttl = constrain(_prefs->bridge_tcp_ttl, 1, 8);
-    _prefs->bridge_profile = constrain(_prefs->bridge_profile, 0, 2);
+    _prefs->bridge_profile = constrain(_prefs->bridge_profile, 0, 3);
     _prefs->bridge_group[sizeof(_prefs->bridge_group) - 1] = 0;
     if (_prefs->bridge_group[0] == 0 || !isValidName(_prefs->bridge_group)) {
       StrHelper::strncpy(_prefs->bridge_group, "default", sizeof(_prefs->bridge_group));
@@ -1871,6 +1871,7 @@ void CommonCLI::handleSetCmd(uint32_t sender_timestamp, char* command, char* rep
     }
   } else if (memcmp(config, "bridge.profile ", 15) == 0) {
     if (memcmp(&config[15], "island", 6) == 0) {
+      _prefs->disable_fwd = 1;
       _prefs->bridge_pkt_src = 2; // RF RX and RF TX export
       _prefs->bridge_rf = BRIDGE_RF_LOCAL;
       _prefs->bridge_export_filter = BRIDGE_EXPORT_MESSAGES;
@@ -1879,7 +1880,18 @@ void CommonCLI::handleSetCmd(uint32_t sender_timestamp, char* command, char* rep
       _prefs->bridge_profile = 1;
       savePrefs();
       strcpy(reply, "OK - bridge island profile applied");
+    } else if (memcmp(&config[15], "gateway", 7) == 0) {
+      _prefs->disable_fwd = 1;
+      _prefs->bridge_pkt_src = 2; // RF RX and RF TX for RF<->TCP
+      _prefs->bridge_rf = BRIDGE_RF_FLOOD;
+      _prefs->bridge_export_filter = BRIDGE_EXPORT_ALL;
+      _prefs->bridge_export_max_hops = 0;
+      _prefs->bridge_tcp_ttl = 2;
+      _prefs->bridge_profile = 3;
+      savePrefs();
+      strcpy(reply, "OK - bridge gateway profile applied (no RF->RF, TCP<->RF via flood.max)");
     } else if (memcmp(&config[15], "repeater", 8) == 0) {
+      _prefs->disable_fwd = 0;
       _prefs->bridge_pkt_src = 2; // RF RX and RF TX export
       _prefs->bridge_rf = BRIDGE_RF_FLOOD;
       _prefs->bridge_export_filter = BRIDGE_EXPORT_ALL;
@@ -2453,7 +2465,9 @@ void CommonCLI::handleGetCmd(uint32_t sender_timestamp, char* command, char* rep
              (uint32_t)(_prefs->bridge_rf_inject_block_duty_centi_pct / 100),
              (uint32_t)(_prefs->bridge_rf_inject_block_duty_centi_pct % 100));
   } else if (memcmp(config, "bridge.profile", 14) == 0) {
-    const char* profile = _prefs->bridge_profile == 1 ? "island" : (_prefs->bridge_profile == 2 ? "repeater" : "default");
+    const char* profile = _prefs->bridge_profile == 1 ? "island"
+                        : (_prefs->bridge_profile == 2 ? "repeater"
+                        : (_prefs->bridge_profile == 3 ? "gateway" : "default"));
     sprintf(reply, "> %s", profile);
 #if defined(WITH_BLE_BRIDGE)
   } else if (memcmp(config, "bridge.status", 13) == 0) {

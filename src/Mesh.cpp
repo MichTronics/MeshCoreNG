@@ -28,6 +28,21 @@ bool Mesh::allowPacketForward(const mesh::Packet* packet) {
   return false;  // by default, Transport NOT enabled
 }
 
+uint8_t Mesh::getEffectiveFloodMaxForRelay(const Packet* packet) const {
+  (void)packet;
+  return getFloodMaxPathCount();
+}
+
+bool Mesh::isFloodPathAtRelayLimit(const Packet* packet) const {
+  if (packet == NULL || !packet->isRouteFlood()) return false;
+
+  uint8_t max_hops = getEffectiveFloodMaxForRelay(packet);
+  if (max_hops == 0) return false;
+
+  // Hops already recorded on the wire before this node appends itself.
+  return packet->getPathHashCount() >= max_hops;
+}
+
 bool Mesh::hasSeen(Packet* packet) {
   bool seen = _tables->hasSeen(packet);
   if (seen && isDuplicateSuppressionEnabled()) recordDuplicateForSuppression(packet);
@@ -447,6 +462,10 @@ DispatcherAction Mesh::routeRecvPacket(Packet* packet) {
   uint8_t n = packet->getPathHashCount();
   const uint8_t max_location_repeater_hops = 2;
   if (packet->getPayloadType() == PAYLOAD_TYPE_LOCATION && n >= max_location_repeater_hops) {
+    return ACTION_RELEASE;
+  }
+
+  if (packet->isRouteFlood() && isFloodPathAtRelayLimit(packet)) {
     return ACTION_RELEASE;
   }
 

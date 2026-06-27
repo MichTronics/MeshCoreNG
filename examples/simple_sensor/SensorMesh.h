@@ -2,6 +2,7 @@
 
 #include <Arduino.h>   // needed for PlatformIO
 #include <Mesh.h>
+#include "helpers/FloodLimits.h"
 
 #include "TimeSeriesData.h"
 
@@ -115,6 +116,12 @@ protected:
 
   // Mesh overrides
   float getAirtimeBudgetFactor() const override;
+  uint8_t getFloodMaxPathCount() const override {
+    return _prefs.flood_max;
+  }
+  uint8_t getEffectiveFloodMaxForRelay(const mesh::Packet* packet) const override {
+    return mesh::effectiveFloodMaxHopLimit(_prefs, packet);
+  }
   bool allowPacketForward(const mesh::Packet* packet) override;
   bool isDuplicateSuppressionEnabled() const override {
     return _prefs.flood_dup_suppress_enable != 0;

@@ -2,6 +2,7 @@
 
 #include <Arduino.h>
 #include <Mesh.h>
+#include "helpers/FloodLimits.h"
 #include <RTClib.h>
 #include <target.h>
 
@@ -277,6 +278,14 @@ class MyMesh : public mesh::Mesh, public CommonCLICallbacks
 protected:
   float getAirtimeBudgetFactor() const override {
     return _prefs.airtime_factor;
+  }
+
+  uint8_t getFloodMaxPathCount() const override {
+    return _prefs.flood_max;
+  }
+
+  uint8_t getEffectiveFloodMaxForRelay(const mesh::Packet* packet) const override {
+    return mesh::effectiveFloodMaxHopLimit(_prefs, packet);
   }
 
   bool allowPacketForward(const mesh::Packet* packet) override;

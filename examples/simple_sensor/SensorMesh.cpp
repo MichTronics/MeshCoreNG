@@ -307,7 +307,7 @@ float SensorMesh::getAirtimeBudgetFactor() const {
 
 bool SensorMesh::allowPacketForward(const mesh::Packet* packet) {
   if (_prefs.disable_fwd) return false;
-  if (packet->isRouteFlood() && packet->getPathHashCount() >= _prefs.flood_max) return false;
+  if (packet->isRouteFlood() && isFloodPathAtRelayLimit(packet)) return false;
   return true;
 }
 

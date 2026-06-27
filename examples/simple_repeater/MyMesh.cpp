@@ -991,16 +991,25 @@ void MyMesh::sendFloodReply(mesh::Packet* packet, unsigned long delay_millis, ui
 bool MyMesh::allowPacketForward(const mesh::Packet *packet) {
   const bool is_flood_advert = packet->isRouteFlood() && packet->getPayloadType() == PAYLOAD_TYPE_ADVERT;
   const bool is_bridge_flood = packet->isRouteFlood() && packet->wasReceivedFromBridge();
-  const bool is_flood_message = packet->isRouteFlood()
-    && (packet->getPayloadType() == PAYLOAD_TYPE_REQ
-        || packet->getPayloadType() == PAYLOAD_TYPE_RESPONSE
-        || packet->getPayloadType() == PAYLOAD_TYPE_TXT_MSG);
+  const bool bridge_gateway = _prefs.bridge_enabled && _prefs.bridge_rf != BRIDGE_RF_OFF;
+  const bool tcp_to_rf = bridge_gateway && is_bridge_flood;
 
-  if (is_bridge_flood) {
-    if (_prefs.bridge_rf == BRIDGE_RF_OFF) {
-      MESH_DEBUG_PRINTLN("allowPacketForward: bridge RF forwarding is off");
-      return false;
-    }
+  if (packet->isRouteFlood() && isFloodPathAtRelayLimit(packet)) {
+    if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
+    recordDenseSuppressedTx();
+    return false;
+  }
+
+  // Bridge gateway: no RF->RF mesh repeat — only TCP->RF injection.
+  if (bridge_gateway && packet->isRouteFlood() && !packet->wasReceivedFromBridge()) {
+    if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
+    recordDenseSuppressedTx();
+    return false;
+  }
+
+  if (is_bridge_flood && _prefs.bridge_rf == BRIDGE_RF_OFF) {
+    MESH_DEBUG_PRINTLN("allowPacketForward: bridge RF forwarding is off");
+    return false;
   }
 
   if (shouldBlockBridgeOrRepeater(packet)) {
@@ -1019,37 +1028,18 @@ bool MyMesh::allowPacketForward(const mesh::Packet *packet) {
     return false;
   }
 
-  if (is_bridge_flood && _prefs.bridge_rf == BRIDGE_RF_FLOOD) {
-    if (is_flood_advert) dense_stats.n_fwd_flood_adverts++;
-    return true;
-  }
-
-  if (_prefs.disable_fwd) {
+  if (_prefs.disable_fwd && !tcp_to_rf) {
     if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
     return false;
   }
-  if (packet->isRouteFlood() && packet->getPathHashCount() >= _prefs.flood_max) {
-    if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
-    return false;
-  }
-  if (packet->isRouteFlood()) {
-    if (packet->getRouteType() == ROUTE_TYPE_FLOOD && packet->getPathHashCount() >= _prefs.flood_max_unscoped) return false;
-    if (is_flood_message && packet->getPathHashCount() >= _prefs.flood_max_messages) return false;
-    if (is_flood_advert && packet->getPathHashCount() >= _prefs.flood_max_advert) {
-      dense_stats.n_drop_flood_adverts++;
+  if (packet->isRouteFlood() && recv_pkt_region == NULL) {
+    if (!tcp_to_rf) {
+      MESH_DEBUG_PRINTLN("allowPacketForward: unknown transport code, or wildcard not allowed for FLOOD packet");
+      if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
       return false;
     }
   }
-  if (packet->isRouteFlood() && recv_pkt_region == NULL) {
-    MESH_DEBUG_PRINTLN("allowPacketForward: unknown transport code, or wildcard not allowed for FLOOD packet");
-    if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
-    return false;
-  }
-  if (is_bridge_flood) {
-    if (is_flood_advert) dense_stats.n_fwd_flood_adverts++;
-    return true;
-  }
-  if (is_flood_advert) {
+  if (is_flood_advert && !tcp_to_rf) {
     uint8_t hops = packet->getPathHashCount();
     float forward_prob = pow(_prefs.flood_advert_base, hops > 0 ? hops - 1 : 0);
     if (getRNG()->nextInt(0, 10000) >= (uint32_t)(forward_prob * 10000.0f)) {
@@ -1058,7 +1048,7 @@ bool MyMesh::allowPacketForward(const mesh::Packet *packet) {
       return false;
     }
   }
-  if (packet->isRouteFlood() && _prefs.loop_detect != LOOP_DETECT_OFF) {
+  if (packet->isRouteFlood() && _prefs.loop_detect != LOOP_DETECT_OFF && !tcp_to_rf) {
     const uint8_t* maximums;
     if (_prefs.loop_detect == LOOP_DETECT_MINIMAL) {
       maximums = max_loop_minimal;
@@ -1073,7 +1063,7 @@ bool MyMesh::allowPacketForward(const mesh::Packet *packet) {
       return false;
     }
   }
-  if (packet->isRouteFlood() && _prefs.flood_relay_prob < 255) {
+  if (packet->isRouteFlood() && _prefs.flood_relay_prob < 255 && !tcp_to_rf) {
     if (_prefs.flood_relay_prob == 0 || getRNG()->nextInt(0, 256) >= _prefs.flood_relay_prob) {
       recordDenseSuppressedTx();
       if (is_flood_advert) dense_stats.n_drop_flood_adverts++;
@@ -1773,12 +1763,15 @@ MyMesh::MyMesh(mesh::MainBoard &board, mesh::Radio &radio, mesh::MillisecondCloc
   // bridge defaults
 #if defined(WITH_TCP_BRIDGE)
   _prefs.bridge_enabled = 0;    // configure WiFi/server before enabling TCP bridge
+  _prefs.disable_fwd = 1;       // bridge gateway: no RF->RF mesh repeat
+  _prefs.bridge_pkt_src = 2;    // RF RX + TX for RF<->TCP bridge
+  _prefs.bridge_rf = BRIDGE_RF_FLOOD; // TCP->RF onto mesh (within flood.max)
 #else
   _prefs.bridge_enabled = 1;    // enabled
+  _prefs.bridge_pkt_src = 0;    // logTx
+  _prefs.bridge_rf = 0;         // do not forward bridge floods to RF by default
 #endif
   _prefs.bridge_delay   = 500;  // milliseconds
-  _prefs.bridge_pkt_src = 0;    // logTx
-  _prefs.bridge_rf      = 0;    // do not forward bridge floods to RF by default
   _prefs.bridge_export_filter = BRIDGE_EXPORT_ALL;
   _prefs.bridge_export_max_hops = 0; // unlimited
   _prefs.bridge_tcp_ttl = 2;

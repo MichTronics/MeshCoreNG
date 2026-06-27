@@ -1,5 +1,7 @@
 #include "BridgeBase.h"
 
+#include "helpers/FloodLimits.h"
+
 #include <Arduino.h>
 #include <string.h>
 
@@ -36,6 +38,10 @@ void prepareBridgeLocalInject(mesh::Packet *packet, const uint8_t *self_hash, bo
 
 bool BridgeBase::isRunning() const {
   return _initialized;
+}
+
+bool BridgeBase::exceedsFloodMaxPath(const NodePrefs *prefs, const mesh::Packet *packet) {
+  return mesh::exceedsFloodMaxHopLimit(*prefs, packet);
 }
 
 const char *BridgeBase::getLogDateTime() {

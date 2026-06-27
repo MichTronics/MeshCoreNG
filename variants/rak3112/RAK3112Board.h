@@ -25,7 +25,7 @@ private:
 public:
   RefCountedDigitalPin periph_power;
 
-  RAK3112Board() : periph_power(PIN_VEXT_EN) { }
+  RAK3112Board() : periph_power(PIN_VEXT_EN, PIN_VEXT_EN_ACTIVE) { }
 
   void begin() {
     ESP32Board::begin();
@@ -38,6 +38,9 @@ public:
     digitalWrite(PIN_ADC_CTRL, !adc_active_state); // Initially inactive
 
     periph_power.begin();
+#ifdef ENABLE_PERIPH_POWER_ON_BOOT
+    periph_power.claim();  // Turn on 3.3V rail for RTC, sensors, and baseboard peripherals
+#endif
 
     esp_reset_reason_t reason = esp_reset_reason();
     if (reason == ESP_RST_DEEPSLEEP) {
