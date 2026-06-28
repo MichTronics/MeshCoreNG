@@ -79,6 +79,10 @@ static void addSaturating(uint16_t* value, uint16_t amount = 1) {
   *value = amount > remaining ? 0xFFFF : *value + amount;
 }
 
+static bool shouldAvoidBridgeDirectPath(const mesh::Packet* packet) {
+  return packet && packet->wasReceivedFromBridge();
+}
+
 static uint8_t calcDensityLevel(uint16_t neighbors, uint16_t dup_rx, uint16_t unique_rx) {
   uint32_t total = (uint32_t)dup_rx + unique_rx;
   uint8_t dup_pct = total == 0 ? 0 : (uint8_t)(((uint32_t)dup_rx * 100) / total);
@@ -1345,17 +1349,29 @@ void MyMesh::onAnonDataRecv(mesh::Packet *packet, const uint8_t *secret, const m
     if (reply_len == 0) return;   // invalid request
 
     if (packet->isRouteFlood()) {
-      // let this sender know path TO here, so they can use sendDirect(), and ALSO encode the response
-      mesh::Packet* path = createPathReturn(sender, secret, packet->path, packet->path_len,
-                                            PAYLOAD_TYPE_RESPONSE, reply_data, reply_len);
-      if (path) sendFloodReply(path, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+      if (shouldAvoidBridgeDirectPath(packet)) {
+        // Bridge-origin floods do not provide a reliable RF direct path back to the app.
+        mesh::Packet* reply = createDatagram(PAYLOAD_TYPE_RESPONSE, sender, secret, reply_data, reply_len);
+        if (reply) sendFloodReply(reply, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+      } else {
+        // let this sender know path TO here, so they can use sendDirect(), and ALSO encode the response
+        mesh::Packet* path = createPathReturn(sender, secret, packet->path, packet->path_len,
+                                              PAYLOAD_TYPE_RESPONSE, reply_data, reply_len);
+        if (path) sendFloodReply(path, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+      }
     } else if (reply_path_len < 0) {
       mesh::Packet* reply = createDatagram(PAYLOAD_TYPE_RESPONSE, sender, secret, reply_data, reply_len);
       if (reply) sendFloodReply(reply, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
     } else {
       mesh::Packet* reply = createDatagram(PAYLOAD_TYPE_RESPONSE, sender, secret, reply_data, reply_len);
       uint8_t path_len = ((reply_path_hash_size - 1) << 6) | (reply_path_len & 63);
-      if (reply) sendDirect(reply, reply_path,  path_len, SERVER_RESPONSE_DELAY);
+      if (reply) {
+        if (shouldAvoidBridgeDirectPath(packet)) {
+          sendFloodReply(reply, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+        } else {
+          sendDirect(reply, reply_path,  path_len, SERVER_RESPONSE_DELAY);
+        }
+      }
     }
   }
 }
@@ -1485,15 +1501,22 @@ void MyMesh::onPeerDataRecv(mesh::Packet *packet, uint8_t type, int sender_idx, 
       client->last_activity = getRTCClock()->getCurrentTime();
 
       if (packet->isRouteFlood()) {
-        // let this sender know path TO here, so they can use sendDirect(), and ALSO encode the response
-        mesh::Packet *path = createPathReturn(client->id, secret, packet->path, packet->path_len,
-                                              PAYLOAD_TYPE_RESPONSE, reply_data, reply_len);
-        if (path) sendFloodReply(path, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+        if (shouldAvoidBridgeDirectPath(packet)) {
+          // Bridge-origin floods do not provide a reliable RF direct path back to the app.
+          mesh::Packet *reply =
+              createDatagram(PAYLOAD_TYPE_RESPONSE, client->id, secret, reply_data, reply_len);
+          if (reply) sendFloodReply(reply, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+        } else {
+          // let this sender know path TO here, so they can use sendDirect(), and ALSO encode the response
+          mesh::Packet *path = createPathReturn(client->id, secret, packet->path, packet->path_len,
+                                                PAYLOAD_TYPE_RESPONSE, reply_data, reply_len);
+          if (path) sendFloodReply(path, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
+        }
       } else {
         mesh::Packet *reply =
             createDatagram(PAYLOAD_TYPE_RESPONSE, client->id, secret, reply_data, reply_len);
         if (reply) {
-          if (client->out_path_len != OUT_PATH_UNKNOWN) { // we have an out_path, so send DIRECT
+          if (client->out_path_len != OUT_PATH_UNKNOWN && !shouldAvoidBridgeDirectPath(packet)) { // we have an out_path, so send DIRECT
             sendDirect(reply, client->out_path, client->out_path_len, SERVER_RESPONSE_DELAY);
           } else {
             sendFloodReply(reply, SERVER_RESPONSE_DELAY, packet->getPathHashSize());
@@ -1526,7 +1549,7 @@ void MyMesh::onPeerDataRecv(mesh::Packet *packet, uint8_t type, int sender_idx, 
 
         mesh::Packet *ack = createAck(ack_hash);
         if (ack) {
-          if (client->out_path_len == OUT_PATH_UNKNOWN) {
+          if (client->out_path_len == OUT_PATH_UNKNOWN || shouldAvoidBridgeDirectPath(packet)) {
             sendFloodReply(ack, TXT_ACK_DELAY, packet->getPathHashSize());
           } else {
             sendDirect(ack, client->out_path, client->out_path_len, TXT_ACK_DELAY);
@@ -1554,7 +1577,7 @@ void MyMesh::onPeerDataRecv(mesh::Packet *packet, uint8_t type, int sender_idx, 
 
         auto reply = createDatagram(PAYLOAD_TYPE_TXT_MSG, client->id, secret, temp, 5 + text_len);
         if (reply) {
-          if (client->out_path_len == OUT_PATH_UNKNOWN) {
+          if (client->out_path_len == OUT_PATH_UNKNOWN || shouldAvoidBridgeDirectPath(packet)) {
             sendFloodReply(reply, CLI_REPLY_DELAY_MILLIS, packet->getPathHashSize());
           } else {
             sendDirect(reply, client->out_path, client->out_path_len, CLI_REPLY_DELAY_MILLIS);
@@ -1573,6 +1596,11 @@ bool MyMesh::onPeerPathRecv(mesh::Packet *packet, int sender_idx, const uint8_t 
   int i = matching_peer_indexes[sender_idx];
 
   if (i >= 0 && i < acl.getNumClients()) { // get from our known_clients table (sender SHOULD already be known in this context)
+    if (shouldAvoidBridgeDirectPath(packet)) {
+      MESH_DEBUG_PRINTLN("PATH to client ignored: bridge-origin path is not a reliable direct RF path");
+      return false;
+    }
+
     MESH_DEBUG_PRINTLN("PATH to client, path_len=%d", (uint32_t)path_len);
     auto client = acl.getClientByIdx(i);
 
