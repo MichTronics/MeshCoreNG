@@ -5,6 +5,7 @@ from urllib.parse import urlsplit
 
 import bridge_server.config as config
 from bridge_server.constants import SERVER_NAME, SERVER_VERSION
+from bridge_server.protocol import redact_public_text
 
 
 def _status_snapshot(*args, **kwargs):
