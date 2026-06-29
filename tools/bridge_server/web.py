@@ -421,7 +421,16 @@ async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.Strea
         writer.write(build_http_headers(status, content_type, body, extra_headers) + body)
         await writer.drain()
     except Exception as exc:
-        log.debug("HTTP status request failed: %s", exc)
+        log.warning("HTTP request handler error: %s", exc, exc_info=True)
+        try:
+            err_body = b"<h1>500 Internal Server Error</h1>"
+            writer.write(
+                build_http_headers("500 Internal Server Error", "text/html", err_body, [])
+                + err_body
+            )
+            await writer.drain()
+        except Exception:
+            pass
     finally:
         writer.close()
         try:
