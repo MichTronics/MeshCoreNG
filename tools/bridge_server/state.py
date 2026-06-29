@@ -22,7 +22,7 @@ short_id_quarantine: dict = {}
 short_id_bad_hits: dict = {}
 packet_log_total = 0
 public_channels: list = []
-web_sessions: dict = {}  # token → expiry timestamp (float)
+web_sessions: dict = {}  # token → (expiry: float, is_admin: bool)
 latest_firmware_info: dict = {
     "enabled": True,
     "checked_at": 0,

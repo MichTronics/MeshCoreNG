@@ -1,7 +1,6 @@
 """HTTP status and admin handlers."""
 
 import asyncio
-import base64
 import json
 import logging
 import re
@@ -57,19 +56,32 @@ def is_session_valid(token: str) -> bool:
     """Return True if the session token exists and has not expired."""
     if not token:
         return False
-    expiry = state.web_sessions.get(token)
-    if expiry is None:
+    entry = state.web_sessions.get(token)
+    if entry is None:
         return False
+    expiry, _is_admin = entry
     if time.time() > expiry:
         state.web_sessions.pop(token, None)
         return False
     return True
 
 
-def create_session() -> str:
+def is_session_admin(token: str) -> bool:
+    """Return True if the session token belongs to an admin user."""
+    entry = state.web_sessions.get(token)
+    if entry is None:
+        return False
+    expiry, is_admin = entry
+    if time.time() > expiry:
+        state.web_sessions.pop(token, None)
+        return False
+    return is_admin
+
+
+def create_session(is_admin: bool = False) -> str:
     """Create a new session token, store it, and return it."""
     token = secrets.token_hex(32)
-    state.web_sessions[token] = time.time() + SESSION_DURATION_SECS
+    state.web_sessions[token] = (time.time() + SESSION_DURATION_SECS, is_admin)
     return token
 
 
@@ -97,19 +109,17 @@ def _decode_basic_auth(headers: dict[str, str]) -> tuple[str, str]:
 
 def is_web_authorized(headers: dict[str, str]) -> bool:
     """Return True if the request carries a valid web session (or no password is set)."""
-    if not config.WEB_PASSWORD:
+    if not config.WEB_PASSWORD and not config.ADMIN_PASSWORD:
         return True
     return is_session_valid(get_cookie_token(headers))
 
 
 def is_admin_authorized(headers: dict[str, str]) -> bool:
-    """Return True if the request has admin (manage page) access."""
-    if config.ADMIN_PASSWORD:
-        # Separate admin password → require it via Basic Auth
-        _user, password = _decode_basic_auth(headers)
-        return password == config.ADMIN_PASSWORD
-    # No separate admin password → web session is sufficient
-    return is_web_authorized(headers)
+    """Return True if the request carries a valid admin session."""
+    if not config.ADMIN_PASSWORD:
+        # No admin account configured → web session is enough
+        return is_web_authorized(headers)
+    return is_session_admin(get_cookie_token(headers))
 
 
 def _login_redirect(base_path: str) -> HttpResponse:
@@ -117,14 +127,9 @@ def _login_redirect(base_path: str) -> HttpResponse:
     return ("302 Found", "text/plain", b"", [("Location", prefixed_url(base_path, "/login"))])
 
 
-def admin_auth_response() -> HttpResponse:
-    """Build the HTTP admin authentication challenge response."""
-    return (
-        "401 Unauthorized",
-        "text/plain",
-        b"Admin authentication required\n",
-        [("WWW-Authenticate", 'Basic realm="MeshCoreNG Bridge Admin"')],
-    )
+def _admin_login_redirect(base_path: str) -> HttpResponse:
+    """Redirect a non-admin session to the login page with an error hint."""
+    return ("302 Found", "text/plain", b"", [("Location", prefixed_url(base_path, "/login?err=admin"))])
 
 
 def find_client(client_id: str) -> BridgeClient | None:
@@ -228,12 +233,16 @@ def parse_content_length(headers: dict[str, str]) -> int:
         return 0
 
 
-async def read_http_request(reader: asyncio.StreamReader) -> tuple[str, str, dict[str, str]]:
-    """Read the request line and headers from a client."""
+async def read_http_request(reader: asyncio.StreamReader) -> tuple[str, str, str, dict[str, str]]:
+    """Read the request line and headers from a client.
+
+    Returns (method, path, query_string, headers).
+    """
     request_line = await reader.readline()
     parts = request_line.decode('ascii', errors='ignore').strip().split()
     method = parts[0] if len(parts) >= 1 else ''
-    path = parts[1] if len(parts) >= 2 else ''
+    raw_path = parts[1] if len(parts) >= 2 else ''
+    path, _, query = raw_path.partition('?')
     headers: dict[str, str] = {}
     while True:
         line = await reader.readline()
@@ -242,13 +251,13 @@ async def read_http_request(reader: asyncio.StreamReader) -> tuple[str, str, dic
         name, sep, value = line.decode('iso-8859-1', errors='ignore').partition(':')
         if sep:
             headers[name.strip().lower()] = value.strip()
-    return (method, path, headers)
+    return (method, path, query, headers)
 
 
 async def handle_command_post(reader: asyncio.StreamReader, headers: dict[str, str], base_path: str) -> HttpResponse:
     """Handle the remote management command form."""
     if not is_admin_authorized(headers):
-        return admin_auth_response()
+        return _admin_login_redirect(base_path)
     content_length = parse_content_length(headers)
     raw_body = await reader.readexactly(content_length) if content_length > 0 else b''
     form = parse_qs(raw_body.decode('utf-8', errors='replace'), keep_blank_values=True)
@@ -306,12 +315,13 @@ async def handle_remote_cli_post(target: str, node_password: str, command: str) 
         return f'Error: {exc}'
 
 
-def route_get_request(route: str, headers: dict[str, str], base_path: str) -> HttpResponse:
+def route_get_request(route: str, headers: dict[str, str], base_path: str, query: str = "") -> HttpResponse:
     """Route an HTTP GET request to a response builder."""
     if route == "/login":
         if is_web_authorized(headers):
             return ("302 Found", "text/plain", b"", [("Location", prefixed_url(base_path, "/"))])
-        return html_response(build_login_html(base_path))
+        err = "Admin login required to access the management page" if "err=admin" in query else ""
+        return html_response(build_login_html(base_path, error=err))
     if route == "/logout":
         token = get_cookie_token(headers)
         revoke_session(token)
@@ -338,7 +348,7 @@ def route_get_request(route: str, headers: dict[str, str], base_path: str) -> Ht
         return html_response(build_location_map_html(base_path))
     if route == "/manage":
         if not is_admin_authorized(headers):
-            return admin_auth_response()
+            return _admin_login_redirect(base_path)
         return html_response(build_manage_html(base_path=base_path))
     if route in ("/", "/status"):
         return html_response(build_status_html(base_path))
@@ -359,19 +369,33 @@ async def handle_login_post(reader: asyncio.StreamReader, headers: dict[str, str
     form = parse_qs(raw_body.decode("utf-8", errors="replace"), keep_blank_values=True)
     username = (form.get("username") or [""])[0]
     password = (form.get("password") or [""])[0]
+
+    # Check admin credentials first
+    expected_admin = config.ADMIN_USERNAME or "admin"
+    if config.ADMIN_PASSWORD and username == expected_admin and password == config.ADMIN_PASSWORD:
+        token = create_session(is_admin=True)
+        log.info("Admin web login successful for user %r", username)
+        return (
+            "302 Found", "text/plain", b"",
+            [
+                ("Location", prefixed_url(base_path, "/manage")),
+                ("Set-Cookie", f"session={token}; HttpOnly; SameSite=Strict; Path=/"),
+            ],
+        )
+
+    # Check regular web credentials
     expected_user = config.WEB_USERNAME or "user"
-    if username == expected_user and password == config.WEB_PASSWORD:
-        token = create_session()
+    if config.WEB_PASSWORD and username == expected_user and password == config.WEB_PASSWORD:
+        token = create_session(is_admin=False)
         log.info("Web login successful for user %r", username)
         return (
-            "302 Found",
-            "text/plain",
-            b"",
+            "302 Found", "text/plain", b"",
             [
                 ("Location", prefixed_url(base_path, "/")),
                 ("Set-Cookie", f"session={token}; HttpOnly; SameSite=Strict; Path=/"),
             ],
         )
+
     log.warning("Web login failed for user %r", username)
     return html_response(build_login_html(base_path, error="Invalid username or password"))
 
@@ -379,7 +403,7 @@ async def handle_login_post(reader: asyncio.StreamReader, headers: dict[str, str
 async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> None:
     """Handle one HTTP status client connection."""
     try:
-        method, path, request_headers = await read_http_request(reader)
+        method, path, query, request_headers = await read_http_request(reader)
         base_path = request_base_path(request_headers)
         route = strip_base_path(path, base_path)
         if not method or not path:
@@ -391,7 +415,7 @@ async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.Strea
         elif method != "GET":
             response = text_response("405 Method Not Allowed", "Method not allowed\n")
         else:
-            response = route_get_request(route, request_headers, base_path)
+            response = route_get_request(route, request_headers, base_path, query)
         status, content_type, body, extra_headers = response
         writer.write(build_http_headers(status, content_type, body, extra_headers) + body)
         await writer.drain()
