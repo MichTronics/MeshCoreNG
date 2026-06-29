@@ -63,7 +63,7 @@ DEFAULT_TRACKER_CHANNEL_SECRET = bytes([
 ]) + (b"\x00" * 16)
 VERSION_RE = re.compile(r"v?(\d+)\.(\d+)\.(\d+)(?:[-+][0-9A-Za-z._-]+)?")
 FIRMWARE_RELEASE_TAG_RE = re.compile(
-    r"^(?:v|bridge-tcp-v|bridge-tcp-ble-v)(\d+\.\d+\.\d+)(?:[-+].*)?$"
+    r"^(?:v|(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*-v))(\d+\.\d+\.\d+)(?:[-+].*)?$"
 )
 PAYLOAD_TYPE_NAMES = {
     0x00: "request",
