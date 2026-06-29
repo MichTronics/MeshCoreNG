@@ -5,6 +5,8 @@ import base64
 import json
 import logging
 import re
+import secrets
+import time
 from typing import TypeAlias
 from urllib.parse import parse_qs
 
@@ -13,8 +15,10 @@ import bridge_server.state as state
 from bridge_server.client import BridgeClient
 from bridge_server.pages import (
     build_location_map_html,
+    build_login_html,
     build_manage_html,
     build_status_html,
+    prefixed_url,
     request_base_path,
     strip_base_path,
 )
@@ -33,54 +37,93 @@ PATH_BLOCK_RE = re.compile(r"^[0-9a-fA-F]{2}(?:/[0-9a-fA-F]{2}){0,2}$|^[0-9a-fA-
 PATH_BLOCK_DURATION_RE = re.compile(r"^[1-9][0-9]*(?:[mhd])?$")
 NODE_BLOCK_RE = re.compile(r"^[0-9a-fA-F]{2}$")
 
+SESSION_DURATION_SECS = 24 * 60 * 60  # 24 hours
+
+
+# ---------------------------------------------------------------------------
+# Session management
+# ---------------------------------------------------------------------------
+
+def get_cookie_token(headers: dict[str, str]) -> str:
+    """Extract the session token from the Cookie header."""
+    for part in headers.get("cookie", "").split(";"):
+        name, sep, value = part.strip().partition("=")
+        if sep and name.strip() == "session":
+            return value.strip()
+    return ""
+
+
+def is_session_valid(token: str) -> bool:
+    """Return True if the session token exists and has not expired."""
+    if not token:
+        return False
+    expiry = state.web_sessions.get(token)
+    if expiry is None:
+        return False
+    if time.time() > expiry:
+        state.web_sessions.pop(token, None)
+        return False
+    return True
+
+
+def create_session() -> str:
+    """Create a new session token, store it, and return it."""
+    token = secrets.token_hex(32)
+    state.web_sessions[token] = time.time() + SESSION_DURATION_SECS
+    return token
+
+
+def revoke_session(token: str) -> None:
+    """Remove a session token."""
+    state.web_sessions.pop(token, None)
+
+
+# ---------------------------------------------------------------------------
+# Auth helpers
+# ---------------------------------------------------------------------------
 
 def _decode_basic_auth(headers: dict[str, str]) -> tuple[str, str]:
     """Decode a Basic auth header into (username, password), or ('', '') on failure."""
-    auth = headers.get('authorization', '')
-    if not auth.lower().startswith('basic '):
-        return ('', '')
+    auth = headers.get("authorization", "")
+    if not auth.lower().startswith("basic "):
+        return ("", "")
     try:
-        decoded = base64.b64decode(auth[6:].strip()).decode('utf-8', errors='replace')
+        decoded = base64.b64decode(auth[6:].strip()).decode("utf-8", errors="replace")
     except Exception:
-        return ('', '')
-    user, sep, password = decoded.partition(':')
-    return (user, password) if sep else ('', '')
+        return ("", "")
+    user, sep, password = decoded.partition(":")
+    return (user, password) if sep else ("", "")
 
 
 def is_web_authorized(headers: dict[str, str]) -> bool:
-    """Return whether the request has web access (username + password)."""
+    """Return True if the request carries a valid web session (or no password is set)."""
     if not config.WEB_PASSWORD:
         return True
-    user, password = _decode_basic_auth(headers)
-    expected_user = config.WEB_USERNAME or 'user'
-    return user == expected_user and password == config.WEB_PASSWORD
-
-
-def web_auth_response() -> tuple[str, str, bytes, list[tuple[str, str]]]:
-    """Build the HTTP web authentication challenge response."""
-    return (
-        '401 Unauthorized',
-        'text/plain',
-        b'Login required\n',
-        [('WWW-Authenticate', 'Basic realm="MeshCoreNG Bridge"')],
-    )
+    return is_session_valid(get_cookie_token(headers))
 
 
 def is_admin_authorized(headers: dict[str, str]) -> bool:
-    """Return whether the request has admin access."""
-    if not config.ADMIN_PASSWORD:
-        return is_web_authorized(headers)
-    _user, password = _decode_basic_auth(headers)
-    return password == config.ADMIN_PASSWORD
+    """Return True if the request has admin (manage page) access."""
+    if config.ADMIN_PASSWORD:
+        # Separate admin password → require it via Basic Auth
+        _user, password = _decode_basic_auth(headers)
+        return password == config.ADMIN_PASSWORD
+    # No separate admin password → web session is sufficient
+    return is_web_authorized(headers)
 
 
-def admin_auth_response() -> tuple[str, str, bytes, list[tuple[str, str]]]:
+def _login_redirect(base_path: str) -> HttpResponse:
+    """Redirect an unauthenticated request to the login page."""
+    return ("302 Found", "text/plain", b"", [("Location", prefixed_url(base_path, "/login"))])
+
+
+def admin_auth_response() -> HttpResponse:
     """Build the HTTP admin authentication challenge response."""
     return (
-        '401 Unauthorized',
-        'text/plain',
-        b'Admin authentication required\n',
-        [('WWW-Authenticate', 'Basic realm="MeshCoreNG Bridge Admin"')],
+        "401 Unauthorized",
+        "text/plain",
+        b"Admin authentication required\n",
+        [("WWW-Authenticate", 'Basic realm="MeshCoreNG Bridge Admin"')],
     )
 
 
@@ -265,25 +308,41 @@ async def handle_remote_cli_post(target: str, node_password: str, command: str) 
 
 def route_get_request(route: str, headers: dict[str, str], base_path: str) -> HttpResponse:
     """Route an HTTP GET request to a response builder."""
+    if route == "/login":
+        if is_web_authorized(headers):
+            return ("302 Found", "text/plain", b"", [("Location", prefixed_url(base_path, "/"))])
+        return html_response(build_login_html(base_path))
+    if route == "/logout":
+        token = get_cookie_token(headers)
+        revoke_session(token)
+        return (
+            "302 Found",
+            "text/plain",
+            b"",
+            [
+                ("Location", prefixed_url(base_path, "/login")),
+                ("Set-Cookie", "session=deleted; HttpOnly; SameSite=Strict; Path=/; Max-Age=0"),
+            ],
+        )
     if not is_web_authorized(headers):
-        return web_auth_response()
-    if route == '/status.json':
+        return _login_redirect(base_path)
+    if route == "/status.json":
         return json_response(status_snapshot())
-    if route == '/locations.json':
+    if route == "/locations.json":
         return json_response(locations_snapshot())
-    if route == '/sensors.json':
+    if route == "/sensors.json":
         return json_response(sensors_snapshot())
-    if route == '/packets.json':
+    if route == "/packets.json":
         return json_response(packets_snapshot())
-    if route == '/map':
+    if route == "/map":
         return html_response(build_location_map_html(base_path))
-    if route == '/manage':
+    if route == "/manage":
         if not is_admin_authorized(headers):
             return admin_auth_response()
         return html_response(build_manage_html(base_path=base_path))
-    if route in ('/', '/status'):
+    if route in ("/", "/status"):
         return html_response(build_status_html(base_path))
-    return text_response('404 Not Found', 'Not found\n')
+    return text_response("404 Not Found", "Not found\n")
 
 
 def build_http_headers(status: str, content_type: str, body: bytes, extra_headers: list[tuple[str, str]]) -> bytes:
@@ -293,6 +352,30 @@ def build_http_headers(status: str, content_type: str, body: bytes, extra_header
     return ('\r\n'.join(header_lines) + '\r\n\r\n').encode('ascii')
 
 
+async def handle_login_post(reader: asyncio.StreamReader, headers: dict[str, str], base_path: str) -> HttpResponse:
+    """Handle a login form submission, create a session on success."""
+    content_length = parse_content_length(headers)
+    raw_body = await reader.readexactly(content_length) if content_length > 0 else b""
+    form = parse_qs(raw_body.decode("utf-8", errors="replace"), keep_blank_values=True)
+    username = (form.get("username") or [""])[0]
+    password = (form.get("password") or [""])[0]
+    expected_user = config.WEB_USERNAME or "user"
+    if username == expected_user and password == config.WEB_PASSWORD:
+        token = create_session()
+        log.info("Web login successful for user %r", username)
+        return (
+            "302 Found",
+            "text/plain",
+            b"",
+            [
+                ("Location", prefixed_url(base_path, "/")),
+                ("Set-Cookie", f"session={token}; HttpOnly; SameSite=Strict; Path=/"),
+            ],
+        )
+    log.warning("Web login failed for user %r", username)
+    return html_response(build_login_html(base_path, error="Invalid username or password"))
+
+
 async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.StreamWriter) -> None:
     """Handle one HTTP status client connection."""
     try:
@@ -300,18 +383,20 @@ async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.Strea
         base_path = request_base_path(request_headers)
         route = strip_base_path(path, base_path)
         if not method or not path:
-            response = text_response('405 Method Not Allowed', 'Method not allowed\n')
-        elif method == 'POST' and route == '/command':
+            response = text_response("405 Method Not Allowed", "Method not allowed\n")
+        elif method == "POST" and route == "/login":
+            response = await handle_login_post(reader, request_headers, base_path)
+        elif method == "POST" and route == "/command":
             response = await handle_command_post(reader, request_headers, base_path)
-        elif method != 'GET':
-            response = text_response('405 Method Not Allowed', 'Method not allowed\n')
+        elif method != "GET":
+            response = text_response("405 Method Not Allowed", "Method not allowed\n")
         else:
             response = route_get_request(route, request_headers, base_path)
         status, content_type, body, extra_headers = response
         writer.write(build_http_headers(status, content_type, body, extra_headers) + body)
         await writer.drain()
     except Exception as exc:
-        log.debug('HTTP status request failed: %s', exc)
+        log.debug("HTTP status request failed: %s", exc)
     finally:
         writer.close()
         try:

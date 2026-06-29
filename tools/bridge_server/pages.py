@@ -45,6 +45,172 @@ def strip_base_path(path: str, base_path: str) -> str:
     return route
 
 
+def build_login_html(base_path: str = "", error: str = "") -> str:
+    """Generate the login HTML page in the same style as the status page."""
+    login_url = prefixed_url(base_path, "/login")
+    error_html = f'<p class="error">{html.escape(error)}</p>' if error else ""
+    return f"""<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MeshCoreNG Bridge — Login</title>
+  <style>
+    :root {{
+      color-scheme: dark;
+      --bg: #050806;
+      --panel: rgba(8, 18, 12, .88);
+      --line: rgba(97, 255, 154, .28);
+      --line-strong: rgba(97, 255, 154, .55);
+      --green: #68ff9d;
+      --green-soft: #a1ffc4;
+      --red: #ff5f6d;
+      --muted: #8fb99e;
+      --text: #dfffe9;
+      --shadow: 0 18px 60px rgba(0, 0, 0, .45);
+      font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, "Liberation Mono", monospace;
+    }}
+    * {{ box-sizing: border-box; }}
+    html {{ min-height: 100%; background: var(--bg); }}
+    body {{
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--text);
+      background:
+        radial-gradient(circle at 18% 12%, rgba(104, 255, 157, .12), transparent 28%),
+        linear-gradient(180deg, rgba(2, 10, 6, .7), rgba(2, 5, 3, .98)),
+        var(--bg);
+    }}
+    body::before {{
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(rgba(104, 255, 157, .04) 50%, rgba(0, 0, 0, .13) 50%),
+        linear-gradient(90deg, rgba(255, 0, 0, .025), rgba(0, 255, 95, .018), rgba(0, 120, 255, .025));
+      background-size: 100% 4px, 7px 100%;
+      mix-blend-mode: screen;
+      opacity: .42;
+      z-index: 3;
+    }}
+    .login-wrap {{
+      position: relative;
+      z-index: 1;
+      width: min(420px, 94vw);
+      padding: 40px 36px 32px;
+      background: linear-gradient(180deg, var(--panel), rgba(3, 10, 6, .92));
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow), inset 0 0 24px rgba(104, 255, 157, .035);
+      border-radius: 8px;
+    }}
+    .brand {{
+      text-align: center;
+      margin-bottom: 32px;
+    }}
+    h1 {{
+      margin: 0 0 6px;
+      color: var(--green);
+      font-size: 1.7rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+      text-shadow: 0 0 18px rgba(104, 255, 157, .45);
+    }}
+    .subtitle {{
+      color: var(--muted);
+      font-size: .78rem;
+      margin: 0;
+    }}
+    .field {{ margin-bottom: 18px; }}
+    label {{
+      display: block;
+      color: var(--muted);
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .04em;
+      margin-bottom: 6px;
+    }}
+    input[type=text], input[type=password] {{
+      width: 100%;
+      background: rgba(104, 255, 157, .05);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      color: var(--text);
+      font-family: inherit;
+      font-size: .92rem;
+      padding: 10px 12px;
+      outline: none;
+      transition: border-color .15s, box-shadow .15s;
+    }}
+    input[type=text]:focus, input[type=password]:focus {{
+      border-color: var(--green);
+      box-shadow: 0 0 14px rgba(104, 255, 157, .18);
+    }}
+    button[type=submit] {{
+      width: 100%;
+      margin-top: 8px;
+      padding: 11px;
+      background: rgba(104, 255, 157, .11);
+      border: 1px solid var(--line-strong);
+      border-radius: 4px;
+      color: var(--green);
+      font-family: inherit;
+      font-size: .92rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      cursor: pointer;
+      transition: border-color .15s, box-shadow .15s, background .15s;
+    }}
+    button[type=submit]:hover {{
+      border-color: var(--green);
+      background: rgba(104, 255, 157, .18);
+      box-shadow: 0 0 22px rgba(104, 255, 157, .22);
+    }}
+    .error {{
+      margin: 0 0 16px;
+      padding: 9px 12px;
+      background: rgba(255, 95, 109, .12);
+      border: 1px solid rgba(255, 95, 109, .4);
+      border-radius: 4px;
+      color: var(--red);
+      font-size: .84rem;
+    }}
+    .version {{
+      text-align: center;
+      margin-top: 24px;
+      color: rgba(143, 185, 158, .4);
+      font-size: .7rem;
+    }}
+  </style>
+</head>
+<body>
+  <div class="login-wrap">
+    <div class="brand">
+      <h1>MeshCore Bridge</h1>
+      <p class="subtitle">TCP Bridge Server &mdash; Secure Access</p>
+    </div>
+    {error_html}
+    <form method="post" action="{login_url}">
+      <div class="field">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" autocomplete="username" autofocus required>
+      </div>
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" autocomplete="current-password" required>
+      </div>
+      <button type="submit">Sign In</button>
+    </form>
+    <p class="version">{SERVER_NAME} v{SERVER_VERSION}</p>
+  </div>
+</body>
+</html>"""
+
+
 def build_status_html(base_path: str = "") -> str:
     """Generate the status HTML page."""
     manage_url = prefixed_url(base_path, "/manage")
