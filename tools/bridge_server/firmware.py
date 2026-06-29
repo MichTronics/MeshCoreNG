@@ -51,7 +51,18 @@ def fetch_latest_firmware_info(repo: str, timeout: int) -> dict:
     best_merged_bin_count = 0
 
     for page in range(1, _MAX_PAGES + 1):
-        items = _fetch_releases_page(repo, page, timeout)
+        try:
+            items = _fetch_releases_page(repo, page, timeout)
+        except (URLError, TimeoutError, OSError) as exc:
+            if best is not None:
+                # We already have a result from earlier pages — use it.
+                log.warning(
+                    "Firmware page %d fetch failed (%s); using best result found so far (%s)",
+                    page, exc, f"v{best[0]}.{best[1]}.{best[2]}",
+                )
+                break
+            raise  # first page failed — nothing to return
+
         if not items:
             break  # no more pages
 

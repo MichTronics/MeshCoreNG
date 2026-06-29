@@ -113,7 +113,7 @@ def add_firmware_update_args(parser: argparse.ArgumentParser) -> None:
     """Add firmware update CLI arguments."""
     parser.add_argument('--firmware-update-repo', default=config.FIRMWARE_UPDATE_REPO, help='GitHub owner/repo used for firmware update checks (default: MichTronics/MeshCoreNG, empty disables)')
     parser.add_argument('--firmware-update-interval', type=int, default=config.FIRMWARE_UPDATE_CHECK_INTERVAL_SECS, help='Seconds between firmware update checks (default: 3600, 0 disables)')
-    parser.add_argument('--firmware-update-timeout', type=int, default=config.FIRMWARE_UPDATE_TIMEOUT_SECS, help='HTTP timeout in seconds for firmware update checks (default: 5)')
+    parser.add_argument('--firmware-update-timeout', type=int, default=config.FIRMWARE_UPDATE_TIMEOUT_SECS, help='HTTP timeout in seconds for firmware update checks (default: 15)')
 
 
 def add_packet_decode_args(parser: argparse.ArgumentParser) -> None:
