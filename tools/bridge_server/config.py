@@ -12,7 +12,7 @@ LOCATION_TRACKS_DIR = Path("logs/location_tracks")
 CLIENT_TIMEOUT_SECS = 180
 STATUS_INTERVAL_SECS = 60
 REPLACE_SAME_IP = False
-STATUS_BASE_PATH = "/meshbridgestatus"
+STATUS_BASE_PATH = ""
 CLIENT_TX_QUEUE_MAX = 250
 
 # Authentication and remote management settings.
