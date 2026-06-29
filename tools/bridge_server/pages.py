@@ -215,6 +215,7 @@ def build_status_html(base_path: str = "") -> str:
     """Generate the status HTML page."""
     manage_url = prefixed_url(base_path, "/manage")
     map_url = prefixed_url(base_path, "/map")
+    logout_url = prefixed_url(base_path, "/logout")
     status_json_url = prefixed_url(base_path, "/status.json")
     packets_json_url = prefixed_url(base_path, "/packets.json")
     sensors_json_url = prefixed_url(base_path, "/sensors.json")
@@ -307,6 +308,8 @@ def build_status_html(base_path: str = "") -> str:
       border-radius: 4px;
     }}
     a:hover {{ border-color: var(--green); box-shadow: 0 0 18px rgba(104, 255, 157, .22); }}
+    a.logout {{ border-color: rgba(255, 95, 109, .35); color: var(--red); background: rgba(255, 95, 109, .07); }}
+    a.logout:hover {{ border-color: var(--red); box-shadow: 0 0 18px rgba(255, 95, 109, .22); }}
     .status-strip {{
       display: grid;
       grid-template-columns: repeat(5, minmax(150px, 1fr));
@@ -506,6 +509,7 @@ def build_status_html(base_path: str = "") -> str:
       <nav>
         <a href="{manage_url}">Remote management</a>
         <a href="{map_url}">Tracker map</a>
+        <a href="{logout_url}" class="logout">Sign out</a>
       </nav>
     </header>
 
@@ -976,6 +980,7 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
 
     status_url = prefixed_url(base_path, "/")
     command_url = prefixed_url(base_path, "/command")
+    logout_url = prefixed_url(base_path, "/logout")
     connected_count = snapshot.get("connected_count", len(snapshot["clients"]))
     node_count = len(snapshot["clients"])
     auth_state = "protected" if ADMIN_PASSWORD else "node password"
@@ -1025,6 +1030,9 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
       font-weight: 750;
       font-size: .82rem;
     }}
+    nav a:hover {{ border-color: var(--green-soft); }}
+    nav a.logout {{ border-color: rgba(255, 91, 91, .35); color: var(--red); background: rgba(255, 91, 91, .07); }}
+    nav a.logout:hover {{ border-color: var(--red); }}
     .status-strip {{
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -1138,6 +1146,7 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
       </div>
       <nav>
         <a href="{status_url}">Bridge status</a>
+        <a href="{logout_url}" class="logout">Sign out</a>
       </nav>
     </header>
     <section class="status-strip">
@@ -1270,6 +1279,7 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
 def build_location_map_html(base_path: str = "") -> str:
     """Generate the map HTML page."""
     status_url = prefixed_url(base_path, "/")
+    logout_url = prefixed_url(base_path, "/logout")
     locations_url = prefixed_url(base_path, "/locations.json")
     page = """<!doctype html>
 <html lang="en">
@@ -1428,6 +1438,8 @@ def build_location_map_html(base_path: str = "") -> str:
       background: rgba(104, 255, 157, .08);
     }
     .topbar a:hover { border-color: var(--line-strong); color: var(--green); }
+    .topbar a.logout { border-color: rgba(255, 91, 91, .35); color: #ff5b5b; background: rgba(255, 91, 91, .07); }
+    .topbar a.logout:hover { border-color: #ff5b5b; }
     .muted {
       color: var(--muted);
       font-size: .84rem;
@@ -1538,6 +1550,7 @@ def build_location_map_html(base_path: str = "") -> str:
     <h1>MeshCoreNG Tracker Tactical Map</h1>
     <span class="muted" id="summary">Loading...</span>
     <a href="__STATUS_URL__">Bridge status</a>
+    <a href="__LOGOUT_URL__" class="logout">Sign out</a>
   </div>
   <div id="map"></div>
   <div class="replaybar">
@@ -1957,6 +1970,6 @@ def build_location_map_html(base_path: str = "") -> str:
 </body>
 </html>
 """
-    return page.replace("__STATUS_URL__", status_url).replace("__LOCATIONS_URL__", locations_url)
+    return page.replace("__STATUS_URL__", status_url).replace("__LOCATIONS_URL__", locations_url).replace("__LOGOUT_URL__", logout_url)
 
 
