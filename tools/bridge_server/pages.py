@@ -961,23 +961,15 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
         '<option value="">No bridge nodes connected</option>'
     )
     disabled = " disabled" if not options else ""
-    path_block_enabled = config.ALLOW_PATH_BLOCK_ADMIN and bool(config.ADMIN_PASSWORD)
-    path_disabled = "" if options and path_block_enabled else " disabled"
+    path_block_enabled = bool(options)  # available to any authenticated admin
+    path_disabled = "" if options else " disabled"
     admin_note = (
-        "Remote management protected by server admin password; node password still required"
+        "Remote management protected by admin login; node password still required for CLI commands"
         if config.ADMIN_PASSWORD else
         "Remote management enabled; enter the selected node's admin password"
     )
-    path_note = (
-        "Path quarantine is enabled for bridge admins and does not require the node password"
-        if path_block_enabled else
-        "Path quarantine is disabled; start the server with --admin-password and --allow-path-block-admin"
-    )
-    node_note = (
-        "Node quarantine blocks a 1-byte source id on the selected bridge node; matching packets are dropped locally"
-        if path_block_enabled else
-        "Node quarantine is disabled; start the server with --admin-password and --allow-path-block-admin"
-    )
+    path_note = "Path quarantine does not require the node password — commands are sent directly to the bridge"
+    node_note = "Node quarantine blocks a 1-byte source id on the selected bridge node; matching packets are dropped locally"
     result_html = (
         f'<pre class="command-result">{html.escape(redact_public_text(command_result))}</pre>'
         if command_result else

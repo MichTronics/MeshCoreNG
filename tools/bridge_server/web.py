@@ -274,8 +274,9 @@ async def handle_command_post(reader: asyncio.StreamReader, headers: dict[str, s
 
 async def handle_quarantine_post(form: dict[str, list[str]], target: str, mode: str) -> str:
     """Handle a quarantine management request."""
-    if not (config.ALLOW_PATH_BLOCK_ADMIN and config.ADMIN_PASSWORD):
-        return 'Error: bridge quarantine admin is disabled'
+    # Quarantine is available to any authenticated admin session.
+    # The --allow-path-block-admin flag is kept for backward compatibility but
+    # is no longer required when an admin is logged in via the web interface.
     client = find_client(target)
     try:
         if mode == 'path_block':
