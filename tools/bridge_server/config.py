@@ -17,6 +17,8 @@ CLIENT_TX_QUEUE_MAX = 250
 
 # Authentication and remote management settings.
 BRIDGE_PASSWORD = ""
+WEB_USERNAME = ""
+WEB_PASSWORD = ""
 ADMIN_PASSWORD = ""
 ALLOW_PATH_BLOCK_ADMIN = False
 

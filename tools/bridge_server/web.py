@@ -34,24 +34,54 @@ PATH_BLOCK_DURATION_RE = re.compile(r"^[1-9][0-9]*(?:[mhd])?$")
 NODE_BLOCK_RE = re.compile(r"^[0-9a-fA-F]{2}$")
 
 
-def is_admin_authorized(headers: dict[str, str]) -> bool:
-    """Return whether the request has admin access."""
-    if not config.ADMIN_PASSWORD:
-        return True
+def _decode_basic_auth(headers: dict[str, str]) -> tuple[str, str]:
+    """Decode a Basic auth header into (username, password), or ('', '') on failure."""
     auth = headers.get('authorization', '')
     if not auth.lower().startswith('basic '):
-        return False
+        return ('', '')
     try:
         decoded = base64.b64decode(auth[6:].strip()).decode('utf-8', errors='replace')
     except Exception:
-        return False
-    _user, sep, password = decoded.partition(':')
-    return bool(sep) and password == config.ADMIN_PASSWORD
+        return ('', '')
+    user, sep, password = decoded.partition(':')
+    return (user, password) if sep else ('', '')
+
+
+def is_web_authorized(headers: dict[str, str]) -> bool:
+    """Return whether the request has web access (username + password)."""
+    if not config.WEB_PASSWORD:
+        return True
+    user, password = _decode_basic_auth(headers)
+    expected_user = config.WEB_USERNAME or 'user'
+    return user == expected_user and password == config.WEB_PASSWORD
+
+
+def web_auth_response() -> tuple[str, str, bytes, list[tuple[str, str]]]:
+    """Build the HTTP web authentication challenge response."""
+    return (
+        '401 Unauthorized',
+        'text/plain',
+        b'Login required\n',
+        [('WWW-Authenticate', 'Basic realm="MeshCoreNG Bridge"')],
+    )
+
+
+def is_admin_authorized(headers: dict[str, str]) -> bool:
+    """Return whether the request has admin access."""
+    if not config.ADMIN_PASSWORD:
+        return is_web_authorized(headers)
+    _user, password = _decode_basic_auth(headers)
+    return password == config.ADMIN_PASSWORD
 
 
 def admin_auth_response() -> tuple[str, str, bytes, list[tuple[str, str]]]:
     """Build the HTTP admin authentication challenge response."""
-    return ('401 Unauthorized', 'text/plain', b'Admin authentication required\n', [('WWW-Authenticate', 'Basic realm="MeshCoreNG Bridge Admin"')])
+    return (
+        '401 Unauthorized',
+        'text/plain',
+        b'Admin authentication required\n',
+        [('WWW-Authenticate', 'Basic realm="MeshCoreNG Bridge Admin"')],
+    )
 
 
 def find_client(client_id: str) -> BridgeClient | None:
@@ -235,6 +265,8 @@ async def handle_remote_cli_post(target: str, node_password: str, command: str) 
 
 def route_get_request(route: str, headers: dict[str, str], base_path: str) -> HttpResponse:
     """Route an HTTP GET request to a response builder."""
+    if not is_web_authorized(headers):
+        return web_auth_response()
     if route == '/status.json':
         return json_response(status_snapshot())
     if route == '/locations.json':

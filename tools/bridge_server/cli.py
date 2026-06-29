@@ -135,6 +135,8 @@ def add_rate_limit_args(parser: argparse.ArgumentParser) -> None:
 
 def add_admin_args(parser: argparse.ArgumentParser) -> None:
     """Add HTTP admin CLI arguments."""
+    parser.add_argument('--web-username', default='', help='Username required to access the HTTP status web interface (default: user when --web-password is set)')
+    parser.add_argument('--web-password', default='', help='Password required to access the HTTP status web interface (empty disables login)')
     parser.add_argument('--admin-password', default='', help='Optional Basic auth password protecting the HTTP remote management page')
     parser.add_argument('--allow-path-block-admin', action='store_true', help='Allow HTTP bridge admins to send path.block quarantine commands without node passwords')
 
@@ -168,6 +170,8 @@ def apply_args(args: argparse.Namespace) -> None:
     config.STATUS_BASE_PATH = normalize_base_path(args.status_base_path)
     config.REPLACE_SAME_IP = args.replace_same_ip
     config.BRIDGE_PASSWORD = args.password
+    config.WEB_USERNAME = args.web_username.strip()
+    config.WEB_PASSWORD = args.web_password
     config.ADMIN_PASSWORD = args.admin_password
     config.ALLOW_PATH_BLOCK_ADMIN = args.allow_path_block_admin
     config.FIRMWARE_UPDATE_REPO = args.firmware_update_repo.strip()
