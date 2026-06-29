@@ -7,6 +7,12 @@ import bridge_server.config as config
 from bridge_server.constants import SERVER_NAME, SERVER_VERSION
 
 
+def _status_snapshot(*args, **kwargs):
+    """Lazy import to avoid circular dependency with server module."""
+    from bridge_server.server import status_snapshot  # noqa: PLC0415
+    return status_snapshot(*args, **kwargs)
+
+
 def normalize_base_path(path: str) -> str:
     """Normalize a configured status page base path."""
     path = (path or "").strip()
@@ -934,7 +940,7 @@ def build_status_html(base_path: str = "") -> str:
 
 def build_manage_html(command_result: str = "", base_path: str = "") -> str:
     """Generate the manage HTML page."""
-    snapshot = status_snapshot(include_disconnected=False)
+    snapshot = _status_snapshot(include_disconnected=False)
     options = []
     for client in snapshot["clients"]:
         label = client["display_name"]
@@ -955,11 +961,11 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
         '<option value="">No bridge nodes connected</option>'
     )
     disabled = " disabled" if not options else ""
-    path_block_enabled = ALLOW_PATH_BLOCK_ADMIN and bool(ADMIN_PASSWORD)
+    path_block_enabled = config.ALLOW_PATH_BLOCK_ADMIN and bool(config.ADMIN_PASSWORD)
     path_disabled = "" if options and path_block_enabled else " disabled"
     admin_note = (
         "Remote management protected by server admin password; node password still required"
-        if ADMIN_PASSWORD else
+        if config.ADMIN_PASSWORD else
         "Remote management enabled; enter the selected node's admin password"
     )
     path_note = (
@@ -983,7 +989,7 @@ def build_manage_html(command_result: str = "", base_path: str = "") -> str:
     logout_url = prefixed_url(base_path, "/logout")
     connected_count = snapshot.get("connected_count", len(snapshot["clients"]))
     node_count = len(snapshot["clients"])
-    auth_state = "protected" if ADMIN_PASSWORD else "node password"
+    auth_state = "protected" if config.ADMIN_PASSWORD else "node password"
     quarantine_state = "enabled" if path_block_enabled else "disabled"
 
     return f"""<!doctype html>
