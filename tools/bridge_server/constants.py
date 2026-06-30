@@ -1,0 +1,106 @@
+"""Shared bridge server constants."""
+
+import re
+
+SERVER_NAME = "MeshCoreNG TCP Bridge Server"
+SERVER_VERSION = "1.1.3"
+BRIDGE_MAGIC = 0xC03E
+MAX_PAYLOAD = 512
+CONTROL_PREFIX = b"MCNG"
+CONTROL_TYPE_HEARTBEAT = 0x01
+CONTROL_TYPE_NODE_INFO = 0x02
+CONTROL_TYPE_AUTH = 0x03
+CONTROL_TYPE_CAPS = 0x04
+CONTROL_TYPE_COMMAND = 0x10
+CONTROL_TYPE_COMMAND_REPLY = 0x11
+CONTROL_TYPE_BRIDGE_PACKET = 0x20
+BRIDGE_PACKET_VERSION = 1
+BRIDGE_PACKET_FLAG_RF_RX = 0x01
+BRIDGE_V2_OVERHEAD = 14
+SUPPORTED_BRIDGE_PACKET_VERSIONS = {BRIDGE_PACKET_VERSION}
+IP_ADDRESS_RE = re.compile(
+    r"(?<![\w.])(?:\d{1,3}\.){3}\d{1,3}(?::\d{1,5})?(?![\w.])"
+    r"|(?<![\w:])(?:[0-9a-fA-F]{1,4}:){2,}[0-9a-fA-F]{0,4}(?::\d{1,5})?(?![\w:])"
+)
+PAYLOAD_TYPE_ADVERT = 0x04
+PAYLOAD_TYPE_REQ = 0x00
+PAYLOAD_TYPE_RESPONSE = 0x01
+PAYLOAD_TYPE_TXT_MSG = 0x02
+PAYLOAD_TYPE_ACK = 0x03
+PAYLOAD_TYPE_PATH = 0x08
+PAYLOAD_TYPE_ANON_REQ = 0x07
+PAYLOAD_TYPE_MULTIPART = 0x0A
+PAYLOAD_TYPE_GRP_TXT = 0x05
+PAYLOAD_TYPE_GRP_DATA = 0x06
+PAYLOAD_TYPE_TRACE = 0x09
+PAYLOAD_TYPE_LOCATION = 0x0D
+DATA_TYPE_MESHCORENG_TRACKER = 0x0200
+PH_ROUTE_MASK = 0x03
+PH_TYPE_SHIFT = 2
+ROUTE_TYPE_TRANSPORT_FLOOD = 0x00
+ROUTE_TYPE_FLOOD = 0x01
+ROUTE_TYPE_DIRECT = 0x02
+ROUTE_TYPE_TRANSPORT_DIRECT = 0x03
+ADV_TYPE_SENSOR = 0x04
+ADV_TYPE_REPEATER = 0x02
+ADV_LATLON_MASK = 0x10
+ADV_FEAT1_MASK = 0x20
+ADV_FEAT2_MASK = 0x40
+ADV_NAME_MASK = 0x80
+PUB_KEY_SIZE = 32
+SIGNATURE_SIZE = 64
+MAX_ADVERT_DATA_SIZE = 32
+PATH_HASH_SIZE = 1
+CIPHER_MAC_SIZE = 2
+CIPHER_BLOCK_SIZE = 16
+DEFAULT_PUBLIC_CHANNEL_SECRET = bytes([
+    0x8B, 0x33, 0x87, 0xE9, 0xC5, 0xCD, 0xEA, 0x6A,
+    0xC9, 0xE5, 0xED, 0xBA, 0xA1, 0x15, 0xCD, 0x72,
+]) + (b"\x00" * 16)
+DEFAULT_TRACKER_CHANNEL_SECRET = bytes([
+    0x5F, 0x30, 0x3A, 0xC5, 0x07, 0x5F, 0x80, 0x0F,
+    0x0F, 0x47, 0x11, 0x31, 0x99, 0xD5, 0x10, 0x53,
+]) + (b"\x00" * 16)
+VERSION_RE = re.compile(r"v?(\d+)\.(\d+)\.(\d+)(?:[-+][0-9A-Za-z._-]+)?")
+FIRMWARE_RELEASE_TAG_RE = re.compile(
+    r"^(?:v|(?:[a-z][a-z0-9]*(?:-[a-z0-9]+)*-v))(\d+\.\d+\.\d+)(?:[-+].*)?$"
+)
+PAYLOAD_TYPE_NAMES = {
+    0x00: "request",
+    0x01: "response",
+    0x02: "text-message",
+    0x03: "ack",
+    0x04: "advert",
+    0x05: "group-text",
+    0x06: "group-data",
+    0x07: "anon-request",
+    0x08: "path",
+    0x09: "trace",
+    0x0A: "multipart",
+    0x0B: "control",
+    0x0C: "atlas",
+    0x0D: "location",
+    0x0F: "raw-custom",
+}
+ROUTE_TYPE_NAMES = {
+    0x00: "transport-flood",
+    0x01: "flood",
+    0x02: "direct",
+    0x03: "transport-direct",
+}
+CONTROL_TYPE_NAMES = {
+    CONTROL_TYPE_HEARTBEAT: "heartbeat",
+    CONTROL_TYPE_NODE_INFO: "node-info",
+    CONTROL_TYPE_AUTH: "auth",
+    CONTROL_TYPE_CAPS: "capabilities",
+    CONTROL_TYPE_COMMAND: "command",
+    CONTROL_TYPE_COMMAND_REPLY: "command-reply",
+    CONTROL_TYPE_BRIDGE_PACKET: "bridge-v2-packet",
+}
+COMMAND_TIMEOUT_SECS = 8
+OTA_CHECK_COMMAND_TIMEOUT_SECS = 25
+OTA_UPDATE_COMMAND_TIMEOUT_SECS = 120
+BLOCK_STATS_COUNTER_WINDOW_SECS = 24 * 60 * 60
+LOCATION_ROUTE_STATIONARY_SECS = 30 * 60
+LOCATION_ROUTE_STATIONARY_METERS = 30
+PACKET_COUNTER_WINDOW_SECS = 24 * 60 * 60
