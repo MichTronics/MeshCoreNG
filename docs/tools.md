@@ -124,6 +124,49 @@ Options:
 --verbose
 ```
 
+## Bridge Echo Lab
+
+`tools/bridge_echo_lab.py` runs a diagnostic Echo Lab service through the TCP bridge. It needs `cryptography` and uses the same bridge-client style as the Python room server.
+
+```bash
+pip install cryptography
+python3 tools/bridge_echo_lab.py --server 127.0.0.1 --port 4200 \
+  --bridge-password bridgeSecret --name "Echo Lab" --password secret
+```
+
+Commands accepted by logged-in clients:
+
+```text
+ping bridge
+trace flood
+echo direct <text>
+echo flood <text>
+delay test <milliseconds>
+loss test <count>
+status
+id
+```
+
+Options:
+
+```text
+--server <host>
+--port <port>
+--bridge-password <secret>
+--name <service-name>
+--password <password>
+--admin-password <admin-password>
+--scope <region-name>
+--state <path>
+--advert-interval <seconds>
+--path-hash-size 1|2|3
+--default-delay-ms <milliseconds>
+--max-delay-ms <milliseconds>
+--loss-spacing-ms <milliseconds>
+--reconnect-delay <seconds>
+--verbose
+```
+
 ## Public channel list updater
 
 `tools/update_public_channels.py` refreshes `tools/public_channels.json` from MeshWiki.

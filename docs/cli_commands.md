@@ -1976,6 +1976,37 @@ The Python room server stores its identity and recent posts in `python_room_serv
 
 ---
 
+#### Use Bridge Echo Lab through the TCP bridge
+
+MeshCoreNG includes `tools/bridge_echo_lab.py`, a bridge client that acts as a small diagnostic service for latency, route and packet-loss checks.
+
+Run the bridge server:
+
+```bash
+python3 tools/tcp_bridge_server.py --port 4200
+```
+
+Run Bridge Echo Lab:
+
+```bash
+python3 tools/bridge_echo_lab.py --server 127.0.0.1 --port 4200 \
+  --bridge-password bridgeSecret \
+  --name "Echo Lab" --password secret
+```
+
+On the bridge repeater, enable bridge RF forwarding:
+
+```text
+set bridge.enabled on
+set bridge.rf on
+```
+
+After logging in to Echo Lab, useful commands are `ping bridge`, `trace flood`, `echo direct <text>`, `echo flood <text>`, `delay test <milliseconds>`, `loss test <count>`, `status`, and `id`.
+
+The Echo Lab stores its identity in `bridge_echo_lab_state.json` by default. Keep that file if clients should keep recognizing the same service.
+
+---
+
 #### View or change the speed of the bridge (RS-232 only)
 **Usage:**
 - `get bridge.baud`

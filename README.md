@@ -498,6 +498,39 @@ set bridge.rf on
 
 The room server keeps its identity and recent posts in `python_room_server_state.json` by default. Keep that file, or use a fixed `--state <path>` as shown above, if clients should continue recognizing the same room after a restart. Optional scoped flood traffic can be enabled with `--scope <region-name>` when your repeaters use matching region forwarding rules.
 
+#### Path 4: Bridge Echo Lab through the bridge
+
+Bridge Echo Lab is a small diagnostic service that runs beside the TCP bridge server. It connects as another bridge client, advertises itself like a room-style service, accepts a service password, and answers test commands without using normal public group chat.
+
+```text
+[MeshCore clients over LoRa] <--> [Bridge repeater] <--> [bridge server] <--> [bridge_echo_lab.py]
+```
+
+Start it after the TCP bridge server is running:
+
+```bash
+pip install cryptography
+python3 tools/bridge_echo_lab.py --server yourserver.example.com --port 4200 \
+  --bridge-password bridgeSecret \
+  --name "Echo Lab" --password secret \
+  --state /home/pi/meshcore/bridge_echo_lab_state.json
+```
+
+Useful commands after logging in to Echo Lab:
+
+```text
+ping bridge
+trace flood
+echo direct hello
+echo flood hello
+delay test 1500
+loss test 5
+status
+id
+```
+
+The Echo Lab keeps its identity in `bridge_echo_lab_state.json` by default. Keep that file, or use a fixed `--state <path>`, if clients should continue recognizing the same Echo Lab service after a restart. Optional scoped flood traffic can be enabled with `--scope <region-name>` when your repeaters use matching region forwarding rules.
+
 ### 9. Safer repeater power saving
 
 Power saving for repeaters is now clearer and easier to inspect.
