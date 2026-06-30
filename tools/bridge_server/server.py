@@ -351,7 +351,13 @@ async def handle_client(reader: asyncio.StreamReader, writer: asyncio.StreamWrit
             now = time.time()
             client.packet_rx_times.append(now)
             prune_packet_times(client.packet_rx_times, now)
-            record_node_packet(client, 'RX', now)
+            envelope = parse_bridge_packet_envelope(payload)
+            is_rf_rx = bool(envelope and (envelope['flags'] & BRIDGE_PACKET_FLAG_RF_RX))
+            if is_rf_rx:
+                client.rf_packets_rx += 1
+                client.rf_packet_rx_times.append(now)
+                prune_packet_times(client.rf_packet_rx_times, now)
+            record_node_packet(client, 'RX', now, is_rf=is_rf_rx)
             mesh_payload = mesh_payload_for_parsing(payload)
             fingerprint = packet_fingerprint(payload)
             record = packet_fingerprint_record(fingerprint, now)
@@ -399,7 +405,6 @@ async def handle_client(reader: asyncio.StreamReader, writer: asyncio.StreamWrit
                 record_sensor_advert(sensor_report, client)
             packet_log = record_packet_log('RX', client, payload)
             if config.LOG_PACKETS:
-                envelope = parse_bridge_packet_envelope(payload)
                 if envelope is not None:
                     log.info('%s -> server: RX bridge-v2 mesh=%d bytes %s: %s', packet_log['source'], envelope['packet_len'], format_packet_description(packet_log), packet_log['preview'])
                 else:

@@ -47,8 +47,12 @@ class BridgeClient:
         state.next_client_id += 1
         self.packets_rx = 0
         self.packets_tx = 0
+        self.rf_packets_rx = 0
+        self.rf_packets_tx = 0
         self.packet_rx_times: deque[float] = deque()
         self.packet_tx_times: deque[float] = deque()
+        self.rf_packet_rx_times: deque[float] = deque()
+        self.rf_packet_tx_times: deque[float] = deque()
         self.transport_rx_times: deque[float] = deque()
         self.transport_rate_dropped = 0
         self._stats_key = ''
@@ -241,11 +245,16 @@ class BridgeClient:
         stats = get_node_stats(self)
         prune_packet_times(stats['rx_times'], now)
         prune_packet_times(stats['tx_times'], now)
+        prune_packet_times(stats['rf_rx_times'], now)
+        prune_packet_times(stats['rf_tx_times'], now)
         prune_packet_times(self.packet_rx_times, now)
         prune_packet_times(self.packet_tx_times, now)
+        prune_packet_times(self.rf_packet_rx_times, now)
+        prune_packet_times(self.rf_packet_tx_times, now)
         prune_rate_window(self.transport_rx_times, now, config.TRANSPORT_RATE_LIMIT_WINDOW_SECS)
         status = node_stats_status_dict(stats, now)
         status.update({'name': self.node_name, 'id': self.client_id, 'node_id': self.node_id, 'firmware_version': self.firmware_version, 'firmware_update': firmware_update_status(self.firmware_version), 'display_name': self.display_name, 'connected': True, 'connected_seconds': int(now - self._connect_time), 'connected_for': format_duration(now - self._connect_time), 'idle_seconds': int(now - self.last_seen), 'heartbeat_age_seconds': int(now - self.last_heartbeat) if self.last_heartbeat else None, 'heartbeat_uptime_ms': self.last_heartbeat_uptime_ms, 'rf_duty': dict(self.rf_duty), 'radio_stats': dict(self.radio_stats), 'neighbor_count': self.neighbor_count if self.neighbor_count is not None else stats.get('neighbor_count'), 'flood_hop_limit_drops': self.flood_hop_limit_drops or stats.get('flood_hop_limit_drops', 0), 'packets_rx': self.packets_rx, 'packets_tx': self.packets_tx, 'packets_rx_24h': len(stats['rx_times']), 'packets_tx_24h': len(stats['tx_times']), 'transport_rx_window': len(self.transport_rx_times), 'transport_rate_dropped': self.transport_rate_dropped, 'tx_queue_depth': self.tx_queue.qsize(), 'tx_queue_max': config.CLIENT_TX_QUEUE_MAX, 'tx_queue_high_water': self.tx_queue_high_water, 'tx_queued': self.tx_queued, 'tx_queue_dropped': self.tx_queue_dropped, 'tx_send_errors': self.tx_send_errors, 'tx_skipped_duplicates': self.tx_skipped_duplicates, 'skipped_dup_total': self.tx_skipped_duplicates, 'skipped_dup_by_reason': dict(self.skip_reasons), 'loop_score': self.loop_score, 'quarantine_active': self.quarantine_active(now), 'quarantine_seconds_left': max(0, int(self.quarantined_until - now)) if self.quarantined_until else 0, 'group': self.bridge_group, 'bridge_proto_ver': self.bridge_proto_ver, 'bridge_id': f'0x{self.bridge_id:08x}' if self.bridge_id else '', 'node_rf_inject_budget': dict(self.node_rf_inject_budget), 'block_stats': dict(self.block_stats), 'block_stats_totals': block_stats_totals(self.block_stats), 'last_fingerprint': fingerprint_hex(self.last_fingerprint) if self.last_fingerprint else '', 'last_fingerprint_age_seconds': int(now - self.last_fingerprint_at) if self.last_fingerprint_at else None, 'rf_inject_budget_remaining_ms': self.rf_inject_budget_remaining_ms(now), 'rf_budget_drops': self.rf_budget_drops, 'bridge_quality_score': max(0, 100 - min(60, self.loop_score * 10) - min(25, self.tx_queue_dropped) - min(25, self.tx_send_errors * 5) - min(25, self.rf_budget_drops * 2)), 'last_tx_age_seconds': int(now - self.last_tx_send) if self.last_tx_send else None, 'last_tx_queue_drop_age_seconds': int(now - self.last_tx_queue_drop) if self.last_tx_queue_drop else None, 'last_tx_error': self.last_tx_error, 'heartbeats_rx': self.heartbeats_rx, 'authenticated': self.authenticated, 'supports_bridge_v2': self.supports_bridge_v2, 'bridge_proto_ver': self.bridge_proto_ver})
+        status.update({'rf_packets_rx': self.rf_packets_rx, 'rf_packets_tx': self.rf_packets_tx, 'rf_packets_rx_24h': len(stats['rf_rx_times']), 'rf_packets_tx_24h': len(stats['rf_tx_times']),})
         return status
 
     async def read_packet(self) -> bytes | None:
@@ -351,7 +360,8 @@ class BridgeClient:
         try:
             self.writer.write(self.build_frame(payload))
             await self.writer.drain()
-            if seen_payload is not None:
+            is_rf_tx = seen_payload is not None
+            if is_rf_tx:
                 # Track forwarded payloads so loopguard and dedupe share the same view.
                 self.mark_seen_payload(seen_payload)
                 fingerprint = packet_fingerprint(seen_payload)
@@ -362,11 +372,15 @@ class BridgeClient:
                 self.record_rf_inject(seen_payload)
             self.packets_tx += 1
             now = time.time()
+            if is_rf_tx:
+                self.rf_packets_tx += 1
+                self.rf_packet_tx_times.append(now)
+                prune_packet_times(self.rf_packet_tx_times, now)
             self.last_tx_send = now
             self.last_tx_error = ''
             self.packet_tx_times.append(now)
             prune_packet_times(self.packet_tx_times, now)
-            record_node_packet(self, 'TX', now)
+            record_node_packet(self, 'TX', now, is_rf=is_rf_tx)
             from bridge_server.server import format_packet_description, record_packet_log
             packet_log = record_packet_log('TX', self, payload, source=source, target=self.display_name)
             if config.LOG_PACKETS:

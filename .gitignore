@@ -25,3 +25,5 @@ __pycache__/
 platformio.local.ini
 source/
 python_room_server_state.json
+tools/bridge_echo_lab_state.json
+bridge_echo_lab_state.json
