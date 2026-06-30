@@ -79,8 +79,49 @@ static void addSaturating(uint16_t* value, uint16_t amount = 1) {
   *value = amount > remaining ? 0xFFFF : *value + amount;
 }
 
+/**
+ * \brief  Check if packet originated from a bridge, indicating unreliable direct RF path.
+ *
+ * Bridge-origin packets lack a reliable RF return path since the bridge interface is typically
+ * not in direct RF communication with the original sender. Therefore, replies to bridge-origin
+ * packets should use flood routing instead of attempting sendDirect() via the bridge.
+ *
+ * \param packet  The packet to check (may be NULL)
+ * \returns true if packet->wasReceivedFromBridge(), false if packet is NULL or RF-origin
+ * \note Used to prevent unreliable communication paths to bridge-connected remote nodes
+ */
 static bool shouldAvoidBridgeDirectPath(const mesh::Packet* packet) {
   return packet && packet->wasReceivedFromBridge();
+}
+
+/**
+ * \brief  Determine if response should be sent via flood routing vs direct path.
+ *
+ * Selects routing strategy based on: (1) packet route type, (2) bridge origin,
+ * (3) available direct path to sender. This consolidates routing decisions to a single
+ * logic point, reducing code duplication across multiple response handlers.
+ *
+ * \param packet  The received packet
+ * \param out_path_len  Available direct path length (OUT_PATH_UNKNOWN if none available)
+ * \returns true if flood routing should be used, false if direct path is viable
+ * \note Standardizes reply routing decisions across all message handlers
+ */
+static bool shouldSendViaFlood(const mesh::Packet* packet,
+                               int out_path_len = OUT_PATH_UNKNOWN) {
+  // Always flood if sender used flood routing
+  if (packet && packet->isRouteFlood()) {
+    return true;
+  }
+  // Flood if no direct path available
+  if (out_path_len == OUT_PATH_UNKNOWN) {
+    return true;
+  }
+  // Flood if bridge-origin (unreliable RF path)
+  if (shouldAvoidBridgeDirectPath(packet)) {
+    return true;
+  }
+  // Otherwise use direct path
+  return false;
 }
 
 static uint8_t calcDensityLevel(uint16_t neighbors, uint16_t dup_rx, uint16_t unique_rx) {
@@ -257,11 +298,15 @@ void MyMesh::getDenseStats(dense_mesh_stats_t* stats) {
   DENSE_STATS_UNLOCK();
 
   stats->neighbors = getDenseNeighborCount();
-  stats->density_level = calcDensityLevel(stats->neighbors, stats->dup_rx, stats->unique_rx);
-  stats->congestion_level = calcCongestionLevel(stats->airtime_rx_ms, stats->airtime_tx_ms, stats->suppressed_tx);
+  stats->density_level =
+      calcDensityLevel(stats->neighbors, stats->dup_rx, stats->unique_rx);
+  stats->congestion_level = calcCongestionLevel(stats->airtime_rx_ms, stats->airtime_tx_ms,
+                                                stats->suppressed_tx);
 }
 
-uint8_t MyMesh::handleLoginReq(const mesh::Identity& sender, const uint8_t* secret, uint32_t sender_timestamp, const uint8_t* data, bool is_flood) {
+uint8_t MyMesh::handleLoginReq(const mesh::Identity& sender, const uint8_t* secret,
+                               uint32_t sender_timestamp, const uint8_t* data,
+                               bool is_flood) {
   ClientInfo* client = NULL;
   if (data[0] == 0) {   // blank password, just check if sender is in ACL
     client = acl.getClient(sender.pub_key, PUB_KEY_SIZE);
@@ -318,7 +363,8 @@ uint8_t MyMesh::handleLoginReq(const mesh::Identity& sender, const uint8_t* secr
   return 13;  // reply length
 }
 
-uint8_t MyMesh::handleAnonRegionsReq(const mesh::Identity& sender, uint32_t sender_timestamp, const uint8_t* data) {
+uint8_t MyMesh::handleAnonRegionsReq(const mesh::Identity& sender, uint32_t sender_timestamp,
+                                     const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
     reply_path_len = *data & 63;
@@ -332,12 +378,14 @@ uint8_t MyMesh::handleAnonRegionsReq(const mesh::Identity& sender, uint32_t send
     uint32_t now = getRTCClock()->getCurrentTime();
     memcpy(&reply_data[4], &now, 4);     // include our clock (for easy clock sync, and packet hash uniqueness)
 
-    return 8 + region_map.exportNamesTo((char *) &reply_data[8], sizeof(reply_data) - 12, REGION_DENY_FLOOD);   // reply length
+    return 8 + region_map.exportNamesTo((char *)&reply_data[8], sizeof(reply_data) - 12,
+                                           REGION_DENY_FLOOD);   // reply length
   }
   return 0;
 }
 
-uint8_t MyMesh::handleAnonOwnerReq(const mesh::Identity& sender, uint32_t sender_timestamp, const uint8_t* data) {
+uint8_t MyMesh::handleAnonOwnerReq(const mesh::Identity& sender, uint32_t sender_timestamp,
+                                   const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
     reply_path_len = *data & 63;
@@ -357,7 +405,8 @@ uint8_t MyMesh::handleAnonOwnerReq(const mesh::Identity& sender, uint32_t sender
   return 0;
 }
 
-uint8_t MyMesh::handleAnonClockReq(const mesh::Identity& sender, uint32_t sender_timestamp, const uint8_t* data) {
+uint8_t MyMesh::handleAnonClockReq(const mesh::Identity& sender, uint32_t sender_timestamp,
+                                   const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
     reply_path_len = *data & 63;
@@ -385,7 +434,8 @@ uint8_t MyMesh::handleAnonClockReq(const mesh::Identity& sender, uint32_t sender
   return 0;
 }
 
-int MyMesh::handleRequest(ClientInfo *sender, uint32_t sender_timestamp, uint8_t *payload, size_t payload_len) {
+int MyMesh::handleRequest(ClientInfo *sender, uint32_t sender_timestamp, uint8_t *payload,
+                          size_t payload_len) {
   // uint32_t now = getRTCClock()->getCurrentTimeUnique();
   // memcpy(reply_data, &now, 4);   // response packets always prefixed with timestamp
   memcpy(reply_data, &sender_timestamp, 4); // reflect sender_timestamp back in response packet (kind of like a 'tag')

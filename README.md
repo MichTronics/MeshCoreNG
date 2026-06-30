@@ -332,6 +332,17 @@ set bridge.rf local
 
 Bridge RF forwarding still uses the normal repeater forwarding path. Region rules, duplicate checks, loop detection, hop limits, relay probability, retransmit delay, and the normal RF TX queue still apply.
 
+#### Bridge Reply Routing
+
+When a bridge-connected remote node sends a request via flood routing, the repeater intelligently avoids using the bridge as a direct reply path. Bridge connections are typically not in direct RF range with the original sender, so using the bridge for direct replies would result in unreliable communication.
+
+Instead:
+- **Flood-routed requests from bridge nodes** are replied to via flood routing (same path as the request came from)
+- **Direct-path requests** are only answered via direct path if not bridge-originated
+- **Bridge-origin path hints are ignored** - the repeater won't try to send direct replies through a bridge that isn't in RF range
+
+This prevents unnecessary failed direct transmissions and ensures reliable request/response communication even for bridge-connected remote nodes.
+
 For controlled RF islands or backbone links, use the bridge export and profile controls instead of making the TCP bridge a real MeshCore route hop:
 
 ```text
