@@ -226,6 +226,7 @@ def build_status_html(base_path: str = "") -> str:
     status_json_url = prefixed_url(base_path, "/status.json")
     packets_json_url = prefixed_url(base_path, "/packets.json")
     sensors_json_url = prefixed_url(base_path, "/sensors.json")
+    events_url = prefixed_url(base_path, "/events")
     return f"""<!doctype html>
 <html lang="en">
 <head>
@@ -441,10 +442,54 @@ def build_status_html(base_path: str = "") -> str:
       border-radius: 6px;
       padding: 9px;
       min-height: 0;
+      position: relative;
+      transition: border-color .18s ease, box-shadow .18s ease;
     }}
     .node-card.offline {{
       border-color: rgba(255, 209, 102, .2);
       background: rgba(15, 18, 18, .7);
+    }}
+    .node-card.flash-rx {{
+      animation: node-rx-flash 850ms ease-out;
+    }}
+    .node-card.flash-tx {{
+      animation: node-tx-flash 850ms ease-out;
+    }}
+    .node-card.flash-rx.flash-tx {{
+      animation: node-rxtx-flash 950ms ease-out;
+    }}
+    @keyframes node-rx-flash {{
+      0% {{
+        border-color: rgba(68, 151, 255, 1);
+        box-shadow: 0 0 0 1px rgba(68, 151, 255, .95), 0 0 26px rgba(68, 151, 255, .7);
+      }}
+      100% {{
+        border-color: rgba(97, 255, 154, .22);
+        box-shadow: none;
+      }}
+    }}
+    @keyframes node-tx-flash {{
+      0% {{
+        border-color: rgba(255, 81, 94, 1);
+        box-shadow: 0 0 0 1px rgba(255, 81, 94, .95), 0 0 26px rgba(255, 81, 94, .7);
+      }}
+      100% {{
+        border-color: rgba(97, 255, 154, .22);
+        box-shadow: none;
+      }}
+    }}
+    @keyframes node-rxtx-flash {{
+      0% {{
+        border-color: rgba(68, 151, 255, 1);
+        box-shadow: -6px 0 24px rgba(68, 151, 255, .72), 6px 0 24px rgba(255, 81, 94, .72);
+      }}
+      45% {{
+        border-color: rgba(255, 81, 94, 1);
+      }}
+      100% {{
+        border-color: rgba(97, 255, 154, .22);
+        box-shadow: none;
+      }}
     }}
     .node-title {{ color: var(--green-soft); font-size: .92rem; font-weight: 800; overflow-wrap: anywhere; }}
     .node-meta {{ margin-top: 5px; color: var(--muted); font-size: .72rem; line-height: 1.25; overflow-wrap: anywhere; }}
@@ -604,11 +649,17 @@ def build_status_html(base_path: str = "") -> str:
     const urls = {{
       status: "{status_json_url}",
       packets: "{packets_json_url}",
-      sensors: "{sensors_json_url}"
+      sensors: "{sensors_json_url}",
+      events: "{events_url}"
     }};
     const state = {{
       seenPacketKeys: new Set(),
-      firstPacketLoad: true
+      firstPacketLoad: true,
+      nodePacketCounters: new Map(),
+      firstNodeLoad: true,
+      pollTimer: null,
+      eventStream: null,
+      lastEventAt: 0
     }};
 
     const text = (value, fallback = "") => value === null || value === undefined || value === "" ? fallback : String(value);
@@ -698,10 +749,23 @@ def build_status_html(base_path: str = "") -> str:
       if (!status.clients.length) {{
         target.innerHTML = '<div class="empty">No bridge nodes seen in the last 24h</div>';
         setStatus("nodeStatus", "no nodes", "warn");
+        state.nodePacketCounters.clear();
+        state.firstNodeLoad = true;
         return;
       }}
       setStatus("nodeStatus", `${{status.connected_count}} online / ${{status.known_count || status.clients.length}} known`, status.connected_count ? "ok" : "warn");
+      const currentCounters = new Map();
       target.innerHTML = status.clients.map((client) => {{
+        const clientKey = client.id || client.node_id || client.display_name;
+        const rxCount = client.rf_packets_rx || client.rf_packets_rx_24h || 0;
+        const txCount = client.rf_packets_tx || client.rf_packets_tx_24h || 0;
+        const previous = state.nodePacketCounters.get(clientKey);
+        const rxDelta = previous ? Math.max(0, rxCount - previous.rx) : 0;
+        const txDelta = previous ? Math.max(0, txCount - previous.tx) : 0;
+        const flashClass = state.firstNodeLoad
+          ? ""
+          : `${{rxDelta > 0 ? " flash-rx" : ""}}${{txDelta > 0 ? " flash-tx" : ""}}`;
+        currentCounters.set(clientKey, {{ rx: rxCount, tx: txCount }});
         const heartbeat = client.heartbeat_age_seconds === null ? "never" : `${{client.heartbeat_age_seconds}}s ago`;
         const isOnline = client.connected !== false;
         const update = client.firmware_update || {{}};
@@ -759,7 +823,7 @@ def build_status_html(base_path: str = "") -> str:
         const nodeBlockTitle = `${{formatBlockEntries(blockStats.node)}}${{blockStats.error ? " | poll error: " + blockStats.error : ""}}`;
         const pathBlockTitle = `${{formatBlockEntries(blockStats.path)}}${{blockStats.error ? " | poll error: " + blockStats.error : ""}}`;
         return `
-          <article class="node-card${{isOnline ? "" : " offline"}}">
+          <article class="node-card${{isOnline ? "" : " offline"}}${{flashClass}}" data-client-id="${{escapeHtml(clientKey)}}">
             <div class="node-title">
               <span>${{escapeHtml(client.display_name)}}</span>
             </div>
@@ -789,6 +853,8 @@ def build_status_html(base_path: str = "") -> str:
           </article>
         `;
       }}).join("");
+      state.nodePacketCounters = currentCounters;
+      state.firstNodeLoad = false;
     }}
 
     function packetKey(packet) {{
@@ -910,6 +976,13 @@ def build_status_html(base_path: str = "") -> str:
       }}).join("");
     }}
 
+    function renderSnapshot(snapshot) {{
+      renderMetrics(snapshot.status, snapshot.packets, snapshot.sensors);
+      renderNodes(snapshot.status);
+      renderPackets(snapshot.packets);
+      renderSensors(snapshot.sensors);
+    }}
+
     async function refresh() {{
       try {{
         const [status, packets, sensors] = await Promise.all([
@@ -917,10 +990,7 @@ def build_status_html(base_path: str = "") -> str:
           getJson(urls.packets),
           getJson(urls.sensors)
         ]);
-        renderMetrics(status, packets, sensors);
-        renderNodes(status);
-        renderPackets(packets);
-        renderSensors(sensors);
+        renderSnapshot({{ status, packets, sensors }});
       }} catch (error) {{
         document.getElementById("metricSync").textContent = "link error";
         setStatus("nodeStatus", "link error", "error");
@@ -931,8 +1001,38 @@ def build_status_html(base_path: str = "") -> str:
       }}
     }}
 
+    function startPollingFallback(intervalMs = 1000) {{
+      if (state.pollTimer) return;
+      state.pollTimer = setInterval(refresh, intervalMs);
+    }}
+
+    function startRealtime() {{
+      if (!("EventSource" in window)) {{
+        startPollingFallback();
+        return;
+      }}
+      state.eventStream = new EventSource(urls.events);
+      state.eventStream.onmessage = (event) => {{
+        try {{
+          state.lastEventAt = Date.now();
+          if (state.pollTimer) {{
+            clearInterval(state.pollTimer);
+            state.pollTimer = null;
+          }}
+          renderSnapshot(JSON.parse(event.data));
+        }} catch (error) {{
+          console.error(error);
+        }}
+      }};
+      state.eventStream.onerror = () => {{
+        if (!state.lastEventAt || Date.now() - state.lastEventAt > 5000) {{
+          startPollingFallback();
+        }}
+      }};
+    }}
+
     refresh();
-    setInterval(refresh, 2000);
+    startRealtime();
   </script>
 </body>
 </html>

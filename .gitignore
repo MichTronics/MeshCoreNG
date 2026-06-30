@@ -27,3 +27,5 @@ source/
 python_room_server_state.json
 bridge_echo_lab_state.json
 tools/bridge_echo_lab_state.json
+logs/
+tools/logs/

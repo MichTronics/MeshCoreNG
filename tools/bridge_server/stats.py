@@ -34,8 +34,12 @@ def new_node_stats(key: str) -> dict:
         "key": key,
         "rx_times": deque(),
         "tx_times": deque(),
+        "rf_rx_times": deque(),
+        "rf_tx_times": deque(),
         "packets_rx": 0,
         "packets_tx": 0,
+        "rf_packets_rx": 0,
+        "rf_packets_tx": 0,
         "heartbeats_rx": 0,
         "first_seen": now,
         "last_seen": now,
@@ -74,10 +78,16 @@ def merge_node_stats(target: dict, source: dict) -> None:
     """Merge persisted node statistics into an active record."""
     target['rx_times'].extend(source['rx_times'])
     target['tx_times'].extend(source['tx_times'])
+    target['rf_rx_times'].extend(source.get('rf_rx_times', ()))
+    target['rf_tx_times'].extend(source.get('rf_tx_times', ()))
     target['rx_times'] = deque(sorted(target['rx_times']))
     target['tx_times'] = deque(sorted(target['tx_times']))
+    target['rf_rx_times'] = deque(sorted(target['rf_rx_times']))
+    target['rf_tx_times'] = deque(sorted(target['rf_tx_times']))
     target['packets_rx'] += source.get('packets_rx', 0)
     target['packets_tx'] += source.get('packets_tx', 0)
+    target['rf_packets_rx'] += source.get('rf_packets_rx', 0)
+    target['rf_packets_tx'] += source.get('rf_packets_tx', 0)
     target['heartbeats_rx'] += source.get('heartbeats_rx', 0)
     target['first_seen'] = min(target.get('first_seen', time.time()), source.get('first_seen', time.time()))
     for field in ('last_seen', 'last_connected', 'last_disconnect', 'last_heartbeat'):
@@ -109,6 +119,10 @@ def get_node_stats(client: 'BridgeClient') -> dict:
         merge_node_stats(stats, old_stats)
     else:
         stats = state.node_traffic_stats.setdefault(key, new_node_stats(key))
+    stats.setdefault('rf_rx_times', deque())
+    stats.setdefault('rf_tx_times', deque())
+    stats.setdefault('rf_packets_rx', 0)
+    stats.setdefault('rf_packets_tx', 0)
     client._stats_key = key
     stats.update({'key': key, 'node_name': client.node_name, 'node_id': client.node_id, 'firmware_version': client.firmware_version, 'supports_bridge_v2': client.supports_bridge_v2, 'bridge_proto_ver': client.bridge_proto_ver, 'bridge_group': client.bridge_group, 'node_rf_inject_budget': dict(client.node_rf_inject_budget), 'block_stats': dict(client.block_stats), 'connected': client in state.connected_clients, 'client_id': client.client_id, 'addr': client.addr, 'last_connected': client._connect_time})
     return stats
@@ -122,7 +136,7 @@ def touch_node_stats(client: 'BridgeClient', now: float | None=None) -> dict:
     return stats
 
 
-def record_node_packet(client: 'BridgeClient', direction: str, now: float | None=None) -> None:
+def record_node_packet(client: 'BridgeClient', direction: str, now: float | None=None, is_rf: bool=False) -> None:
     """Record packet timing and counters for a client."""
     now = now or time.time()
     stats = touch_node_stats(client, now)
@@ -130,10 +144,18 @@ def record_node_packet(client: 'BridgeClient', direction: str, now: float | None
         stats['packets_rx'] += 1
         stats['rx_times'].append(now)
         prune_packet_times(stats['rx_times'], now)
+        if is_rf:
+            stats['rf_packets_rx'] += 1
+            stats['rf_rx_times'].append(now)
+            prune_packet_times(stats['rf_rx_times'], now)
     elif direction == 'TX':
         stats['packets_tx'] += 1
         stats['tx_times'].append(now)
         prune_packet_times(stats['tx_times'], now)
+        if is_rf:
+            stats['rf_packets_tx'] += 1
+            stats['rf_tx_times'].append(now)
+            prune_packet_times(stats['rf_tx_times'], now)
 
 
 def record_node_heartbeat(client: 'BridgeClient', heartbeat: dict, now: float | None=None) -> None:
@@ -193,8 +215,14 @@ def mark_node_disconnected(client: 'BridgeClient', now: float | None=None) -> No
 
 def node_stats_status_dict(stats: dict, now: float) -> dict:
     """Build the status payload for a node stats record."""
+    stats.setdefault('rf_rx_times', deque())
+    stats.setdefault('rf_tx_times', deque())
+    stats.setdefault('rf_packets_rx', 0)
+    stats.setdefault('rf_packets_tx', 0)
     prune_packet_times(stats['rx_times'], now)
     prune_packet_times(stats['tx_times'], now)
+    prune_packet_times(stats['rf_rx_times'], now)
+    prune_packet_times(stats['rf_tx_times'], now)
     display_name = stats.get('node_name') or 'unnamed bridge node'
     connected = bool(stats.get('connected'))
     heartbeat_age = int(now - stats['last_heartbeat']) if stats.get('last_heartbeat') else None
@@ -217,8 +245,12 @@ def node_stats_status_dict(stats: dict, now: float) -> dict:
         "flood_hop_limit_drops": stats.get("flood_hop_limit_drops", 0),
         "packets_rx": stats.get("packets_rx", 0),
         "packets_tx": stats.get("packets_tx", 0),
+        "rf_packets_rx": stats.get("rf_packets_rx", 0),
+        "rf_packets_tx": stats.get("rf_packets_tx", 0),
         "packets_rx_24h": len(stats["rx_times"]),
         "packets_tx_24h": len(stats["tx_times"]),
+        "rf_packets_rx_24h": len(stats["rf_rx_times"]),
+        "rf_packets_tx_24h": len(stats["rf_tx_times"]),
         "transport_rx_window": 0,
         "transport_rate_dropped": 0,
         "tx_queue_depth": 0,

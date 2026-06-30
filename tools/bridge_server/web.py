@@ -363,6 +363,48 @@ def build_http_headers(status: str, content_type: str, body: bytes, extra_header
     return ('\r\n'.join(header_lines) + '\r\n\r\n').encode('ascii')
 
 
+def build_stream_headers(status: str, content_type: str, extra_headers: list[tuple[str, str]] | None=None) -> bytes:
+    """Build HTTP headers for a long-lived streaming response."""
+    header_lines = [f'HTTP/1.1 {status}', f'Content-Type: {content_type}', 'Connection: keep-alive', 'Cache-Control: no-store']
+    header_lines.extend((f'{name}: {value}' for name, value in (extra_headers or [])))
+    return ('\r\n'.join(header_lines) + '\r\n\r\n').encode('ascii')
+
+
+async def stream_status_events(writer: asyncio.StreamWriter, headers: dict[str, str]) -> None:
+    """Stream status page data with server-sent events."""
+    if not is_web_authorized(headers):
+        body = b"Unauthorized\n"
+        writer.write(build_http_headers("401 Unauthorized", "text/plain", body, []) + body)
+        await writer.drain()
+        return
+    try:
+        writer.write(
+            build_stream_headers(
+                "200 OK",
+                "text/event-stream; charset=utf-8",
+                [("X-Accel-Buffering", "no")],
+            )
+        )
+        await writer.drain()
+        last_payload = ""
+        writer.write(b"retry: 1000\n\n")
+        await writer.drain()
+        while not writer.is_closing():
+            snapshot = {
+                "status": status_snapshot(),
+                "packets": packets_snapshot(),
+                "sensors": sensors_snapshot(),
+            }
+            payload = json.dumps(snapshot, separators=(",", ":"))
+            if payload != last_payload:
+                writer.write(f"data: {payload}\n\n".encode("utf-8"))
+                await writer.drain()
+                last_payload = payload
+            await asyncio.sleep(0.25)
+    except (BrokenPipeError, ConnectionResetError):
+        return
+
+
 async def handle_login_post(reader: asyncio.StreamReader, headers: dict[str, str], base_path: str) -> HttpResponse:
     """Handle a login form submission, create a session on success."""
     content_length = parse_content_length(headers)
@@ -415,6 +457,9 @@ async def handle_http_client(reader: asyncio.StreamReader, writer: asyncio.Strea
             response = await handle_command_post(reader, request_headers, base_path)
         elif method != "GET":
             response = text_response("405 Method Not Allowed", "Method not allowed\n")
+        elif route == "/events":
+            await stream_status_events(writer, request_headers)
+            return
         else:
             response = route_get_request(route, request_headers, base_path, query)
         status, content_type, body, extra_headers = response
