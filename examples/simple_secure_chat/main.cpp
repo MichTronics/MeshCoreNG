@@ -136,7 +136,7 @@ class MyMesh : public BaseChatMesh, ContactVisitor {
     File file = _fs->open("/contacts", "w", true);
 #endif
     if (file) {
-      ContactsIterator iter;
+      ContactsIterator iter = startContactsIterator();
       ContactInfo c;
       uint8_t unused = 0;
       uint32_t reserved = 0;
@@ -576,6 +576,10 @@ void setup() {
   board.begin();
   guardLowBatteryBoot(board);
 
+#ifdef HAS_EXTERNAL_WATCHDOG
+  external_watchdog.begin();
+#endif
+
   if (!radio_init()) { halt(); }
 
   fast_rng.begin(radio_driver.getRngSeed());
@@ -607,4 +611,7 @@ void setup() {
 void loop() {
   the_mesh.loop();
   rtc_clock.tick();
+#ifdef HAS_EXTERNAL_WATCHDOG
+  external_watchdog.loop();
+#endif
 }
