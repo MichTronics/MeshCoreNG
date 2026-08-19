@@ -369,7 +369,7 @@ class BridgeEchoLab:
         if flags == TXT_TYPE_PLAIN:
             await self.send_ack(client, ack_hash, pkt)
         log.info("Command from %s: %s", client.pub.hex()[:12], cmd)
-        await self.handle_command(pkt, client, cmd)
+        await self.handle_command(pkt, client, cmd, flags)
 
     async def handle_request(self, pkt: Packet, client: LabClient, data: bytes) -> None:
         if len(data) < 5:
@@ -403,7 +403,7 @@ class BridgeEchoLab:
         client.out_path = data[1:1 + path_bytes]
         log.info("Path to %s learned: len=0x%02x", client.pub.hex()[:12], path_len)
 
-    async def handle_command(self, pkt: Packet, client: LabClient, cmd: str) -> None:
+    async def handle_command(self, pkt: Packet, client: LabClient, cmd: str, request_text_type: int) -> None:
         client.commands += 1
         self.command_count += 1
         started = time.monotonic()
@@ -450,7 +450,7 @@ class BridgeEchoLab:
             )
         elif lower.startswith("loss test"):
             count = self.parse_count(cmd[len("loss test"):].strip())
-            await self.send_loss_test(pkt, client, count)
+            await self.send_loss_test(pkt, client, count, request_text_type)
             return
         else:
             reply = (
@@ -462,6 +462,7 @@ class BridgeEchoLab:
             pkt,
             client,
             reply,
+            reply_text_type=request_text_type,
             force_flood=force_flood,
             force_direct=force_direct,
         )
@@ -511,11 +512,11 @@ class BridgeEchoLab:
             count = 3
         return max(1, min(MAX_LOSS_TEST_PACKETS, count))
 
-    async def send_loss_test(self, pkt: Packet, client: LabClient, count: int) -> None:
+    async def send_loss_test(self, pkt: Packet, client: LabClient, count: int, reply_text_type: int) -> None:
         test_id = now_unique(self.last_unique)
         for i in range(count):
             reply = f"loss test id={test_id} packet={i + 1}/{count} route={self.route_label(pkt)}"
-            await self.send_text_reply(pkt, client, reply)
+            await self.send_text_reply(pkt, client, reply, reply_text_type=reply_text_type)
             await asyncio.sleep(self.args.loss_spacing_ms / 1000.0)
 
     def create_datagram(self, payload_type: int, dest_pub: bytes, secret: bytes, data: bytes) -> Packet:
@@ -577,6 +578,7 @@ class BridgeEchoLab:
         request: Packet,
         client: LabClient,
         text: str,
+        reply_text_type: int = TXT_TYPE_CLI_DATA,
         force_flood: bool = False,
         force_direct: bool = False,
     ) -> None:
@@ -585,7 +587,7 @@ class BridgeEchoLab:
             force_direct = False
         body = (
             struct.pack("<I", now_unique(self.last_unique))
-            + bytes([TXT_TYPE_CLI_DATA << 2])
+            + bytes([reply_text_type << 2])
             + text.encode("utf-8")[:MAX_REPLY_TEXT_LEN]
         )
         payload = self.create_datagram(PAYLOAD_TYPE_TXT_MSG, client.pub, client.secret, body)
