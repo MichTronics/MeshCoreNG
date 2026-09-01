@@ -43,12 +43,12 @@ public:
     loRaFEMControl.setRxModeEnable();
   }
 
-  bool setLoRaFemLnaEnabled(bool enable) override;
-  bool canControlLoRaFemLna() const override;
-  bool isLoRaFemLnaEnabled() const override;
-  bool setLoRaFemPaGainEnabled(bool enable) override;
-  bool canControlLoRaFemPaGain() const override;
-  bool isLoRaFemPaGainEnabled() const override;
+  bool setLoRaFemLnaEnabled(bool enable);
+  bool canControlLoRaFemLna() const;
+  bool isLoRaFemLnaEnabled() const;
+  bool setLoRaFemPaGainEnabled(bool enable);
+  bool canControlLoRaFemPaGain() const;
+  bool isLoRaFemPaGainEnabled() const;
 
   void powerOff() override;
 

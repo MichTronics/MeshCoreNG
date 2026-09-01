@@ -77,7 +77,8 @@ void BridgeBase::handleReceivedPacket(mesh::Packet *packet) {
     return;
   }
 
-  if (!_seen_packets.hasSeen(packet)) {
+  if (!_seen_packets.wasSeen(packet)) {
+    _seen_packets.markSeen(packet);
     packet->markReceivedFromBridge();
     // local mode injects bridge traffic once on RF and prevents normal multi-hop forwarding.
     if (_prefs->bridge_rf == BRIDGE_RF_LOCAL) {

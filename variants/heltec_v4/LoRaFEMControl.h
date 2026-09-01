@@ -19,6 +19,7 @@ class LoRaFEMControl
     void setRxModeEnableWhenMCUSleep(void);
     void setLNAEnable(bool enabled);
     bool getLNAEnable(void) const { return lna_enabled; }
+    bool isLNAEnabled(void) const { return lna_enabled; }
     bool isLnaCanControl(void) const { return lna_can_control; }
     void setLnaCanControl(bool can_control) { lna_can_control = can_control; }
     LoRaFEMType getFEMType(void) const { return fem_type; }

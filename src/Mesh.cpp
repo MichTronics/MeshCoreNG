@@ -44,7 +44,10 @@ bool Mesh::isFloodPathAtRelayLimit(const Packet* packet) const {
 }
 
 bool Mesh::hasSeen(Packet* packet) {
-  bool seen = _tables->hasSeen(packet);
+  bool seen = _tables->wasSeen(packet);
+  if (!seen) {
+    _tables->markSeen(packet);
+  }
   if (seen && isDuplicateSuppressionEnabled()) recordDuplicateForSuppression(packet);
   onPacketSeen(packet, seen);
   return seen;
@@ -774,7 +777,7 @@ void Mesh::sendFlood(Packet* packet, uint32_t delay_millis, uint8_t path_hash_si
   packet->header |= ROUTE_TYPE_FLOOD;
   packet->setPathHashSizeAndCount(path_hash_size, 0);
 
-  _tables->hasSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
+  _tables->markSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
 
   uint8_t pri;
   if (packet->getPayloadType() == PAYLOAD_TYPE_PATH) {
@@ -803,7 +806,7 @@ void Mesh::sendFlood(Packet* packet, uint16_t* transport_codes, uint32_t delay_m
   packet->transport_codes[1] = transport_codes[1];
   packet->setPathHashSizeAndCount(path_hash_size, 0);
 
-  _tables->hasSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
+  _tables->markSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
 
   uint8_t pri;
   if (packet->getPayloadType() == PAYLOAD_TYPE_PATH) {
@@ -836,7 +839,7 @@ void Mesh::sendDirect(Packet* packet, const uint8_t* path, uint8_t path_len, uin
       pri = 0;
     }
   }
-  _tables->hasSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
+  _tables->markSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
   sendPacket(packet, pri, delay_millis);
 }
 
@@ -846,7 +849,7 @@ void Mesh::sendZeroHop(Packet* packet, uint32_t delay_millis) {
 
   packet->path_len = 0;  // path_len of zero means Zero Hop
 
-  _tables->hasSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
+  _tables->markSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
 
   sendPacket(packet, 0, delay_millis);
 }
@@ -859,7 +862,7 @@ void Mesh::sendZeroHop(Packet* packet, uint16_t* transport_codes, uint32_t delay
 
   packet->path_len = 0;  // path_len of zero means Zero Hop
 
-  _tables->hasSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
+  _tables->markSeen(packet); // mark this packet as already sent in case it is rebroadcast back to us
 
   sendPacket(packet, 0, delay_millis);
 }

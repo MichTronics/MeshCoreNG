@@ -25,7 +25,7 @@ public:
   uint16_t getBattMilliVolts() override;
   const char* getManufacturerName() const override ;
   void powerOff() override;
-  bool setLoRaFemLnaEnabled(bool enable) override;
-  bool canControlLoRaFemLna() const override;
-  bool isLoRaFemLnaEnabled() const override;
+  bool setLoRaFemLnaEnabled(bool enable);
+  bool canControlLoRaFemLna() const;
+  bool isLoRaFemLnaEnabled() const;
 };

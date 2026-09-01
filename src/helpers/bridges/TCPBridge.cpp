@@ -715,7 +715,8 @@ void TCPBridge::sendPacket(mesh::Packet *packet) {
   if (_state != State::RUNNING) return;
   if (!shouldExportPacket(packet)) return;
 
-  if (!_seen_packets.hasSeen(packet)) {
+  if (!_seen_packets.wasSeen(packet)) {
+    _seen_packets.markSeen(packet);
     if (sendBridgePacket(packet)) {
       _exported_rf_to_tcp_count++;
     }
