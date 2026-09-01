@@ -8,7 +8,7 @@
 #include <queue>
 #include <vector>
 
-#include "KissModem.h"
+#include "../../examples/kiss_modem/KissModem.h"
 
 static constexpr int TEST_TX_AVAILABLE_BYTES = 4096;
 static constexpr size_t TEST_DEFAULT_MAX_WRITE_CHUNK = SIZE_MAX;
@@ -111,15 +111,17 @@ public:
 
 class FakeRadio : public mesh::Radio {
 public:
-  bool isReceiving() override { return false; }
-  uint32_t getEstAirtimeFor(uint16_t) override { return 10; }
-  bool startSendRaw(const uint8_t*, uint16_t) override {
+  int recvRaw(uint8_t*, int) override { return 0; }
+  uint32_t getEstAirtimeFor(int) override { return 10; }
+  float packetScore(float, int) override { return 0.0f; }
+  bool startSendRaw(const uint8_t*, int) override {
     _start_send_count++;
     return _start_send_result;
   }
   bool isSendComplete() override { return _send_complete; }
   void onSendFinished() override { _send_finished_count++; }
-  int16_t getNoiseFloor() override { return -120; }
+  int getNoiseFloor() const override { return -120; }
+  bool isInRecvMode() const override { return false; }
 
   void setStartSendResult(bool result) { _start_send_result = result; }
   void setSendComplete(bool complete) { _send_complete = complete; }
@@ -137,8 +139,9 @@ class FakeBoard : public mesh::MainBoard {
 public:
   uint16_t getBattMilliVolts() override { return 4200; }
   float getMCUTemperature() override { return 24.0f; }
-  const char* getManufacturerName() override { return "test-board"; }
+  const char* getManufacturerName() const override { return "test-board"; }
   void reboot() override {}
+  uint8_t getStartupReason() const override { return 0; }
 };
 
 class FakeSensors : public SensorManager {

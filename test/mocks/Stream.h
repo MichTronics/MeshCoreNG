@@ -45,7 +45,14 @@ public:
     size_t print(char c) { return write(c); }
     size_t print(const char* str) { return write(str); }
 
-    //size_t println(void)  { return 0; }
+    size_t println(void) { return write("\n"); }
+    size_t println(const char* str) { return print(str) + write("\n"); }
+    size_t println(char c) { return print(c) + write("\n"); }
+    size_t println(int v) { return print(v) + write("\n"); }
+    size_t println(unsigned int v) { return print(v) + write("\n"); }
+    size_t println(long v) { return print(v) + write("\n"); }
+    size_t println(unsigned long v) { return print(v) + write("\n"); }
+    size_t println(double v) { return print(v) + write("\n"); }
     
     virtual void flush() { /* Empty implementation for backward compatibility */ }    
 };
