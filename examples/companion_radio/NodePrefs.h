@@ -11,6 +11,7 @@
 struct NodePrefs {  // persisted to file
   float airtime_factor;
   char node_name[32];
+  double node_lat, node_lon;
   float freq;
   uint8_t sf;
   uint8_t cr;
@@ -23,15 +24,21 @@ struct NodePrefs {  // persisted to file
   uint8_t telemetry_mode_env;
   float rx_delay_base;
   uint32_t ble_pin;
-  uint8_t  advert_loc_policy;
-  uint8_t  buzzer_quiet;
-  uint8_t  gps_enabled;      // GPS enabled flag (0=disabled, 1=enabled)
-  uint32_t gps_interval;     // GPS read interval in seconds
-  uint8_t autoadd_config;    // bitmask for auto-add contacts config
-  uint8_t rx_boosted_gain; // SX126x RX boosted gain mode (0=power saving, 1=boosted)
+  uint8_t advert_loc_policy;
+  uint8_t buzzer_quiet;
+  uint8_t gps_enabled;      // GPS enabled flag (0=disabled, 1=enabled)
+  uint32_t gps_interval;    // GPS read interval in seconds
+  uint8_t autoadd_config;   // bitmask for auto-add contacts config
+  uint8_t rx_boosted_gain;  // SX126x RX boosted gain mode (0=power saving, 1=boosted)
   uint8_t client_repeat;
-  uint8_t path_hash_mode;    // which path mode to use when sending
-  uint8_t autoadd_max_hops;  // 0 = no limit, 1 = direct (0 hops), N = up to N-1 hops (max 64)
+  uint8_t path_hash_mode;   // which path mode to use when sending
+  uint8_t autoadd_max_hops; // 0 = no limit, 1 = direct (0 hops), N = up to N-1 hops (max 64)
   char default_scope_name[31];
   uint8_t default_scope_key[16];
+  uint8_t radio_fem_rxgain;
+  uint8_t radio_fem_txgain;
+  uint8_t repeat_en;
+
+  bool isRepeatEn() const { return repeat_en != 0; }
+  void setRepeatEn(bool enabled) { repeat_en = enabled ? 1 : 0; }
 };

@@ -117,7 +117,9 @@ static void _ftoa(float f, char *p, int *status)
     *p++ = '0';
   else 
   {
-    ltoa(int_part, p, 10);
+    char tmp[16];
+    snprintf(tmp, sizeof(tmp), "%ld", (long)int_part);
+    strcpy(p, tmp);
     while (*p)
       p++;
   }

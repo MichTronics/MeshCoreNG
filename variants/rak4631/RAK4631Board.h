@@ -32,6 +32,16 @@ public:
     return (ADC_MULTIPLIER * raw) / 4096;
   }
 
+  bool setLoRaFemLnaEnabled(bool enable) {
+    (void)enable;
+    return true;
+  }
+
+  bool setLoRaFemPaGainEnabled(bool enable) {
+    (void)enable;
+    return true;
+  }
+
   const char* getManufacturerName() const override {
     return "RAK 4631";
   }

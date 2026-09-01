@@ -616,7 +616,7 @@ void BLEBridge::sendPacket(mesh::Packet *packet) {
     return;
   }
 
-  if (_seen_packets.hasSeen(packet)) {
+  if (_seen_packets.wasSeen(packet)) {
     _tx_seen_drop++;
     return;
   }

@@ -189,12 +189,18 @@ bool DataStore::saveMainIdentity(const mesh::LocalIdentity &identity) {
   return identity_store.save("_main", identity);
 }
 
+void DataStore::loadPrefs(NodePrefs& prefs) {
+  double node_lat = 0.0;
+  double node_lon = 0.0;
+  loadPrefs(prefs, node_lat, node_lon);
+}
+
 void DataStore::loadPrefs(NodePrefs& prefs, double& node_lat, double& node_lon) {
   if (_fs->exists("/new_prefs")) {
     loadPrefsInt("/new_prefs", prefs, node_lat, node_lon); // new filename
   } else if (_fs->exists("/node_prefs")) {
     loadPrefsInt("/node_prefs", prefs, node_lat, node_lon);
-    savePrefs(prefs, node_lat, node_lon);                // save to new filename
+    savePrefs(prefs, node_lat, node_lon);                  // save to new filename
     _fs->remove("/node_prefs"); // remove old
   }
 }
@@ -237,6 +243,11 @@ void DataStore::loadPrefsInt(const char *filename, NodePrefs& _prefs, double& no
 
     file.close();
   }
+}
+
+bool DataStore::savePrefs(NodePrefs& prefs) {
+  savePrefs((const NodePrefs&)prefs, prefs.node_lat, prefs.node_lon);
+  return true;
 }
 
 void DataStore::savePrefs(const NodePrefs& _prefs, double node_lat, double node_lon) {

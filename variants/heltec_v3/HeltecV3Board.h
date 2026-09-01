@@ -65,6 +65,16 @@ public:
     return (ADC_MULTIPLIER * (3.3 / 1024.0) * raw) * 1000;
   }
 
+  bool setLoRaFemLnaEnabled(bool enable) {
+    (void)enable;
+    return true;
+  }
+
+  bool setLoRaFemPaGainEnabled(bool enable) {
+    (void)enable;
+    return true;
+  }
+
   const char* getManufacturerName() const override {
     return "Heltec V3";
   }
