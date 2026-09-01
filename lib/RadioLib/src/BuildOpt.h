@@ -228,6 +228,9 @@
 #elif defined(ARDUINO_ARCH_STM32)
   // official STM32 Arduino core (https://github.com/stm32duino/Arduino_Core_STM32)
   #define RADIOLIB_PLATFORM                           "Arduino STM32 (official)"
+  #define RADIOLIB_ARDUINOHAL_PIN_MODE_CAST           (PinMode)
+  #define RADIOLIB_ARDUINOHAL_PIN_STATUS_CAST         (PinStatus)
+  #define RADIOLIB_ARDUINOHAL_INTERRUPT_MODE_CAST     (PinStatus)
 
 #elif defined(SAMD_SERIES)
   // Adafruit SAMD boards (M0 and M4)
