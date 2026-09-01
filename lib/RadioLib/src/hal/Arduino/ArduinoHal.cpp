@@ -26,7 +26,7 @@ void inline ArduinoHal::pinMode(uint32_t pin, uint32_t mode) {
     return;
   }
 #if defined(ARDUINO_ARCH_STM32)
-  ::pinMode(pin, static_cast<PinMode>(RADIOLIB_ARDUINOHAL_PIN_MODE_CAST mode));
+  ::pinMode(pin, mode);
 #else
   ::pinMode(pin, mode);
 #endif
@@ -37,7 +37,7 @@ void inline ArduinoHal::digitalWrite(uint32_t pin, uint32_t value) {
     return;
   }
 #if defined(ARDUINO_ARCH_STM32)
-  ::digitalWrite(pin, static_cast<PinStatus>(RADIOLIB_ARDUINOHAL_PIN_STATUS_CAST value));
+  ::digitalWrite(pin, value);
 #else
   ::digitalWrite(pin, value);
 #endif
@@ -55,7 +55,7 @@ void inline ArduinoHal::attachInterrupt(uint32_t interruptNum, void (*interruptC
     return;
   }
 #if defined(ARDUINO_ARCH_STM32)
-  ::attachInterrupt(interruptNum, interruptCb, static_cast<PinStatus>(RADIOLIB_ARDUINOHAL_INTERRUPT_MODE_CAST mode));
+  ::attachInterrupt(interruptNum, interruptCb, mode);
 #else
   ::attachInterrupt(interruptNum, interruptCb, mode);
 #endif
