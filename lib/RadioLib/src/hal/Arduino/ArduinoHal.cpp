@@ -25,8 +25,8 @@ void inline ArduinoHal::pinMode(uint32_t pin, uint32_t mode) {
   if(pin == RADIOLIB_NC) {
     return;
   }
-#if defined(ARDUINO_ARCH_STM32)
-  ::pinMode(pin, static_cast<decltype(INPUT)>(mode));
+#if defined(RADIOLIB_ARDUINOHAL_PIN_MODE_CAST)
+  ::pinMode(pin, static_cast<decltype(INPUT)>(RADIOLIB_ARDUINOHAL_PIN_MODE_CAST mode));
 #else
   ::pinMode(pin, mode);
 #endif
@@ -36,8 +36,8 @@ void inline ArduinoHal::digitalWrite(uint32_t pin, uint32_t value) {
   if(pin == RADIOLIB_NC) {
     return;
   }
-#if defined(ARDUINO_ARCH_STM32)
-  ::digitalWrite(pin, static_cast<decltype(LOW)>(value));
+#if defined(RADIOLIB_ARDUINOHAL_PIN_STATUS_CAST)
+  ::digitalWrite(pin, static_cast<decltype(LOW)>(RADIOLIB_ARDUINOHAL_PIN_STATUS_CAST value));
 #else
   ::digitalWrite(pin, value);
 #endif
@@ -54,8 +54,8 @@ void inline ArduinoHal::attachInterrupt(uint32_t interruptNum, void (*interruptC
   if(interruptNum == RADIOLIB_NC) {
     return;
   }
-#if defined(ARDUINO_ARCH_STM32)
-  ::attachInterrupt(interruptNum, interruptCb, static_cast<decltype(LOW)>(mode));
+#if defined(RADIOLIB_ARDUINOHAL_INTERRUPT_MODE_CAST)
+  ::attachInterrupt(interruptNum, interruptCb, static_cast<decltype(LOW)>(RADIOLIB_ARDUINOHAL_INTERRUPT_MODE_CAST mode));
 #else
   ::attachInterrupt(interruptNum, interruptCb, mode);
 #endif
