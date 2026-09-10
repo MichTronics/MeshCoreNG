@@ -80,3 +80,8 @@ void HeltecV4Board::begin() {
   bool HeltecV4Board::isLoRaFemLnaEnabled() const {
     return loRaFEMControl.isLNAEnabled();
   }
+
+  bool HeltecV4Board::setLoRaFemPaGainEnabled(bool enable) {
+    (void)enable;
+    return true; // FEM PA gain switching not exposed by this board's LoRaFEMControl yet
+  }

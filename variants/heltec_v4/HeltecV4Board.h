@@ -26,6 +26,7 @@ public:
   bool setLoRaFemLnaEnabled(bool enable);
   bool canControlLoRaFemLna() const;
   bool isLoRaFemLnaEnabled() const;
+  bool setLoRaFemPaGainEnabled(bool enable);
   uint16_t getBattMilliVolts() override;
   bool setAdcMultiplier(float multiplier) override {
     if (multiplier == 0.0f) {
