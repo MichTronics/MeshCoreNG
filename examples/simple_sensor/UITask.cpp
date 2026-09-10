@@ -94,15 +94,15 @@ void UITask::renderCurrScreen() {
 
     _display->setCursor(0, 0);
     _display->setTextSize(1);
-    _display->setColor(DisplayDriver::GREEN);
+    _display->setColor(UIColor::primary_txt);
     _display->drawTextEllipsized(0, 0, _display->width(), _node_prefs->node_name);
 
     _display->setCursor(0, 12);
-    _display->setColor(fix ? DisplayDriver::GREEN : DisplayDriver::YELLOW);
+    _display->setColor(fix ? UIColor::primary_txt : UIColor::warning_txt);
     sprintf(tmp, "GPS: %s  SAT:%02ld", fix ? "FIX" : (gps_enabled ? "WAIT" : "OFF"), sats);
     _display->print(tmp);
 
-    _display->setColor(DisplayDriver::LIGHT);
+    _display->setColor(UIColor::secondary_txt);
     if (fix) {
       _display->setCursor(0, 24);
       sprintf(tmp, "LAT:% .6f", location->getLatitude() / 1000000.0);
@@ -121,7 +121,7 @@ void UITask::renderCurrScreen() {
     }
 
     _display->setCursor(0, 50);
-    _display->setColor(DisplayDriver::YELLOW);
+    _display->setColor(UIColor::warning_txt);
     uint16_t batt_mv = _board ? _board->getBattMilliVolts() : 0;
     if (fix) {
       sprintf(tmp, "ALT:%ldm BAT:%umV", location->getAltitude() / 1000, batt_mv);

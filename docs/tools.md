@@ -193,3 +193,16 @@ python3 tools/generate_dutch_region_db.py --html /path/to/Lijst_van_regios.html 
 python3 tools/build_webflasher.py --repo owner/repo
 python3 tools/build_webflasher.py --repo owner/repo --token "$GITHUB_TOKEN"
 ```
+
+## Telegram public channel bridge
+
+`tools/telegram_gwnl_bridge.py` connects to `tools/tcp_bridge_server.py` as a bridge client and relays a public channel's group text (default channel: `GWNL`) to/from a Telegram chat. Requires `pip install cryptography`.
+
+```bash
+python3 tools/telegram_gwnl_bridge.py \
+  --server 127.0.0.1 --port 4200 --bridge-password bridgeSecret \
+  --public-channels-file tools/public_channels.json --channel-name GWNL \
+  --telegram-token <bot-token> --telegram-chat-id <chat-id>
+```
+
+Telegram->mesh injection is rate limited (`--rate-limit-per-min`, default 6) to avoid RF airtime abuse, and the bridge skips re-relaying its own echoed messages.
