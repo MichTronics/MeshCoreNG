@@ -367,11 +367,13 @@ uint8_t MyMesh::handleAnonRegionsReq(const mesh::Identity& sender, uint32_t send
                                      const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
-    reply_path_len = *data & 63;
-    reply_path_hash_size = (*data >> 6) + 1;
+    uint8_t encoded_path_len = *data;
+    if (!mesh::Packet::isValidPathLen(encoded_path_len)) return 0;
+    reply_path_len = encoded_path_len & 63;
+    reply_path_hash_size = (encoded_path_len >> 6) + 1;
     data++;
 
-    memcpy(reply_path, data, ((uint8_t)reply_path_len) * reply_path_hash_size);
+    memcpy(reply_path, data, reply_path_len * reply_path_hash_size);
     // data += (uint8_t)reply_path_len * reply_path_hash_size;
 
     memcpy(reply_data, &sender_timestamp, 4);   // prefix with sender_timestamp, like a tag
@@ -388,11 +390,13 @@ uint8_t MyMesh::handleAnonOwnerReq(const mesh::Identity& sender, uint32_t sender
                                    const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
-    reply_path_len = *data & 63;
-    reply_path_hash_size = (*data >> 6) + 1;
+    uint8_t encoded_path_len = *data;
+    if (!mesh::Packet::isValidPathLen(encoded_path_len)) return 0;
+    reply_path_len = encoded_path_len & 63;
+    reply_path_hash_size = (encoded_path_len >> 6) + 1;
     data++;
 
-    memcpy(reply_path, data, ((uint8_t)reply_path_len) * reply_path_hash_size);
+    memcpy(reply_path, data, reply_path_len * reply_path_hash_size);
     // data += (uint8_t)reply_path_len * reply_path_hash_size;
 
     memcpy(reply_data, &sender_timestamp, 4);   // prefix with sender_timestamp, like a tag
@@ -409,11 +413,13 @@ uint8_t MyMesh::handleAnonClockReq(const mesh::Identity& sender, uint32_t sender
                                    const uint8_t* data) {
   if (anon_limiter.allow(rtc_clock.getCurrentTime())) {
     // request data has: {reply-path-len}{reply-path}
-    reply_path_len = *data & 63;
-    reply_path_hash_size = (*data >> 6) + 1;
+    uint8_t encoded_path_len = *data;
+    if (!mesh::Packet::isValidPathLen(encoded_path_len)) return 0;
+    reply_path_len = encoded_path_len & 63;
+    reply_path_hash_size = (encoded_path_len >> 6) + 1;
     data++;
 
-    memcpy(reply_path, data, ((uint8_t)reply_path_len) * reply_path_hash_size);
+    memcpy(reply_path, data, reply_path_len * reply_path_hash_size);
     // data += (uint8_t)reply_path_len * reply_path_hash_size;
 
     memcpy(reply_data, &sender_timestamp, 4);   // prefix with sender_timestamp, like a tag
@@ -1375,6 +1381,7 @@ bool MyMesh::filterRecvFloodPacket(mesh::Packet* pkt) {
 
 void MyMesh::onAnonDataRecv(mesh::Packet *packet, const uint8_t *secret, const mesh::Identity &sender,
                             uint8_t *data, size_t len) {
+  if (len < 5 || len >= MAX_PACKET_PAYLOAD) return;
   if (packet->getPayloadType() == PAYLOAD_TYPE_ANON_REQ) { // received an initial request by a possible admin
                                                            // client (unknown at this stage)
     uint32_t timestamp;

@@ -104,6 +104,13 @@ void TCPBridge::begin() {
   _last_heartbeat_ms = 0;
   _transport_dropped_count = 0;
   _control_dropped_count = 0;
+  _send_error_count = 0;
+  _partial_write_count = 0;
+  _rx_invalid_length_count = 0;
+  _rx_checksum_error_count = 0;
+  _rx_parse_error_count = 0;
+  _rx_alloc_drop_count = 0;
+  _disconnected_drop_count = 0;
   resetGuardStats();
   _bridge_id = 0;
   _ntp_synced = false;
@@ -242,6 +249,7 @@ void TCPBridge::readIncoming() {
         uint16_t len = (_rx_buffer[2] << 8) | _rx_buffer[3];
 
         if (len > MAX_TCP_PAYLOAD_SIZE) {
+          _rx_invalid_length_count++;
           BRIDGE_DEBUG_PRINTLN("TCP bridge: RX invalid length %d, resetting\n", len);
           _rx_buffer_pos = 0;
           continue;
@@ -318,13 +326,16 @@ void TCPBridge::readIncoming() {
                 _injected_tcp_to_rf_count++;
                 onPacketReceived(pkt);
               } else {
+                _rx_parse_error_count++;
                 BRIDGE_DEBUG_PRINTLN("TCP bridge: RX failed to parse packet\n");
                 _mgr->free(pkt);
               }
             } else {
+              _rx_alloc_drop_count++;
               BRIDGE_DEBUG_PRINTLN("TCP bridge: RX failed to allocate packet\n");
             }
           } else {
+            _rx_checksum_error_count++;
             BRIDGE_DEBUG_PRINTLN("TCP bridge: RX checksum mismatch, rcv=0x%04x\n",
                                  received_checksum);
           }
@@ -336,8 +347,10 @@ void TCPBridge::readIncoming() {
 }
 
 bool TCPBridge::sendPayloadFrame(const uint8_t *payload, uint16_t len) {
-  if (!_initialized || !_client.connected()) return false;
-  if (len > MAX_TCP_PAYLOAD_SIZE) return false;
+  if (!_initialized || !_client.connected() || len > MAX_TCP_PAYLOAD_SIZE) {
+    _send_error_count++;
+    return false;
+  }
 
   uint8_t buffer[MAX_TCP_PACKET_SIZE];
   buffer[0] = (BRIDGE_PACKET_MAGIC >> 8) & 0xFF;
@@ -350,7 +363,26 @@ bool TCPBridge::sendPayloadFrame(const uint8_t *payload, uint16_t len) {
   buffer[4 + len] = (checksum >> 8) & 0xFF;
   buffer[5 + len] = checksum & 0xFF;
 
-  return _client.write(buffer, len + TCP_OVERHEAD) == len + TCP_OVERHEAD;
+  const size_t frame_len = len + TCP_OVERHEAD;
+  size_t written = 0;
+  uint32_t deadline = millis() + SERVER_CONNECT_TIMEOUT_MS;
+  while (written < frame_len) {
+    if (!_client.connected() || (int32_t)(millis() - deadline) >= 0) {
+      _send_error_count++;
+      if (written > 0) _partial_write_count++;
+      _client.stop();
+      _state = State::IDLE;
+      _last_reconnect_ms = millis() - RECONNECT_INTERVAL_MS;
+      return false;
+    }
+    size_t progress = _client.write(buffer + written, frame_len - written);
+    if (progress == 0) {
+      yield();
+      continue;
+    }
+    written += progress;
+  }
+  return true;
 }
 
 void TCPBridge::sendAuth() {
@@ -712,7 +744,10 @@ bool TCPBridge::isControlPacket(const uint8_t *payload, uint16_t len) const {
 
 void TCPBridge::sendPacket(mesh::Packet *packet) {
   if (!_initialized || !packet) return;
-  if (_state != State::RUNNING) return;
+  if (_state != State::RUNNING) {
+    _disconnected_drop_count++;
+    return;
+  }
   if (!shouldExportPacket(packet)) return;
 
   if (!_seen_packets.wasSeen(packet)) {
@@ -1311,6 +1346,13 @@ void TCPBridge::recordInjectFromTcp(uint16_t packet_len) {
 void TCPBridge::resetGuardStats() {
   _transport_dropped_count = 0;
   _control_dropped_count = 0;
+  _send_error_count = 0;
+  _partial_write_count = 0;
+  _rx_invalid_length_count = 0;
+  _rx_checksum_error_count = 0;
+  _rx_parse_error_count = 0;
+  _rx_alloc_drop_count = 0;
+  _disconnected_drop_count = 0;
   _transport_flood_limiter.reset();
   _control_flood_limiter.reset();
   _rf_inject_minute_start_ms = 0;
@@ -1377,9 +1419,9 @@ void TCPBridge::getStatusStr(char *reply) const {
              _prefs->bridge_rf_inject_budget_enabled ? "on" : "off",
              (unsigned long)_rf_inject_dropped_count);
   }
-  char bridgeStatsStr[96] = "";
+  char bridgeStatsStr[160] = "";
   snprintf(bridgeStatsStr, sizeof(bridgeStatsStr),
-           " | B:%08lx a:%lu x:%lu i:%lu d:%lu o:%lu t:%lu l:%lu f:%lu h:%lu b:%lu n:%lu",
+           " | B:%08lx a:%lu x:%lu i:%lu d:%lu o:%lu t:%lu l:%lu f:%lu h:%lu b:%lu n:%lu w:%lu e:%lu q:%lu c:%lu p:%lu m:%lu r:%lu",
            (unsigned long)_bridge_id,
            (unsigned long)_accepted_tcp_packet_count,
            (unsigned long)_exported_rf_to_tcp_count,
@@ -1391,7 +1433,14 @@ void TCPBridge::getStatusStr(char *reply) const {
            (unsigned long)_skipped_export_disabled_count,
            (unsigned long)_skipped_max_hops_count,
            (unsigned long)_skipped_rf_inject_budget_count,
-           (unsigned long)_skipped_node_block_count);
+           (unsigned long)_skipped_node_block_count,
+           (unsigned long)_partial_write_count,
+           (unsigned long)_send_error_count,
+           (unsigned long)_rx_invalid_length_count,
+           (unsigned long)_rx_checksum_error_count,
+           (unsigned long)_rx_parse_error_count,
+           (unsigned long)_rx_alloc_drop_count,
+           (unsigned long)_disconnected_drop_count);
 
   // Show TCP rate-limit stats if enabled and packets were dropped
   if (_prefs->tcp_flood_limit_enable && (_transport_dropped_count > 0 || _control_dropped_count > 0)) {

@@ -171,6 +171,8 @@ RegionEntry* RegionMap::putRegion(const char* name, uint16_t parent_id, uint16_t
 }
 
 int RegionMap::getTransportKeysFor(const RegionEntry& src, TransportKey dest[], int max_num) {
+  if (dest == NULL || max_num <= 0) return 0;
+
   int num;
   if (src.name[0] == '$') {   // private region
     num = _store->loadKeysFor(src.id, dest, max_num);
@@ -216,14 +218,17 @@ RegionEntry* RegionMap::findByName(const char* name) {
 }
 
 RegionEntry* RegionMap::findByNamePrefix(const char* prefix) {
+  if (prefix == NULL) return NULL;
   if (strcmp(prefix, "*") == 0) return &wildcard;
 
   if (*prefix == '#') { prefix++; }  // ignore the '#' when matching by name
+  size_t prefix_len = strlen(prefix);
   RegionEntry* partial = NULL;
   for (int i = 0; i < num_regions; i++) {
     auto region = &regions[i];
     if (strcmp(prefix, skip_hash(region->name)) == 0) return region;  // is a complete match, preference this one
-    if (memcmp(prefix, skip_hash(region->name), strlen(prefix)) == 0) {
+    if (prefix_len <= strlen(skip_hash(region->name)) &&
+        memcmp(prefix, skip_hash(region->name), prefix_len) == 0) {
       partial = region;
     }
   }

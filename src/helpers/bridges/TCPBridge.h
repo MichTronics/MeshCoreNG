@@ -112,6 +112,13 @@ private:
   RateLimiter _control_flood_limiter;    // for control/admin packets  
   uint32_t    _transport_dropped_count = 0;
   uint32_t    _control_dropped_count = 0;
+  uint32_t    _send_error_count = 0;
+  uint32_t    _partial_write_count = 0;
+  uint32_t    _rx_invalid_length_count = 0;
+  uint32_t    _rx_checksum_error_count = 0;
+  uint32_t    _rx_parse_error_count = 0;
+  uint32_t    _rx_alloc_drop_count = 0;
+  uint32_t    _disconnected_drop_count = 0;
   bool        _just_connected = false;
   bool        _ntp_synced = false;
   uint32_t    _last_ntp_sync_ms = 0;

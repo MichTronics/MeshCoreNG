@@ -308,6 +308,7 @@ bool MyMesh::filterRecvFloodPacket(mesh::Packet* pkt) {
 
 void MyMesh::onAnonDataRecv(mesh::Packet *packet, const uint8_t *secret, const mesh::Identity &sender,
                             uint8_t *data, size_t len) {
+  if (len < 9 || len >= MAX_PACKET_PAYLOAD) return;
   if (packet->getPayloadType() == PAYLOAD_TYPE_ANON_REQ) { // received an initial request by a possible admin
                                                            // client (unknown at this stage)
     uint32_t sender_timestamp, sender_sync_since;

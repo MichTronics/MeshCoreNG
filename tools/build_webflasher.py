@@ -7,8 +7,9 @@ boards listed in website/public/flasher/boards.json. Boards without a matching
 release asset are silently skipped (firmware not yet released).
 
 Writes boards.json to website/.vitepress/dist/flasher/ and mirrors only the
-latest flashable firmware asset for each board under /flasher/firmware/. Web
-Serial needs browser-readable bytes, and GitHub Release asset URLs do not
+latest flashable firmware asset for each board under /flasher/firmware/. It also
+publishes a Heltec V3/V4 prerelease-only flasher under /flasher/heltec-prerelease/.
+Web Serial needs browser-readable bytes, and GitHub Release asset URLs do not
 provide CORS headers for fetch(). Older releases stay as direct GitHub download
 links to keep the Pages artifact small. Run this script AFTER 'vitepress build'.
 """
@@ -27,7 +28,8 @@ ROOT = Path(__file__).resolve().parents[1]
 WEBFLASHER_SRC  = ROOT / "website" / "public" / "flasher"
 BOARDS_FILE     = WEBFLASHER_SRC / "boards.json"
 SITE_FLASHER    = ROOT / "website" / ".vitepress" / "dist" / "flasher"
-FIRMWARE_DIR    = SITE_FLASHER / "firmware"
+HELTEC_PRERELEASE_FLASHER = SITE_FLASHER / "heltec-prerelease"
+HELTEC_V3_V4_PATTERN = re.compile(r"^heltec_v[34](?:_|$)", re.IGNORECASE)
 
 
 def load_boards():
@@ -247,10 +249,15 @@ def ota_manifest_sort_key(item):
     )
 
 
-def build_flasher(boards, all_assets):
-    if FIRMWARE_DIR.exists():
-        shutil.rmtree(FIRMWARE_DIR)
-    FIRMWARE_DIR.mkdir(parents=True, exist_ok=True)
+def is_heltec_v3_v4_board(board):
+    return bool(HELTEC_V3_V4_PATTERN.match(board.get("env", "")))
+
+
+def build_flasher(boards, all_assets, site_flasher=SITE_FLASHER, write_ota_manifest=True, label="Flasher"):
+    firmware_dir = site_flasher / "firmware"
+    if firmware_dir.exists():
+        shutil.rmtree(firmware_dir)
+    firmware_dir.mkdir(parents=True, exist_ok=True)
 
     published = []
     skipped = []
@@ -263,7 +270,7 @@ def build_flasher(boards, all_assets):
             skipped.append(env_name)
             continue
 
-        board_dir = FIRMWARE_DIR / env_name
+        board_dir = firmware_dir / env_name
         board_dir.mkdir(parents=True, exist_ok=True)
 
         releases = []
@@ -303,9 +310,14 @@ def build_flasher(boards, all_assets):
             "releases": releases,
         })
 
-    with (SITE_FLASHER / "boards.json").open("w", encoding="utf-8") as f:
+    site_flasher.mkdir(parents=True, exist_ok=True)
+    with (site_flasher / "boards.json").open("w", encoding="utf-8") as f:
         json.dump(published, f, indent=2)
         f.write("\n")
+
+    if not write_ota_manifest:
+        print(f"\n{label} built: {len(published)} boards published, {len(skipped)} skipped (no release asset).", file=sys.stderr)
+        return published
 
     ota_assets = []
     for board in published:
@@ -326,11 +338,11 @@ def build_flasher(boards, all_assets):
             "",
         ]))
 
-    with (SITE_FLASHER / "ota-manifest.txt").open("w", encoding="utf-8") as f:
+    with (site_flasher / "ota-manifest.txt").open("w", encoding="utf-8") as f:
         f.write("\n".join(ota_lines))
         f.write("\n")
 
-    print(f"\nFlasher built: {len(published)} boards published, {len(skipped)} skipped (no release asset).", file=sys.stderr)
+    print(f"\n{label} built: {len(published)} boards published, {len(skipped)} skipped (no release asset).", file=sys.stderr)
     return published
 
 
@@ -367,7 +379,17 @@ def main():
     print(f"Loading release assets from {args.repo} ...", file=sys.stderr)
     all_assets = load_all_release_assets(args.repo, args_token)
 
-    build_flasher(boards, all_assets)
+    build_flasher(boards, all_assets, label="Flasher")
+
+    heltec_prerelease_boards = [board for board in boards if is_heltec_v3_v4_board(board)]
+    prerelease_assets = [asset for asset in all_assets if asset.get("release_prerelease")]
+    build_flasher(
+        heltec_prerelease_boards,
+        prerelease_assets,
+        site_flasher=HELTEC_PRERELEASE_FLASHER,
+        write_ota_manifest=False,
+        label="Heltec V3/V4 prerelease flasher",
+    )
     return 0
 
 

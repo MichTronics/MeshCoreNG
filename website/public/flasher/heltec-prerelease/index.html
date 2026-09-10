@@ -3,21 +3,18 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>MeshCoreNG – Web Flasher</title>
+  <title>MeshCoreNG - Heltec V3/V4 Prerelease Flasher</title>
   <link rel="icon" href="/MeshCoreNG/favicon.svg" />
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="../style.css" />
 </head>
 <body>
 
   <header>
-    <a class="back" href="/MeshCoreNG/">← MeshCoreNG docs</a>
-    <h1>MeshCoreNG</h1>
+    <a class="back" href="/MeshCoreNG/flasher/">&larr; Standard web flasher</a>
+    <h1>Heltec V3/V4 prerelease flasher</h1>
     <p class="tagline">
-      LoRa mesh repeater firmware — dense-mesh telemetry &bull; internet bridge &bull; power saving<br>
-      Use <strong>Chrome</strong> or <strong>Edge</strong> — Web Serial is not supported in Firefox or Safari.
-    </p>
-    <p class="tagline">
-      <a href="./heltec-prerelease/">Heltec V3/V4 prerelease flasher</a>
+      Prerelease MeshCoreNG firmware for all Heltec V3 and V4 variants<br>
+      Use <strong>Chrome</strong> or <strong>Edge</strong> - Web Serial is not supported in Firefox or Safari.
     </p>
   </header>
 
@@ -31,7 +28,7 @@
 
     <!-- Step 2: board -->
     <section class="step">
-      <h2><span class="step-num">2</span> Select your board</h2>
+      <h2><span class="step-num">2</span> Select your Heltec board</h2>
       <div id="board-section">
         <p class="hint" id="board-hint">Select a firmware type first.</p>
         <select id="board-select" style="display:none"></select>
@@ -41,7 +38,7 @@
 
     <!-- Step 3: version -->
     <section class="step">
-      <h2><span class="step-num">3</span> Choose firmware version</h2>
+      <h2><span class="step-num">3</span> Choose prerelease version</h2>
       <div id="version-section">
         <p class="hint" id="version-hint">Select a board first.</p>
         <select id="version-select" style="display:none"></select>
@@ -52,14 +49,14 @@
     <!-- Step 4: flash -->
     <section class="step">
       <h2><span class="step-num">4</span> Connect &amp; flash</h2>
-      <p class="hint">Plug your board into USB, then press the button below.</p>
+      <p class="hint">Plug your Heltec board into USB, then press the button below.</p>
       <p class="hint" id="device-notice"></p>
       <label class="option-row" id="wipe-row" style="display:none">
         <input type="checkbox" id="wipe-check">
         <span>Erase device before flashing</span>
       </label>
       <div class="flash-row">
-        <button id="flash-btn" class="install-btn" disabled>Flash MeshCoreNG</button>
+        <button id="flash-btn" class="install-btn" disabled>Flash prerelease firmware</button>
         <button id="dfu-btn" class="secondary-btn" style="display:none">Enter DFU mode</button>
         <button id="erase-btn" class="secondary-btn danger" style="display:none">Erase nRF52 flash</button>
         <span id="no-serial-msg" class="hint" style="display:none">
@@ -79,10 +76,6 @@
         </div>
       </div>
       <div class="download-list" id="download-list"></div>
-      <label class="custom-row">
-        <span>Custom firmware</span>
-        <input type="file" id="custom-file" accept=".bin,.zip">
-      </label>
     </section>
 
     <!-- Step 5: first use -->
@@ -91,12 +84,10 @@
       <ol>
         <li>Connect via USB serial at <strong>115 200 baud</strong> (e.g. <a href="https://config.meshcore.io" target="_blank">config.meshcore.io</a>).</li>
         <li>For bridge firmware: <code>set bridge.enabled on</code></li>
-        <li>Repeater malformed public chat drop is on by default. Check or change it with <code>get malformed.drop</code>, <code>set malformed.drop on</code>, or <code>set malformed.drop off</code>.</li>
-        <li>Check stats: <code>get dense.stats</code></li>
         <li>Use any MeshCore client to connect: <a href="https://app.meshcore.nz" target="_blank">app.meshcore.nz</a></li>
       </ol>
       <p>Full documentation: <a href="/MeshCoreNG/">MeshCoreNG docs</a> &bull;
-         <a href="https://github.com/MichTronics/MeshCoreNG" target="_blank">GitHub</a></p>
+         <a href="https://github.com/MichTronics/MeshCoreNG/releases" target="_blank">Prereleases</a></p>
     </section>
 
   </main>
@@ -107,9 +98,9 @@
       <a href="https://github.com/MichTronics/MeshCoreNG/releases" target="_blank">Releases</a> &bull;
       <a href="/MeshCoreNG/">Documentation</a>
     </p>
-    <p class="small">MeshCoreNG is open-source firmware. Flash at your own risk.</p>
+    <p class="small">This page only lists GitHub prerelease firmware for Heltec V3/V4 variants. Flash at your own risk.</p>
   </footer>
 
-  <script type="module" src="app.js"></script>
+  <script type="module" src="../app.js"></script>
 </body>
 </html>

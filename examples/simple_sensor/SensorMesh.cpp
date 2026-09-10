@@ -455,6 +455,7 @@ void SensorMesh::handleCommand(uint32_t sender_timestamp, char* command, char* r
 }
 
 void SensorMesh::onAnonDataRecv(mesh::Packet* packet, const uint8_t* secret, const mesh::Identity& sender, uint8_t* data, size_t len) {
+    if (len < 5 || len >= MAX_PACKET_PAYLOAD) return;
   if (packet->getPayloadType() == PAYLOAD_TYPE_ANON_REQ) {  // received an initial request by a possible admin client (unknown at this stage)
     uint32_t timestamp;
     memcpy(&timestamp, data, 4);

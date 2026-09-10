@@ -168,7 +168,7 @@ int Mesh::searchChannelsByHash(const uint8_t* hash, GroupChannel channels[], int
 
 DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
   if (pkt->isRouteDirect() && pkt->getPayloadType() == PAYLOAD_TYPE_TRACE) {
-    if (pkt->path_len < MAX_PATH_SIZE) {
+    if (pkt->path_len < MAX_PATH_SIZE && pkt->payload_len >= 9) {
       uint8_t i = 0;
       uint32_t trace_tag;
       memcpy(&trace_tag, &pkt->payload[i], 4); i += 4;
@@ -194,7 +194,8 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
     return ACTION_RELEASE;
   }
 
-  if (pkt->isRouteDirect() && pkt->getPayloadType() == PAYLOAD_TYPE_CONTROL && (pkt->payload[0] & 0x80) != 0) {
+  if (pkt->isRouteDirect() && pkt->getPayloadType() == PAYLOAD_TYPE_CONTROL &&
+      pkt->payload_len > 0 && (pkt->payload[0] & 0x80) != 0) {
     if (pkt->getPathHashCount() == 0) {
       onControlDataRecv(pkt);
     }
@@ -205,10 +206,9 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
   if (pkt->isRouteDirect() && pkt->getPathHashCount() > 0) {
     // check for 'early received' ACK
     if (pkt->getPayloadType() == PAYLOAD_TYPE_ACK) {
-      int i = 0;
-      uint32_t ack_crc;
-      memcpy(&ack_crc, &pkt->payload[i], 4); i += 4;
-      if (i <= pkt->payload_len) {
+      if (pkt->payload_len >= 4) {
+        uint32_t ack_crc;
+        memcpy(&ack_crc, pkt->payload, 4);
         onAckRecv(pkt, ack_crc);
       }
     }
@@ -240,12 +240,11 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
 
   switch (pkt->getPayloadType()) {
     case PAYLOAD_TYPE_ACK: {
-      int i = 0;
       uint32_t ack_crc;
-      memcpy(&ack_crc, &pkt->payload[i], 4); i += 4;
-      if (i > pkt->payload_len) {
+      if (pkt->payload_len < 4) {
         MESH_DEBUG_PRINTLN("%s Mesh::onRecvPacket(): incomplete ACK packet", getLogDateTime());
       } else if (!hasSeen(pkt)) {
+        memcpy(&ack_crc, pkt->payload, 4);
         onAckRecv(pkt, ack_crc);
         action = routeRecvPacket(pkt);
       }
@@ -255,6 +254,10 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
     case PAYLOAD_TYPE_REQ:
     case PAYLOAD_TYPE_RESPONSE:
     case PAYLOAD_TYPE_TXT_MSG: {
+      if (pkt->payload_len < 2) {
+        MESH_DEBUG_PRINTLN("%s Mesh::onRecvPacket(): incomplete addressed packet", getLogDateTime());
+        break;
+      }
       int i = 0;
       uint8_t dest_hash = pkt->payload[i++];
       uint8_t src_hash = pkt->payload[i++];
@@ -282,9 +285,12 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
             if (len > 0) {  // success!
               if (pkt->getPayloadType() == PAYLOAD_TYPE_PATH) {
                 int k = 0;
+                if (len < 1) break;
                 uint8_t path_len = data[k++];
+                if (!Packet::isValidPathLen(path_len)) break;
                 uint8_t hash_size = (path_len >> 6) + 1;
                 uint8_t hash_count = path_len & 63;
+                if (k + hash_size * hash_count >= len) break;
                 uint8_t* path = &data[k]; k += hash_size*hash_count;
                 uint8_t extra_type = data[k++] & 0x0F;   // upper 4 bits reserved for future use
                 uint8_t* extra = &data[k];
@@ -314,6 +320,10 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
       break;
     }
     case PAYLOAD_TYPE_ANON_REQ: {
+      if (pkt->payload_len < 1 + PUB_KEY_SIZE + CIPHER_MAC_SIZE) {
+        MESH_DEBUG_PRINTLN("%s Mesh::onRecvPacket(): incomplete anonymous request", getLogDateTime());
+        break;
+      }
       int i = 0;
       uint8_t dest_hash = pkt->payload[i++];
       uint8_t* sender_pub_key = &pkt->payload[i]; i += PUB_KEY_SIZE;
@@ -342,6 +352,10 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
     }
     case PAYLOAD_TYPE_GRP_DATA: 
     case PAYLOAD_TYPE_GRP_TXT: {
+      if (pkt->payload_len < 1 + CIPHER_MAC_SIZE) {
+        MESH_DEBUG_PRINTLN("%s Mesh::onRecvPacket(): incomplete group packet", getLogDateTime());
+        break;
+      }
       int i = 0;
       uint8_t channel_hash = pkt->payload[i++];
 
@@ -367,6 +381,10 @@ DispatcherAction Mesh::onRecvPacket(Packet* pkt) {
       break;
     }
     case PAYLOAD_TYPE_ADVERT: {
+      if (pkt->payload_len < PUB_KEY_SIZE + 4 + SIGNATURE_SIZE) {
+        MESH_DEBUG_PRINTLN("%s Mesh::onRecvPacket(): incomplete advertisement packet", getLogDateTime());
+        break;
+      }
       int i = 0;
       Identity id;
       memcpy(id.pub_key, &pkt->payload[i], PUB_KEY_SIZE); i += PUB_KEY_SIZE;

@@ -555,6 +555,6 @@ flashLogToggle.addEventListener('click', () => {
 flashBtn.addEventListener('click', flashSelected);
 dfuBtn.addEventListener('click', enterDfuMode);
 eraseBtn.addEventListener('click', eraseNrf52);
-customFile.addEventListener('change', loadCustomFirmware);
+customFile?.addEventListener('change', loadCustomFirmware);
 
 loadBoards();
