@@ -329,6 +329,9 @@ uint32_t SensorMesh::getDirectRetransmitDelay(const mesh::Packet* packet) {
 int SensorMesh::getInterferenceThreshold() const {
   return _prefs.interference_threshold;
 }
+bool SensorMesh::getCADEnabled() const {
+  return false; // hardware CAD before TX (disabled by default, until configurable)
+}
 int SensorMesh::getAGCResetInterval() const {
   return ((int)_prefs.agc_reset_interval) * 4000;   // milliseconds
 }
