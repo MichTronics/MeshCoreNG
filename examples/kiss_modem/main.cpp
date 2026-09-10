@@ -115,7 +115,8 @@ void setup() {
   uint32_t start = millis();
   while (!Serial && millis() - start < 3000) delay(10);
   delay(100);
-#if defined(ESP32) && ARDUINO_USB_MODE
+#if defined(ESP32) && ARDUINO_USB_MODE && defined(ARDUINO_USB_CDC_ON_BOOT) && ARDUINO_USB_CDC_ON_BOOT
+  // only the native USB CDC (HWCDC) class supports these; plain HardwareSerial (CDC-on-boot off) does not
   Serial.setTxTimeoutMs(USB_TX_TIMEOUT_MS);
   Serial.setTxBufferSize(USB_TX_BUFFER_SIZE);
 #endif
