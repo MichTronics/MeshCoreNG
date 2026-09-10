@@ -26,6 +26,8 @@ public:
   void enterDeepSleep(uint32_t secs, int pin_wake_btn = -1);
   void powerOff() override;
   uint16_t getBattMilliVolts() override;
+  bool setLoRaFemLnaEnabled(bool enable);
+  bool setLoRaFemPaGainEnabled(bool enable);
   bool setAdcMultiplier(float multiplier) override {
     if (multiplier == 0.0f) {
       adc_mult = ADC_MULTIPLIER;

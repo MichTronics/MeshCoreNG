@@ -138,3 +138,8 @@ bool T096Board::canControlLoRaFemLna() const {
 bool T096Board::isLoRaFemLnaEnabled() const {
   return loRaFEMControl.isLNAEnabled();
 }
+
+bool T096Board::setLoRaFemPaGainEnabled(bool enable) {
+  (void)enable;
+  return true; // FEM PA gain switching not exposed by this board's LoRaFEMControl yet
+}

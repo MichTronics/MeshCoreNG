@@ -22,5 +22,6 @@ public:
   bool setLoRaFemLnaEnabled(bool enable);
   bool canControlLoRaFemLna() const;
   bool isLoRaFemLnaEnabled() const;
+  bool setLoRaFemPaGainEnabled(bool enable);
 
 };

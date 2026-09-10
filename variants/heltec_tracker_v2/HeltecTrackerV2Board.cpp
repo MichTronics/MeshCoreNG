@@ -79,3 +79,8 @@ void HeltecTrackerV2Board::begin() {
   bool HeltecTrackerV2Board::isLoRaFemLnaEnabled() const {
     return loRaFEMControl.isLNAEnabled();
   }
+
+  bool HeltecTrackerV2Board::setLoRaFemPaGainEnabled(bool enable) {
+    (void)enable;
+    return true; // FEM PA gain switching not exposed by this board's LoRaFEMControl yet
+  }
