@@ -22,6 +22,7 @@ Commands:
   build-bridge-espnow-firmwares: Build all ESPNow bridge repeater firmwares (ESP32 with ESPNow).
   build-bridge-ble-firmwares: Build all BLE bridge repeater firmwares (nRF52/Bluefruit and ESP32 BLE).
   build-bridge-tcp-ble-firmwares: Build all combined TCP+BLE bridge repeater firmwares (selected ESP32 WiFi+BLE boards).
+  build-heltec-v3-v4-firmwares: Build all Heltec V3/V4 variants for the prerelease web flasher.
 
 Examples:
 Build firmware for the "RAK_4631_repeater" device target
@@ -50,6 +51,9 @@ $ bash build.sh build-bridge-ble-firmwares
 
 Build all combined TCP+BLE bridge firmwares
 $ bash build.sh build-bridge-tcp-ble-firmwares
+
+Build all Heltec V3/V4 prerelease web flasher firmwares
+$ bash build.sh build-heltec-v3-v4-firmwares
 
 Environment Variables:
   REGION_PROFILE=nl|de|border|none:
@@ -346,6 +350,14 @@ build_bridge_tcp_ble_firmwares() {
 
 }
 
+build_heltec_v3_v4_firmwares() {
+
+  # build all Heltec V3/V4 variants, including V3 433 and V4 TFT targets
+  build_all_firmwares_matching "heltec_v3"
+  build_all_firmwares_matching "heltec_v4"
+
+}
+
 build_firmwares() {
   build_companion_firmwares
   build_repeater_firmwares
@@ -399,4 +411,6 @@ elif [[ $1 == "build-bridge-ble-firmwares" ]]; then
   build_bridge_ble_firmwares
 elif [[ $1 == "build-bridge-tcp-ble-firmwares" ]]; then
   build_bridge_tcp_ble_firmwares
+elif [[ $1 == "build-heltec-v3-v4-firmwares" ]]; then
+  build_heltec_v3_v4_firmwares
 fi

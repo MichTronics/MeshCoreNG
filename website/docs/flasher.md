@@ -10,7 +10,7 @@ MeshCoreNG publishes a GitHub Pages web flasher at:
 
 The flasher is a browser frontend for release firmware assets. It does not build firmware in the browser. It lists known board environments from `website/public/flasher/boards.json`, finds matching release files, and either flashes them directly or offers the correct download.
 
-The Heltec V3/V4 prerelease flasher uses the same Web Serial flow, but its CI-generated manifest only contains GitHub prerelease assets for Heltec V3, Heltec V3 433, Heltec V4 and Heltec V4 TFT board variants.
+The Heltec V3/V4 prerelease flasher uses the same Web Serial flow, but its CI-generated manifest only contains GitHub prerelease assets for PlatformIO environments beginning with `heltec_v3` or `heltec_v4`.
 
 ## Browser support
 
@@ -80,5 +80,7 @@ These boards are nRF52-based. If the bootloader supports serial DFU and the rele
 The Pages workflow mirrors release assets into `/flasher/firmware/`. This avoids browser CORS problems that occur when trying to fetch GitHub Release asset bytes directly.
 
 The same workflow also publishes `/flasher/heltec-prerelease/` from prerelease-only assets for all Heltec V3/V4 variants and mirrors the newest flashable prerelease asset per board under `/flasher/heltec-prerelease/firmware/`.
+
+Heltec V3/V4 prerelease assets are built by the `Build Heltec V3/V4 Prerelease Firmwares` GitHub Actions workflow. Push a tag like `heltec-prerelease-v1.2.3` to compile all PlatformIO environments matching `heltec_v3` or `heltec_v4` and publish them as a GitHub prerelease.
 
 When a release is published, the website should be rebuilt so the flasher uses the exact firmware files from that release. Manual Pages runs use the latest published release.

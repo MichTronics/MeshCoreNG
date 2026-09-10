@@ -37,6 +37,35 @@ def load_boards():
         return json.load(f)
 
 
+def load_pio_env_names():
+    env_names = []
+    for config_file in [ROOT / "platformio.ini", *sorted((ROOT / "variants").glob("*/platformio.ini"))]:
+        if not config_file.exists():
+            continue
+        section_pattern = re.compile(r"^\s*\[env:([^\]]+)\]")
+        with config_file.open("r", encoding="utf-8") as f:
+            for line in f:
+                match = section_pattern.match(line)
+                if match:
+                    env_names.append(match.group(1).strip())
+    return env_names
+
+
+def format_env_name(env_name):
+    words = re.sub(r"_+", " ", env_name).strip().split()
+    return " ".join(word.upper() if word.lower() in ("ble", "usb", "wifi", "tcp", "rs232", "tft", "gps", "mqtt") else word for word in words)
+
+
+def make_heltec_board(env_name):
+    board_name = format_env_name(env_name)
+    return {
+        "env": env_name,
+        "name": board_name,
+        "chipFamily": "ESP32",
+        "description": f"MeshCoreNG prerelease firmware for {board_name}.",
+    }
+
+
 def github_request(url, token=None, accept="application/vnd.github+json"):
     headers = {
         "Accept": accept,
@@ -253,6 +282,14 @@ def is_heltec_v3_v4_board(board):
     return bool(HELTEC_V3_V4_PATTERN.match(board.get("env", "")))
 
 
+def get_heltec_v3_v4_boards(boards):
+    by_env = {board["env"]: board for board in boards if is_heltec_v3_v4_board(board)}
+    for env_name in load_pio_env_names():
+        if HELTEC_V3_V4_PATTERN.match(env_name) and env_name not in by_env:
+            by_env[env_name] = make_heltec_board(env_name)
+    return sorted(by_env.values(), key=lambda board: board["env"].lower())
+
+
 def build_flasher(boards, all_assets, site_flasher=SITE_FLASHER, write_ota_manifest=True, label="Flasher"):
     firmware_dir = site_flasher / "firmware"
     if firmware_dir.exists():
@@ -381,7 +418,7 @@ def main():
 
     build_flasher(boards, all_assets, label="Flasher")
 
-    heltec_prerelease_boards = [board for board in boards if is_heltec_v3_v4_board(board)]
+    heltec_prerelease_boards = get_heltec_v3_v4_boards(boards)
     prerelease_assets = [asset for asset in all_assets if asset.get("release_prerelease")]
     build_flasher(
         heltec_prerelease_boards,
